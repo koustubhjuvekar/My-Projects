@@ -129,6 +129,9 @@ This is testing HTML page. Run in Primary region http://18.192.68.28/test.html
 - Click on Vaults → Create New vault <kbd>
   <img width="150" height="72" src="https://github.com/user-attachments/assets/5f931609-2a94-465d-82fd-dcfcbc90bbdd" />
 </kbd>
+Click on Vaults → Create New Vault  
+![](https://github.com/user-attachments/assets/5f931609-2a94-465d-82fd-dcfcbc90bbdd)
+
 
 
 
