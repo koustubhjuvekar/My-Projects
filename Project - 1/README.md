@@ -134,8 +134,8 @@ This is testing HTML page. Run in Primary region http://18.192.68.28/test.html
     - **Vault Name** - PrimaryEC2Vault
     - **Vault Type** - Backup Vault
     - **Encryption key** - (default) aws/backup<br>
-  Click on  <bd><img width="100" height="65" alt="CreateVault" src="https://github.com/user-attachments/assets/1c391ee3-6c54-490d-ac9c-336fc11ed9f1" /></bd>
-  <img src="https://github.com/user-attachments/assets/your-image.png" alt="Create New Vault" width="200">
+  Click on  <bd><img width="100" top-margin="30px" height="65" alt="CreateVault" src="https://github.com/user-attachments/assets/1c391ee3-6c54-490d-ac9c-336fc11ed9f1" /></bd>
+
 
 
 
