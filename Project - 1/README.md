@@ -137,6 +137,6 @@ This is testing HTML page. Run in Primary region http://18.192.68.28/test.html
   
   
 
-  - Click on <button>Create New Vault</button>
+- Click on <button>Create New Vault</button>
 
 
