@@ -11,7 +11,7 @@ This ensures:
 
 
 ## ⚙️ Steps  
-- [⚙️ Steps](#️-steps)  
+[⚙️ Steps]
   1. [🌐 Select Regions & Launch EC2](#1-select-regions-and-launch-ec2-instance)  
   2. [🖥️ Install & Configure Nginx](#2-install-and-configure-nginx-with-test-application)  
   3. [📦 Create Backup Vaults](#3-create-backup-vaults)  
