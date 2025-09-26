@@ -126,7 +126,8 @@ This is testing HTML page. Run in Primary region http://18.192.68.28/test.html
     <i>Image 3.1: AWS backup console page</i>
   </p><br>
 
-Click on Vaults  <img width="339" height="68" alt="image" src="https://github.com/user-attachments/assets/49834764-3393-495d-b69f-c0d04f1ec247" />
+Click on Vaults  <img width="191" height="35" alt="image" src="https://github.com/user-attachments/assets/33f3d74a-bf4e-446a-93a7-216e16c1f30b" />
+
 Create New Vault
 In the Frankfurt region, create a Backup Vault.
 •	Vault Name - PrimaryEC2Vault
