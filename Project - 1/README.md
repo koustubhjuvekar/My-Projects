@@ -127,7 +127,7 @@ This is testing HTML page. Run in Primary region http://18.192.68.28/test.html
   </p><br>
 
 Click on Vaults ▶ <img width="150" height="72" alt="Create_Vault-removebg-preview" src="https://github.com/user-attachments/assets/5f931609-2a94-465d-82fd-dcfcbc90bbdd" />
-<p align="center" style="margin-top:20px;">
+<p style="margin-top:20px;">
   Click on Vaults ▶ <img width="150" height="72" alt="Create_Vault-removebg-preview" src="https://github.com/user-attachments/assets/5f931609-2a94-465d-82fd-dcfcbc90bbdd" />
 </p>
 In the Frankfurt region, create a Backup Vault.
