@@ -134,9 +134,9 @@ This is testing HTML page. Run in Primary region http://18.192.68.28/test.html
     - **Vault Name** - PrimaryEC2Vault
     - **Vault Type** - Backup Vault
     - **Encryption key** - (default) aws/backup<br>
-  Click on <button>Create New Vault</button>
+  
+  
 
-![Create New Vault](https://img.shields.io/badge/Create_New_Vault-darkorange?style=for-the-badge&labelColor=000000&logoColor=000000&color=FF8C00)
-
+  - Click on <button>Create New Vault</button>
 
 
