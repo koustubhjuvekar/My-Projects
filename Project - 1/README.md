@@ -40,6 +40,16 @@ We are creating an automated system where **EC2 backups happen regularly in one 
   +  Configure security group: Allow HTTP (Port 80) and SSH (Port 22).<br>
   +  Launch the instance and Connect to the instance via SSH.
 
+<ul>
+  <li>1 primary AWS region (Europe - Frankfurt - eu-central-1)</li>
+  <li>1 replica AWS region (Canada - Central - ca-central-1)</li>
+  <li>Launch an EC2 Instance in primary region (here Frankfurt)</li>
+  <li>Go to the AWS Management Console → EC2 → Launch Instance.</li>
+  <li>Select OS Amazon Linux (or Ubuntu) → Here selected OS is Amazon Linux.</li>
+  <li>Choose an instance type (t2.micro).</li>
+  <li>Configure security group: Allow HTTP (Port 80) and SSH (Port 22).</li>
+  <li>Launch the instance and Connect to the instance via SSH.</li>
+</ul>
 
 
 ---
