@@ -136,6 +136,6 @@ This is testing HTML page. Run in Primary region http://18.192.68.28/test.html
     - **Encryption key** - (default) aws/backup<br>
   Click on <button>Create New Vault</button>
 
-Click on ![Create New Vault](https://img.shields.io/badge/Create%20New%20Vault-grey?style=flat&color=orange) to continue.
+Click on ![Create New Vault](https://img.shields.io/badge/Create%20New%20Vault-grey?style=flat&color=#ec7211) to continue.
 
 
