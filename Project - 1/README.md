@@ -145,7 +145,7 @@ This is testing HTML page. Run in Primary region http://18.192.68.28/test.html
          width="150" height="72" 
          alt="Vault Button" 
          style="border:none; outline:none; vertical-align:middle;" />
-  </li>
+  </li> 
   <li>
     In the Frankfurt region, create a Backup Vault.
     <ul>
