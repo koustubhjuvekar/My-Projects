@@ -45,6 +45,10 @@ We are creating an automated system where **EC2 backups happen regularly in one 
 <img width="925" height="471" alt="image" src="https://github.com/user-attachments/assets/68ba00be-76a9-4613-9a8f-b05b89b511ed" /><br>
 
 _Image 1: Launching an EC2 in primary region (Frankfurt - eu-central-1)_
+```bash
+sudo yum update -y
+sudo yum install nginx -y
+sudo systemctl start nginx
 
 
 ### 2. 🖥️ Install and Configure Nginx with Test Application
