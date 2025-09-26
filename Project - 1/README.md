@@ -101,3 +101,9 @@ Insert this code: (or you can add your html page for test)
 </body>
 </html>
 ```
+Save it (Ctrl + X)  (press y)  Enter.
+```bash
+sudo systemctl reload nginx
+```
+
+This is testing HTML page. Run in Primary region http://18.192.68.28/test.html
