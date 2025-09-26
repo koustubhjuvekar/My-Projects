@@ -42,7 +42,7 @@ We are creating an automated system where **EC2 backups happen regularly in one 
   <li>&emsp;Launch the instance and Connect to the instance via SSH.</li>
 </ul>
 
-<img width="925" height="471" alt="image" src="https://github.com/user-attachments/assets/68ba00be-76a9-4613-9a8f-b05b89b511ed" /><br>
+<img width="1366" height="690" alt="EC2 Primary region launched" src="https://github.com/user-attachments/assets/990a4eb8-ac1a-4135-9148-3685160d2ea1" />
 
 _Image 1: Launching an EC2 in primary region (Frankfurt - eu-central-1)_
 
