@@ -161,4 +161,26 @@ This is testing HTML page. Run in Primary region http://18.192.68.28/test.html
   </li>
 </ul>
 
+<ul>
+  <li>
+    Click on Vaults →
+    <img src="https://github.com/user-attachments/assets/5f931609-2a94-465d-82fd-dcfcbc90bbdd" 
+         width="150" height="72" 
+         alt="Vault Button" 
+         style="border:none; outline:none;" />
+  </li>
+  <li>
+    In the Frankfurt region, create a Backup Vault.
+    <ul>
+      <li><b>Vault Name</b> - PrimaryEC2Vault</li>
+      <li><b>Vault Type</b> - Backup Vault</li>
+      <li><b>Encryption key</b> - (default) aws/backup</li>
+    </ul>
+    Click on <br>
+    <img src="https://github.com/user-attachments/assets/1c391ee3-6c54-490d-ac9c-336fc11ed9f1" 
+         width="100" height="65" 
+         alt="Create Vault" 
+         style="border:none; outline:none;" />
+  </li>
+</ul>
 
