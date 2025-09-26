@@ -128,9 +128,9 @@ This is testing HTML page. Run in Primary region http://18.192.68.28/test.html
 
 - Click on Vaults → Create New vault
 <span style="pointer-events: none; cursor: default;">
-  <img width="150" height="72" alt="Create_Vault-removebg-preview"
-       src="https://github.com/user-attachments/assets/5f931609-2a94-465d-82fd-dcfcbc90bbdd" />
-</span>
+ <kbd>
+  <img width="150" height="72" src="https://github.com/user-attachments/assets/5f931609-2a94-465d-82fd-dcfcbc90bbdd" />
+ </kbd>
 
 
 
