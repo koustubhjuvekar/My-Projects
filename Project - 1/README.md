@@ -13,7 +13,7 @@ This ensures:
 
 ### 📑 Table of Contents
 ⚙️ Steps
-&emsp;1. 🌐 Select Regions & Launch EC2
+&emsp;1. 🌐 Select Regions & Launch EC2<br>
 &emsp;2. 🖥️ Install & Configure Nginx
 &emsp;3. 📦 Create Backup Vaults
 &emsp;4. 📝 Create Backup Plan
