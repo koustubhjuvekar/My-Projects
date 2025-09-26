@@ -21,8 +21,6 @@ This ensures:
 &emsp;7. 🔍 Verify Cross-Region Copy  
 &emsp;8. ♻️ Test Restore in Canada  
 
----
-
 ✅ Result  
 🌟 Benefits  
 ⚠️ Issues & Resolutions  
