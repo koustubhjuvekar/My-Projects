@@ -133,9 +133,3 @@ This is testing HTML page. Run in Primary region http://18.192.68.28/test.html
     - **Vault Type** - Backup Vault
     - **Encryption key** - (default) aws/backup<br>
 
-- Click on <button>Create New Vault</button>
-### 3. 🔒 Create Backup Vaults
-
--
-- Click the <span style="background-color: #38761d; color: white; padding: 4px 10px; border-radius: 5px; font-weight: bold; border: 1px solid #1c4587;">Create New Vault</span> button to finish.
-
