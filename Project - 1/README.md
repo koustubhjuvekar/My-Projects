@@ -21,9 +21,9 @@ This ensures:
 &emsp;&emsp;6. ⚡ Run On-Demand Backup<br>
 &emsp;&emsp;7. 🔍 Verify Cross-Region Copy<br>
 &emsp;&emsp;8. ♻️ Test Restore in Canada<br>
-
-✅ Result<br>
-🌟 Benefits<br>
+✅ Result
+🌟 Benifits 
+ Benefits<br>
 ⚠️ Issues & Resolutions<br>
 🔚 End of Document<br>
 ---
