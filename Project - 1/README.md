@@ -114,3 +114,6 @@ This is testing HTML page. Run in Primary region http://18.192.68.28/test.html
   <i>Image 2: Testing Application output in browser – Primary Region - http://18.192.68.28/test.html</i>
 </p>
 
+
+### 3.	🔒 Create Backup Vaults
+
