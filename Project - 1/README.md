@@ -184,3 +184,28 @@ This is testing HTML page. Run in Primary region http://18.192.68.28/test.html
   </li>
 </ul>
 
+<style>
+  .aws-btn {
+    background-color: #ec7211;  /* AWS orange */
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    font-family: Arial, sans-serif;
+    box-shadow: 0px 4px 6px rgba(0,0,0,0.2);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  .aws-btn:hover {
+    background-color: #d3620f;  /* Darker orange */
+    transform: translateY(-2px);
+  }
+  .aws-btn:active {
+    background-color: #b94f0b;
+    transform: translateY(0);
+  }
+</style>
+
+<button class="aws-btn">Create New Vault</button>
