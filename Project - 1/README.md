@@ -136,19 +136,7 @@ This is testing HTML page. Run in Primary region http://18.192.68.28/test.html
     - **Encryption key** - (default) aws/backup<br>
   Click on  <kbd><img width="100" margin-top="30px" height="65" alt="CreateVault" src="https://github.com/user-attachments/assets/1c391ee3-6c54-490d-ac9c-336fc11ed9f1" /></kbd>
 
-<style>
-  .aws-btn {
-    background-color: #ec7211;  /* AWS orange */
-    color: white;
-    padding: 10px 25px;
-    border: none;
-    border-radius: 30px;  /* Heavy rounded corners */
-    font-size: 16px;
-    font-weight: bold;
-    font-family: Arial, sans-serif;
-  }
-</style>
 
-<button class="aws-btn">Create New Vault</button>
+<button class="aws-btn" background-color="orange" >Create New Vault</button>
 
 
