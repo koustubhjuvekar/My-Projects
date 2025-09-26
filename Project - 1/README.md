@@ -116,4 +116,13 @@ This is testing HTML page. Run in Primary region http://18.192.68.28/test.html
 
 
 ### 3.	🔒 Create Backup Vaults
+-	In console search, search for AWS Backup. Click on it.
+  <img width="1366" height="643" alt="Image 3 Console search for AWS Backup" src="https://github.com/user-attachments/assets/f6b7535a-a04a-4624-9d0d-6085d8cd1adf" />
+  <p align="center">
+    <i>Image 3: Console search for AWS Backup</i>
+  </p>
+<img width="1366" height="643" alt="Image 3 1 - AWS backup console page" src="https://github.com/user-attachments/assets/d79a5177-00d7-440a-b41b-beb0a809f607" />
+  <p align="center">
+    <i>Image 3.1: AWS backup console page</i>
+  </p>
 
