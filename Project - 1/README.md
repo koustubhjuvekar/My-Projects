@@ -124,5 +124,14 @@ This is testing HTML page. Run in Primary region http://18.192.68.28/test.html
 <img width="1366" height="643" alt="Image 3 1 - AWS backup console page" src="https://github.com/user-attachments/assets/d79a5177-00d7-440a-b41b-beb0a809f607" />
   <p align="center">
     <i>Image 3.1: AWS backup console page</i>
-  </p>
+  </p><br>
+
+Click on Vaults  <img width="339" height="68" alt="image" src="https://github.com/user-attachments/assets/49834764-3393-495d-b69f-c0d04f1ec247" />
+Create New Vault
+In the Frankfurt region, create a Backup Vault.
+•	Vault Name - PrimaryEC2Vault
+•	Vault Type - Backup Vault
+•	Encryption key - (default) aws/backup
+Click on    Create vault
+
 
