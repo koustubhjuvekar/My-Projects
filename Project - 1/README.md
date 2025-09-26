@@ -136,22 +136,6 @@ This is testing HTML page. Run in Primary region http://18.192.68.28/test.html
 - Click on <button>Create New Vault</button>
 ### 3. 🔒 Create Backup Vaults
 
-- In the console search bar, search for **AWS Backup** and click on the service result.
-  <img width="1366" height="643" alt="Image 3 Console search for AWS Backup" src="https://github.com/user-attachments/assets/f6b7535a-a04a-4624-9d0d-6085d8cd1adf" />
-  <p align="center">
-    <i>Image 3: Console search for AWS Backup</i>
-  </p><br>
-  <img width="1366" height="643" alt="Image 3 1 - AWS backup console page" src="https://github.com/user-attachments/assets/d79a5177-00d7-440a-b41b-beb0a809f607" />
-  <p align="center">
-    <i>Image 3.1: AWS backup console page</i>
-  </p><br>
-
-- Navigate to **Vaults** → Click on the <span style="background-color: #38761d; color: white; padding: 4px 10px; border-radius: 5px; font-weight: bold; border: 1px solid #1c4587;">Create New Vault</span> button.
-
-- In the Frankfurt region, create the first Backup Vault:
-    - **Vault Name**: `PrimaryEC2Vault`
-    - **Vault Type**: Backup Vault
-    - **Encryption key**: (default) `aws/backup`
-
+-
 - Click the <span style="background-color: #38761d; color: white; padding: 4px 10px; border-radius: 5px; font-weight: bold; border: 1px solid #1c4587;">Create New Vault</span> button to finish.
 
