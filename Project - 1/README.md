@@ -101,7 +101,7 @@ Insert this code: (or you can add your html page for test)
 </body>
 </html>
 ```
-Save it (Ctrl + X)  (press y)  Enter.
+Save it **(Ctrl + X)** --> **(press y)** --> Press **Enter**.
 ```bash
 sudo systemctl reload nginx
 ```
