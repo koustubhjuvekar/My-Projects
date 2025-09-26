@@ -12,15 +12,15 @@ This ensures:
 ---
 
 ### 📑 Table of Contents
-⚙️ Steps<br>
-&emsp;1. 🌐 Select Regions & Launch EC2<br>
-&emsp;2. 🖥️ Install & Configure Nginx<br>
-&emsp;3. 📦 Create Backup Vaults<br>
-&emsp;4. 📝 Create Backup Plan<br>
-&emsp;5. 🔗 Assign Resources<br>
-&emsp;6. ⚡ Run On-Demand Backup<br>
-&emsp;7. 🔍 Verify Cross-Region Copy<br>
-&emsp;8. ♻️ Test Restore in Canada<br>
+⚙️ Steps<br><br>
+&emsp;&emsp;1. 🌐 Select Regions & Launch EC2<br>
+&emsp;&emsp;2. 🖥️ Install & Configure Nginx<br>
+&emsp;&emsp;3. 📦 Create Backup Vaults<br>
+&emsp;&emsp;4. 📝 Create Backup Plan<br>
+&emsp;&emsp;5. 🔗 Assign Resources<br>
+&emsp;&emsp;6. ⚡ Run On-Demand Backup<br>
+&emsp;&emsp;7. 🔍 Verify Cross-Region Copy<br>
+&emsp;&emsp;8. ♻️ Test Restore in Canada<br>
 
 ✅ Result
 🌟 Benefits
