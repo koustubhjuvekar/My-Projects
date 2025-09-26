@@ -43,9 +43,9 @@ We are creating an automated system where **EC2 backups happen regularly in one 
 </ul>
 
 <img width="1366" height="690" alt="EC2 Primary region launched" src="https://github.com/user-attachments/assets/990a4eb8-ac1a-4135-9148-3685160d2ea1" />
-<center>
-  _Image 1: Launching an EC2 in primary region (Frankfurt - eu-central-1)_
-</center>
+<p align="center">
+  <i>Image 1: Launching an EC2 in primary region (Frankfurt - eu-central-1)</i>
+</p>
 
 
 ### 2. 🖥️ Install and Configure Nginx with Test Application
