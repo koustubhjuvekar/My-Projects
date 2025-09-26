@@ -11,7 +11,7 @@ This ensures:
 
 ---
 
-### 📑 Table of Contents
+## 📑 Table of Contents
 ⚙️ Steps<br>
 &emsp;&emsp;1. 🌐 Select Regions & Launch EC2<br>
 &emsp;&emsp;2. 🖥️ Install & Configure Nginx<br>
