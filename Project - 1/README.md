@@ -126,7 +126,8 @@ This is testing HTML page. Run in Primary region http://18.192.68.28/test.html
     <i>Image 3.1: AWS backup console page</i>
   </p><br>
 
-Click on Vaults  <img width="191" height="35" alt="image" src="https://github.com/user-attachments/assets/33f3d74a-bf4e-446a-93a7-216e16c1f30b" />
+Click on Vaults  <img width="36" height="50" alt="Create_Vault-removebg-preview" src="https://github.com/user-attachments/assets/5f931609-2a94-465d-82fd-dcfcbc90bbdd" />
+
 
 Create New Vault
 In the Frankfurt region, create a Backup Vault.
