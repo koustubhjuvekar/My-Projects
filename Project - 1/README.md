@@ -110,4 +110,7 @@ sudo systemctl reload nginx
 This is testing HTML page. Run in Primary region http://18.192.68.28/test.html
 
 <img width="1366" height="686" alt="ss1" src="https://github.com/user-attachments/assets/20f7b2ed-b1f4-40ee-9c9a-1cd400df974a" />
+<p align="center">
+  <i>Image 2: Testing Application output in browser – Primary Region - http://18.192.68.28/test.html</i>
+</p>
 
