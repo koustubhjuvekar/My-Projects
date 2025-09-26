@@ -20,7 +20,7 @@ This ensures:
 &emsp;&emsp;5. 🔗 Assign Resources<br>
 &emsp;&emsp;6. ⚡ Run On-Demand Backup<br>
 &emsp;&emsp;7. 🔍 Verify Cross-Region Copy<br>
-&emsp;&emsp;8. ♻️ Test Restore in Canada<br><br>
+&emsp;&emsp;8. ♻️ Test Restore in Canada<br>
 
 ✅ Result<br>
 🌟 Benefits<br>
