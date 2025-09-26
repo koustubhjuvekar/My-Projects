@@ -31,13 +31,13 @@ This ensures:
 ## ⚙️ Steps  
 We are creating an automated system where **EC2 backups happen regularly in one region and automatically get replicated to another AWS region.** This way, even if the entire primary region fails (disaster, outage, natural calamity), we can still restore our EC2 instance from the backup stored safely in another region.
 ### 1. 🌐 Select Regions and Launch EC2 Instance
-&emsp;-	1 primary AWS region (Europe - Frankfurt - eu-central-1)
-&emsp;-	1 replica AWS region (Canada - Central - ca-central-1)
-&emsp;-	Launch an EC2 Instance in primary region (here Frankfurt)
-&emsp;-	Go to the AWS Management Console  EC2  Launch Instance.
-&emsp;-	Select OS Amazon Linux (or Ubuntu)  Here selected OS is Amazon linux.
-&emsp;-	Choose an instance type (t2.micro).
-&emsp;-	Configure security group: Allow HTTP (Port 80) and SSH (Port 22).
+&emsp;-	1 primary AWS region (Europe - Frankfurt - eu-central-1)<br>
+&emsp;-	1 replica AWS region (Canada - Central - ca-central-1)<br>
+&emsp;-	Launch an EC2 Instance in primary region (here Frankfurt)<br>
+&emsp;-	Go to the AWS Management Console  EC2  Launch Instance.<br>
+&emsp;-	Select OS Amazon Linux (or Ubuntu)  Here selected OS is Amazon linux.<br>
+&emsp;-	Choose an instance type (t2.micro).<br>
+&emsp;-	Configure security group: Allow HTTP (Port 80) and SSH (Port 22).<br>
 
 -	Launch the instance and Connect to the instance via SSH.
 
