@@ -142,6 +142,9 @@ This is testing HTML page. Run in Primary region http://18.192.68.28/test.html
     background: transparent !important;
   }
 </style>
+<p align="center">
+  🟧 **Create New Vault**
+</p>
 
 <kbd>Create New Vault</kbd>
 
