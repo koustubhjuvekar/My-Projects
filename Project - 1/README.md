@@ -127,7 +127,6 @@ This is testing HTML page. Run in Primary region http://18.192.68.28/test.html
   </p><br>
 
 - Click on Vaults → Create New vault
-<span style="pointer-events: none; cursor: default;">
  <kbd>
   <img width="150" height="72" src="https://github.com/user-attachments/assets/5f931609-2a94-465d-82fd-dcfcbc90bbdd" />
  </kbd>
