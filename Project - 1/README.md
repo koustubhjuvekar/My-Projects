@@ -20,10 +20,10 @@ This ensures:
   `6.` ⚡ Run On-Demand Backup  
   `7.` 🔍 Verify Cross-Region Copy  
   `8.` ♻️ Test Restore in Canada  
-- ✅ &emsp;Result  
-- 🌟 &emsp;Benefits  
-- ⚠️ &emsp;Issues & Resolutions  
-- 🔚 &emsp;End of Document
+- ✅ &emsp;&emsp;Result  
+- 🌟 &emsp;&emsp;Benefits  
+- ⚠️ &emsp;&emsp;Issues & Resolutions  
+- 🔚 &emsp;&emsp;End of Document
 
 
 ---
