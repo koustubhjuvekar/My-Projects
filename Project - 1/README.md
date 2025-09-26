@@ -137,6 +137,6 @@ This is testing HTML page. Run in Primary region http://18.192.68.28/test.html
   Click on  <kbd><img width="100" margin-top="30px" height="65" alt="CreateVault" src="https://github.com/user-attachments/assets/1c391ee3-6c54-490d-ac9c-336fc11ed9f1" /></kbd>
 
 
-<button class="aws-btn" background-color="orange" >Create New Vault</button>
+<button class="aws-btn" background-color=#ec7211 >Create New Vault</button>
 
 
