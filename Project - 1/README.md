@@ -9,7 +9,6 @@ This ensures:
 ✅ High Availability  
 ✅ Disaster Recovery  
 
----
 
 ## ⚙️ Steps  
 &emsp;1. 🌐 Select Regions & Launch EC2  
