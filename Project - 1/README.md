@@ -130,13 +130,11 @@ This is testing HTML page. Run in Primary region http://18.192.68.28/test.html
     <img src="https://github.com/user-attachments/assets/5f931609-2a94-465d-82fd-dcfcbc90bbdd" width="150" height="72" style="border:none; outline:none;" />
   </kbd>
 
+- In the Frankfurt region, create a Backup Vault.
+  •	Vault Name - PrimaryEC2Vault
+  •	Vault Type - Backup Vault
+  •	Encryption key - (default) aws/backup
+Click on    <img width="251" height="65" alt="image" src="https://github.com/user-attachments/assets/9ba77e64-d119-4ea4-88f6-7413b4671e0f" />
 
-
-
-In the Frankfurt region, create a Backup Vault.
-•	Vault Name - PrimaryEC2Vault
-•	Vault Type - Backup Vault
-•	Encryption key - (default) aws/backup
-Click on    Create vault
 
 
