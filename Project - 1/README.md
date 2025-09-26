@@ -126,7 +126,7 @@ This is testing HTML page. Run in Primary region http://18.192.68.28/test.html
     <i>Image 3.1: AWS backup console page</i>
   </p><br>
 
-- Click on Vaults → Create New vault <kbd style="border:none;">
+- Click on Vaults → Create New vault <kbd style="border:none; outline:none;">
     <img src="https://github.com/user-attachments/assets/5f931609-2a94-465d-82fd-dcfcbc90bbdd" width="150" height="72" style="border:none; outline:none;" />
   </kbd>
 
