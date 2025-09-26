@@ -136,76 +136,58 @@ This is testing HTML page. Run in Primary region http://18.192.68.28/test.html
     - **Encryption key** - (default) aws/backup<br>
   Click on  <bd><img width="100" margin-top="30px" height="65" alt="CreateVault" src="https://github.com/user-attachments/assets/1c391ee3-6c54-490d-ac9c-336fc11ed9f1" /></bd>
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>AWS Style Button</title>
+  <style>
+    .aws-btn {
+      background-color: #ec7211;  /* AWS orange */
+      color: white;
+      padding: 12px 25px;
+      border: none;
+      border-radius: 20px;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+      font-family: Arial, sans-serif;
+      box-shadow: 0px 4px 6px rgba(0,0,0,0.2);
+      transition: background-color 0.3s ease, transform 0.2s ease;
+    }
+    .aws-btn:hover {
+      background-color: #d3620f;  /* Darker orange */
+      transform: translateY(-2px);
+    }
+    .aws-btn:active {
+      background-color: #b94f0b;
+      transform: translateY(0);
+    }
+    .center {
+      text-align: center;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body style="background:#1e1e1e; color:#fff; font-family:Arial;">
+  
+  <p>Click on Vaults →</p>
+  <div class="center">
+    <button class="aws-btn">Create New Vault</button>
+  </div>
 
+  <p>In the Frankfurt region, create a Backup Vault.</p>
+  <ul>
+    <li><b>Vault Name</b> - PrimaryEC2Vault</li>
+    <li><b>Vault Type</b> - Backup Vault</li>
+    <li><b>Encryption key</b> - (default) aws/backup</li>
+  </ul>
 
-<ul>
-  <li>
-    Click on Vaults →
-    <img src="https://github.com/user-attachments/assets/5f931609-2a94-465d-82fd-dcfcbc90bbdd" 
-         width="150" height="72" 
-         alt="Vault Button" 
-         style="border:none; outline:none; vertical-align:middle;" />
-  </li> 
-  <li>
-    In the Frankfurt region, create a Backup Vault.
-    <ul>
-      <li><b>Vault Name</b> - PrimaryEC2Vault</li>
-      <li><b>Vault Type</b> - Backup Vault</li>
-      <li><b>Encryption key</b> - (default) aws/backup</li>
-    </ul>
-    Click on
-    <img src="https://github.com/user-attachments/assets/1c391ee3-6c54-490d-ac9c-336fc11ed9f1" 
-         width="100" height="65" 
-         alt="Create Vault" 
-         style="border:none; outline:none; vertical-align:bottom;" />
-  </li>
-</ul>
+  <p>Click on</p>
+  <div class="center">
+    <button class="aws-btn">Create Vault</button>
+  </div>
 
-<ul>
-  <li>
-    Click on Vaults →
-    <img src="https://github.com/user-attachments/assets/5f931609-2a94-465d-82fd-dcfcbc90bbdd" 
-         width="150" height="72" 
-         alt="Vault Button" 
-         style="border:none; outline:none;" />
-  </li>
-  <li>
-    In the Frankfurt region, create a Backup Vault.
-    <ul>
-      <li><b>Vault Name</b> - PrimaryEC2Vault</li>
-      <li><b>Vault Type</b> - Backup Vault</li>
-      <li><b>Encryption key</b> - (default) aws/backup</li>
-    </ul>
-    Click on <br>
-    <img src="https://github.com/user-attachments/assets/1c391ee3-6c54-490d-ac9c-336fc11ed9f1" 
-         width="100" height="65" 
-         alt="Create Vault" 
-         style="border:none; outline:none;" />
-  </li>
-</ul>
+</body>
+</html>
 
-<style>
-  .aws-btn {
-    background-color: #ec7211;  /* AWS orange */
-    color: white;
-    padding: 12px 25px;
-    border: none;
-    border-radius: 20px;
-    font-size: 16px;
-    font-weight: bold;
-    cursor: pointer;
-    font-family: Arial, sans-serif;
-    box-shadow: 0px 4px 6px rgba(0,0,0,0.2);
-    transition: background-color 0.3s ease, transform 0.2s ease;
-  }
-  .aws-btn:hover {
-    background-color: #d3620f;  /* Darker orange */
-    transform: translateY(-2px);
-  }
-  .aws-btn:active {
-    background-color: #b94f0b;
-    transform: translateY(0);
-  }
-</style>
-
-<button class="aws-btn">Create New Vault</button>
