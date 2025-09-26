@@ -13,9 +13,9 @@ We created an automated system where EC2 backups happen regularly in one region 
 ## Steps Implemented
 
 ### 1. EC2 Instance Setup (Primary Region: Frankfurt)
-1.  [cite_start]**Launch an EC2 Instance:** Launched a **t2.micro** instance using **Amazon Linux** in the Frankfurt region[cite: 720, 721].
-2.  [cite_start]**Security Group:** Configured the security group to allow **HTTP (Port 80)** and **SSH (Port 22)**[cite: 722].
-3.  [cite_start]**Install & Configure Nginx:** Connected to the instance via SSH and installed Nginx along with a test application page (`test.html`)[cite: 725, 726].
+1.  Launch an EC2 Instance:** Launched a **t2.micro** instance using **Amazon Linux** in the Frankfurt region
+2.  Security Group:** Configured the security group to allow **HTTP (Port 80)** and **SSH (Port 22)
+3.  Install & Configure Nginx:** Connected to the instance via SSH and installed Nginx along with a test application page (`test.html`)
 
 **Shell Commands for Nginx Setup:**
 ```bash
