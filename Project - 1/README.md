@@ -10,7 +10,7 @@ This ensures:
 `2.` High Availability  
 `3.` Disaster Recovery  
 <br>
-
+--
 ## `📑 Table of Contents`
 - ⚙️ **Steps**  
   `1.` &ensp;🌐 Select Regions & Launch EC2  
