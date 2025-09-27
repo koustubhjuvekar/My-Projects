@@ -13,14 +13,14 @@ This ensures:
 
 ## 📑 `Table of Contents`
 - ⚙️ **Steps**  
-  &ensp;&ensp;  `1.` &ensp;Select Regions & Launch EC2  
-  &ensp;&ensp;  `2.` &ensp;Install & Configure Nginx  
-  &ensp;&ensp; `3.` &ensp;Create Backup Vaults  
-  &ensp;&ensp;  `4.` &ensp;Create Backup Plan  
-  &ensp;&ensp;  `5.` &ensp;Assign Resources  
-  &ensp;&ensp;  `6.` &ensp;Run On-Demand Backup   
-  &ensp;&ensp;  `7.` &ensp;Verify Cross-Region Copy  
-  &ensp;&ensp;  `8.` &ensp;Test Restore in Canada  
+  &ensp;&ensp;  1. &ensp;Select Regions & Launch EC2  
+  &ensp;&ensp;  2. &ensp;Install & Configure Nginx  
+  &ensp;&ensp;  3. &ensp;Create Backup Vaults  
+  &ensp;&ensp;  4. &ensp;Create Backup Plan  
+  &ensp;&ensp;  5. &ensp;Assign Resources  
+  &ensp;&ensp;  6. &ensp;Run On-Demand Backup   
+  &ensp;&ensp;  7. &ensp;Verify Cross-Region Copy  
+  &ensp;&ensp;  8. &ensp;Test Restore in Canada  
 - &ensp;✅  **Result**
 - &ensp;🌟  **Benefits**  
 - &ensp;⚠️  **Issues & Resolutions**  
