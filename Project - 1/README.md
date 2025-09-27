@@ -46,6 +46,7 @@ We are creating an automated system where **EC2 backups happen regularly in one 
   <i>Image 1: Launching an EC2 in primary region (Frankfurt - eu-central-1)</i>
 </p>
 
+<br>
 
 ### 2. 🖥️ **Install and Configure Nginx with Test Application**
 Install Nginx and set up a test HTML page:  
