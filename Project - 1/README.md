@@ -207,5 +207,5 @@ In Frankfurt region (Primary Region), go to **Backup Plans** →  <kbd>Create Ba
 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;→&emsp;	**Region** – Select Secondary region `(Canada - Central - ca-central-1)` <br>
 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;→&emsp;	**Destination vault** → Click on <kbd>Create new vault</kbd> → 
 
-&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; →  It will directly go to Canada region → Create vault there → `SecondaryEC2VaultCanada`
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; ↪  It will directly go to Canada region → Create vault there → `SecondaryEC2VaultCanada`
 
