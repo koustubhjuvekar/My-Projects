@@ -9,7 +9,7 @@ This ensures:
 `1.` Data Durability  
 `2.` High Availability  
 `3.` Disaster Recovery  
-<br>
+<br><br><br>
 
 ## `📑 Table of Contents`
 - ⚙️ **Steps**  
