@@ -159,6 +159,6 @@ This is testing HTML page. Run in Primary region http://18.192.68.28/test.html
 In Frankfurt region (Primary Region), go to **Backup Plans** →  <kbd>Create Backup Plan</kbd> <br>
 -	**Start options →**
 
-&emsp;&emsp;▸   Backup plan options - Start with a template<br>
-&emsp;&emsp;▸   Templates - Daily-35day-Retention<br>
-&emsp;&emsp;▸   Backup plan name – MyBackup<br>
+&emsp;&emsp;▸   **Backup plan options -** `Start with a template` <br>
+&emsp;&emsp;▸   **Templates -** `Daily-35day-Retention` <br>
+&emsp;&emsp;▸   **Backup plan name –** `MyBackup` <br>
