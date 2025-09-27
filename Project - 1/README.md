@@ -436,10 +436,11 @@ So, run **http://99.79.161.219/test.html** (Canada Region - Backup region)
 
 So, it is the same output page as seen in **Europe - Frankfurt - eu-central-1.**
 
-
+<br>
 ## ✅ `Result`
 Cross-Region Backup Replication for EC2 using AWS Backup was successfully implemented. Backups from Frankfurt were automatically copied to Canada, and the instance was restored from the replicated backup in Canada.
 
+<br>
 ## 🌟 `Benefits`
 
 -  **Disaster Recovery (DR):** Ensures business continuity even if the primary AWS region becomes unavailable due to natural disasters, power failures, or large-scale outages. <br>
@@ -447,6 +448,7 @@ Cross-Region Backup Replication for EC2 using AWS Backup was successfully implem
 -  **Compliance & Governance:** Many organizations and regulations require that data be stored in multiple locations for resilience and audit readiness. <br>
 -  **High Availability:** Applications and workloads can be quickly restored in another region, minimizing downtime.
 
+<br>
 ## ⚠️ `Issues & Resolutions`
 
 **1.	Cross-Region Copy Delay:**
