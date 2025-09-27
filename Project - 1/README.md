@@ -1,13 +1,14 @@
 ## 🌍 **`Enable Cross-Region Backup Replication for EC2 using AWS Backup`**
 
-Author: Koustubh Juvekar
+Author: Koustubh Juvekar <br>
+
 ## `🎯 Objective`  
 The objective of this project is to configure an **_AWS Backup Plan_** that automatically backs up an EC2 instance in the **_Primary region (Frankfurt)_** and replicates those backups to a **_Secondary region (Canada)_**. 
 
 This ensures:  
 `1.` Data Durability  
 `2.` High Availability  
-`3.` Disaster Recovery  
+`3.` Disaster Recovery  <br>
 
 
 ## `📑 Table of Contents`
@@ -23,10 +24,7 @@ This ensures:
 - ✅  **Result**
 - 🌟  **Benefits**  
 - ⚠️  **Issues & Resolutions**  
-- 🔚  **End of Document**
-
-
-
+- 🔚  **End of Document**  <br>
 
 ## `⚙️ Steps`  
 We are creating an automated system where **EC2 backups happen regularly in one region and automatically get replicated to another AWS region.** This way, even if the entire primary region fails (disaster, outage, natural calamity), we can still restore our EC2 instance from the backup stored safely in another region.
