@@ -191,3 +191,15 @@ In Frankfurt region (Primary Region), go to **Backup Plans** →  <kbd>Create Ba
   <p align="center">
     <i><strong>Image 4.2 : </strong> Backup plan creating – Edit Backup rule (Backup rule configuration – <strong>Backup Window</strong>)</i>
   </p><br>
+
+
+&emsp;&emsp;&emsp;&emsp;▸&emsp;  **Lifecycle →**
+
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;→&emsp;	**Cold storage** – Select `Move backups from warm to cold storage`
+
+<img width="1366" height="553" alt="Image 4 3 - Backup plan creating – Edit Backup rule (Backup rule configuration – Lifecycle)" src="https://github.com/user-attachments/assets/23de2991-af6b-451c-8945-6f594e4de52c" />
+  <p align="center">
+    <i><strong>Image 4.3 : </strong> Backup plan creating – Edit Backup rule (Backup rule configuration –<strong>Lifecycle</strong>)</i>
+  </p><br>
+
+  
