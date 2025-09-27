@@ -2,7 +2,7 @@
 
 **Author:** Koustubh Juvekar <br>
 <br>
-## `🎯 Objective`  
+## 🎯 `Objective`  
 The objective of this project is to configure an **_AWS Backup Plan_** that automatically backs up an EC2 instance in the **_Primary region (Frankfurt)_** and replicates those backups to a **_Secondary region (Canada)_**. 
 
 This ensures:  
@@ -11,7 +11,7 @@ This ensures:
 `3.` Disaster Recovery  
 <br>
 
-## `📑 Table of Contents`
+## 📑 `Table of Contents`
 - ⚙️ **Steps**  
   `1.` &ensp;🌐 Select Regions & Launch EC2  
   `2.` &ensp;🖥️ Install & Configure Nginx  
@@ -27,7 +27,7 @@ This ensures:
 - &ensp;🔚  **End of Document** 
   <br><br>
 
-## `⚙️ Steps`  
+## ⚙️ `Steps`  
 We are creating an automated system where **EC2 backups happen regularly in one region and automatically get replicated to another AWS region.** This way, even if the entire primary region fails (disaster, outage, natural calamity), we can still restore our EC2 instance from the backup stored safely in another region.
 ### 1. 🌐 Select Regions and Launch EC2 Instance
 <ul>
