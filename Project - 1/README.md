@@ -12,20 +12,19 @@ This ensures:
 
 
 ## `📑 Table of Contents`
-
-- ⚙️ Steps
-  `1.` Select Regions & Launch EC2  
-  `2.` Install & Configure Nginx  
-  `3.` Create Backup Vaults  
-  `4.` Create Backup Plan  
-  `5.` Assign Resources  
-  `6.` Run On-Demand Backup  
-  `7.` Verify Cross-Region Copy  
-  `8.` Test Restore in Canada  
+- ⚙️ **Steps**  
+  `1.` 🌐 Select Regions & Launch EC2  
+  `2.` 🖥️ Install & Configure Nginx  
+  `3.` 📦 Create Backup Vaults  
+  `4.` 📝 Create Backup Plan  
+  `5.` 🔗 Assign Resources  
+  `6.` ⚡ Run On-Demand Backup  
+  `7.` 🔍 Verify Cross-Region Copy  
+  `8.` ♻️ Test Restore in Canada  
 - ✅  **Result**
 - 🌟  **Benefits**  
 - ⚠️  **Issues & Resolutions**  
-- 🔚  **End of Document**  <br>
+- 🔚  **End of Document**
 
 ## `⚙️ Steps`  
 We are creating an automated system where **EC2 backups happen regularly in one region and automatically get replicated to another AWS region.** This way, even if the entire primary region fails (disaster, outage, natural calamity), we can still restore our EC2 instance from the backup stored safely in another region.
