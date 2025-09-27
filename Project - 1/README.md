@@ -249,4 +249,43 @@ Create Secondary vault in **Canada - Central - ca-central-1**, same like **point
     <i><strong>Image 4.8 : </strong> Backup plan created</i>
   </p><br>
 
+### 5.  🔗 **Assign Resources to the Plan**
+
+**General** **→**
+-  **Resource assignment name** – `MyResource1.` <br>
+-  **IAM Role** – `Default role`
   
+**Resource selection →**
+
+**1. Define resource selection**
+
+You can select **Include all resource types** OR **Include specific resource types.** <br>
+Here selected **Include specific resource types.**
+  
+<img width="1365" height="643" alt="Image 5 - Assigning resources" src="https://github.com/user-attachments/assets/a7113fc5-cfaa-49ad-afac-2fbdaefea480" />
+  <p align="center">
+    <i><strong>Image 5 : </strong> Assigning resources</i>
+  </p><br>
+
+**2. Select specific resource types**
+
+-  **Resource types** - `EC2` 
+-  **Instance IDs** – Select **instance ID of EC2 launched in Primary region**,  `i-0545b6e883c95a7c5`
+
+<img width="1366" height="595" alt="Image 5 1 - Assigning resources – Select specific resource types" src="https://github.com/user-attachments/assets/eff79ddf-d5e4-48db-90e2-b96863182179" />
+  <p align="center">
+    <i><strong>Image 5.1 : </strong> Assigning resources – Select specific resource types</i>
+  </p><br>
+
+Click on  <kbd>Assign Resources</kbd>
+
+**Resources assigned!**
+
+Go to **AWS Backup page** **→** **Backup plans** **→** **MyBackup → DailyBackups** <br>
+Here, backup details are displayed and under copy configuration **destination region and vault is displayed. 
+**
+
+<img width="1366" height="641" alt="Image 5 2 - Details of backup plans – MyBackup - DailyBackups" src="https://github.com/user-attachments/assets/37f55166-59b4-4948-9e1c-8e2d191686ff" />
+  <p align="center">
+    <i><strong>Image 5.2 : </strong> Details of backup plans – MyBackup - DailyBackups</i>
+  </p><br>
