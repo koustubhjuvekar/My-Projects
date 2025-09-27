@@ -459,24 +459,24 @@ Cross-Region Backup Replication for EC2 using AWS Backup was successfully implem
 
 **1.	Cross-Region Copy Delay:**
 
-❓  After configuring the copy rule, the recovery point did not appear immediately in the Canada (Central) vault, which initially caused confusion. The reason behind it was identified: only new backups are eligible for replication, whereas existing backups are not copied. <br>
-❓  In addition, there was no option to trigger the copy instantly, so replication started later as per the backup schedule.
+&ensp;&ensp;&ensp;&ensp;❓  After configuring the copy rule, the recovery point did not appear immediately in the Canada (Central) vault, which initially caused confusion. The reason behind it was identified: only new backups are eligible for replication, whereas existing backups are not copied. <br>
+&ensp;&ensp;&ensp;&ensp;❓  In addition, there was no option to trigger the copy instantly, so replication started later as per the backup schedule.
 
 **Issue Fixed:**  <br>
-✔  Additional on-demand backups were created in the primary region (Frankfurt), which successfully triggered the copy jobs. <br>
-✔  This ensured that recovery points were eventually replicated to the secondary region (Canada).
+&ensp;&ensp;&ensp;&ensp;✔  Additional on-demand backups were created in the primary region (Frankfurt), which successfully triggered the copy jobs. <br>
+&ensp;&ensp;&ensp;&ensp;✔  This ensured that recovery points were eventually replicated to the secondary region (Canada).
 
 <br>
 
 **2.	Restore Failure via AWS Backup Console**
 
-❓  While attempting to restore the EC2 instance directly from the recovery point in the Canada (Central) region using the AWS Backup console, the process failed. <br>
-❓  The restore from AWS Backup console failed because the original VPC, subnet, and security groups from Frankfurt were not available in the Canada region, causing a configuration mismatch.
+&ensp;&ensp;&ensp;&ensp;❓  While attempting to restore the EC2 instance directly from the recovery point in the Canada (Central) region using the AWS Backup console, the process failed. <br>
+&ensp;&ensp;&ensp;&ensp;❓  The restore from AWS Backup console failed because the original VPC, subnet, and security groups from Frankfurt were not available in the Canada region, causing a configuration mismatch.
 
 **Issue Fixed: ** <br>
-✔  The issue was resolved by navigating to the EC2 → AMIs section in the Canada region. <br>
-✔  The AMI generated through the cross-region backup was available there. <br>
-✔  A new EC2 instance was successfully launched directly from this AMI, and the test application page was verified to be identical to the one in the primary region (Frankfurt).
+&ensp;&ensp;&ensp;&ensp;✔  The issue was resolved by navigating to the EC2 → AMIs section in the Canada region. <br>
+&ensp;&ensp;&ensp;&ensp;✔  The AMI generated through the cross-region backup was available there. <br>
+&ensp;&ensp;&ensp;&ensp;✔  A new EC2 instance was successfully launched directly from this AMI, and the test application page was verified to be identical to the one in the primary region (Frankfurt).
 
 
 <br>
