@@ -136,8 +136,8 @@ This is testing HTML page. Run in Primary region http://18.192.68.28/test.html
     - **Vault Type** - Backup Vault
     - **Encryption key** - (default) aws/backup<br>
 
+<button style="background-color: darkorange; color: black; border: 1px solid black; border-radius: 8px; padding: 5px 12px;">
+  Create New Vault
+</button>
 
-Click on Vaults → Click on <button>Create New Vault</button>
-Click on Vaults → Click on 
-[![Create New Vault](https://img.shields.io/badge/Create%20New%20Vault-darkorange?style=for-the-badge)](#)
 
