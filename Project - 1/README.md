@@ -151,7 +151,7 @@ This is testing HTML page. Run in Primary region http://18.192.68.28/test.html
 
   <img width="1084" height="552" alt="Image 3 4 - Clicked on PrimaryEC2Vault  -  Details of PrimaryEC2Vault" src="https://github.com/user-attachments/assets/6de70e83-2df1-4c9c-95ab-3cfd622aface" />
   <p align="center">
-    <i><strong>Image 3.4 : </strong> Clicked on PrimaryEC2Vault  -  Details of PrimaryEC2Vault</i>
+    <i><strong>Image 3.4 : </strong> Clicked on PrimaryEC2Vault  -  Details of <strong>PrimaryEC2Vault</strong></i>
   </p><br>
 
 
