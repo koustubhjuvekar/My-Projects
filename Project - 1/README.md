@@ -2,11 +2,12 @@
 
 Author: Koustubh Juvekar
 ## `🎯 Objective`  
-The objective of this project is to configure an **AWS Backup Plan** that automatically backs up an EC2 instance in the **primary region (Frankfurt)** and replicates those backups to a **secondary region (Canada)**.  
+The objective of this project is to configure an **_AWS Backup Plan_** that automatically backs up an EC2 instance in the **_Primary region (Frankfurt)_** and replicates those backups to a **_Secondary region (Canada)_**. 
+
 This ensures:  
-🟢 Data Durability  
-🟢 High Availability  
-🟢 Disaster Recovery  
+`1.` Data Durability  
+`2.` High Availability  
+`3.` Disaster Recovery  
 
 
 ## `📑 Table of Contents`
