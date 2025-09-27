@@ -445,6 +445,7 @@ So, it is the same output page as seen in **Europe - Frankfurt - eu-central-1.**
 Cross-Region Backup Replication for EC2 using AWS Backup was successfully implemented. Backups from Frankfurt were automatically copied to Canada, and the instance was restored from the replicated backup in Canada.
 
 <br>
+
 ## 🌟 `Benefits`
 
 -  **Disaster Recovery (DR):** Ensures business continuity even if the primary AWS region becomes unavailable due to natural disasters, power failures, or large-scale outages. <br>
@@ -453,6 +454,7 @@ Cross-Region Backup Replication for EC2 using AWS Backup was successfully implem
 -  **High Availability:** Applications and workloads can be quickly restored in another region, minimizing downtime.
 
 <br>
+
 ## ⚠️ `Issues & Resolutions`
 
 **1.	Cross-Region Copy Delay:**
@@ -465,6 +467,7 @@ Cross-Region Backup Replication for EC2 using AWS Backup was successfully implem
 ✔  This ensured that recovery points were eventually replicated to the secondary region (Canada).
 
 <br>
+
 **2.	Restore Failure via AWS Backup Console**
 
 ❓  While attempting to restore the EC2 instance directly from the recovery point in the Canada (Central) region using the AWS Backup console, the process failed. <br>
@@ -477,6 +480,7 @@ Cross-Region Backup Replication for EC2 using AWS Backup was successfully implem
 
 
 <br>
+
 <div align="center">
 
 <b><strong>- - T H E   E N D - -</strong></b>
