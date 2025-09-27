@@ -154,3 +154,10 @@ This is testing HTML page. Run in Primary region http://18.192.68.28/test.html
     <i><strong>Image 3.4 : </strong> Clicked on PrimaryEC2Vault  -  Details of PrimaryEC2Vault</i>
   </p><br>
 
+
+### 4.	📝 Create Backup Plan
+In Frankfurt region (Primary Region), go to **Backup Plans** →  <kbd>Create Backup Plan</kbd>
+**-	Start options →**
+&emsp;      o	Backup plan options - Start with a template
+&emsp;      o	Templates - Daily-35day-Retention
+&emsp;      o	Backup plan name – MyBackup
