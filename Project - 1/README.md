@@ -215,6 +215,7 @@ In Frankfurt region (Primary Region), go to **Backup Plans** →  <kbd>Create Ba
   </p><br>
 
 Create Secondary vault in **Canada - Central - ca-central-1**, same like **point 3**, in **Primary region**.
+
 <img width="1366" height="642" alt="Image 4 5 - Created New vault in Secondary Region (Canada - Central - ca-central-1)" src="https://github.com/user-attachments/assets/c0e18a6b-1674-4b3a-813e-d7482ee026d4" />
   <p align="center">
     <i><strong>Image 4.5 : </strong> Created New vault in Secondary Region <strong>(Canada - Central - ca-central-1)</strong></i>
