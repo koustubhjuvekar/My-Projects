@@ -162,3 +162,15 @@ In Frankfurt region (Primary Region), go to **Backup Plans** →  <kbd>Create Ba
 &emsp;&emsp;▸&emsp;   **Backup plan options -** `Start with a template` <br>
 &emsp;&emsp;▸&emsp;   **Templates -** `Daily-35day-Retention` <br>
 &emsp;&emsp;▸&emsp;   **Backup plan name –** `MyBackup` <br>
+
+<img width="1365" height="642" alt="Image 4 - Backup plan creating (Start Options)" src="https://github.com/user-attachments/assets/fa01910b-acd5-4826-a04c-1f8ee633c935" />
+  <p align="center">
+    <i><strong>Image 4 : </strong> Backup plan creating (Start Options)</i>
+  </p><br>
+
+- **Backup rules →**  Edit Backup rule or Add backup rule → Backup rule configuration <br>
+&emsp;&emsp;▸&emsp;  Schedule → <br>
+    &emsp;&emsp;→&emsp;	Backup rule name – DailyBackups
+    &emsp;&emsp;→&emsp;	Backup vault – Select PrimaryEC2Vault
+    &emsp;&emsp;→&emsp;	Backup frequency – Daily
+
