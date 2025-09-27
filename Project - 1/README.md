@@ -12,7 +12,7 @@ This ensures:
 
 
 ## `📑 Table of Contents`
-- ⚙️ **Steps**
+- ⚙️ **Steps**  <br>
   `1.` Select Regions & Launch EC2  
   `2.` Install & Configure Nginx  
   `3.` Create Backup Vaults  
