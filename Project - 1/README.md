@@ -141,5 +141,5 @@ This is testing HTML page. Run in Primary region http://18.192.68.28/test.html
 </p><br>
 
 -	After creating vault, click on **Vaults.**
--	List of created vaults displayed here. Click on newly created vault `**PrimaryEC2Vault.**`
+-	List of created vaults displayed here. Click on newly created vault **`PrimaryEC2Vault.`**
 -	Details of `**PrimaryEC2Vault**` will be displayed. **Backup Vault created!**
