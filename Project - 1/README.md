@@ -12,6 +12,7 @@ This ensures:
 
 <br>
 ---
+
 ## `📑 Table of Contents`
 - ⚙️ **Steps**  
   `1.` &ensp;🌐 Select Regions & Launch EC2  
