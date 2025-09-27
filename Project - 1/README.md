@@ -136,5 +136,6 @@ This is testing HTML page. Run in Primary region http://18.192.68.28/test.html
     - **Vault Type** - Backup Vault
     - **Encryption key** - (default) aws/backup<br>
 
-Click on Vaults → Click on 
-<button>Create New Vault</button>
+
+Click on Vaults → Click on <button>Create New Vault</button>
+
