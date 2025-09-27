@@ -222,5 +222,5 @@ Create Secondary vault in **Canada - Central - ca-central-1**, same like **point
   </p><br>
 
   &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;→&emsp;	Return to previous window (Frankfurt region - **Edit Backup rule: DailyBackups page**) <br>
-  &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;→&emsp;	Again, click on refresh button in front of **Destination vault** ↻ – then select `SecondaryEC2VaultCanada` from list.
+  &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;→&emsp;	Again, click on refresh button in front of **Destination vault** 🔃 – then select `SecondaryEC2VaultCanada` from list.
  
