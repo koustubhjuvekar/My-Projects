@@ -127,7 +127,10 @@ This is testing HTML page. Run in Primary region http://18.192.68.28/test.html
   </p><br>
 
 - Click on Vaults → Click on <kbd>Create New Vault</kbd>
-  
+- <p style="font-size:16px; font-family:Arial;">
+  Click on Vaults → Click on <kbd>Create New Vault</kbd>
+</p>
+
 - In the Frankfurt region, create a Backup Vault.
     - **Vault Name** - PrimaryEC2Vault
     - **Vault Type** - Backup Vault
