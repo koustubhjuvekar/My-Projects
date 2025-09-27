@@ -282,8 +282,7 @@ Click on  <kbd>Assign Resources</kbd>
 **Resources assigned!**
 
 Go to **AWS Backup page** **→** **Backup plans** **→** **MyBackup → DailyBackups** <br>
-Here, backup details are displayed and under copy configuration **destination region and vault is displayed. 
-**
+Here, backup details are displayed and under copy configuration **destination region and vault is displayed.**
 
 <img width="1366" height="641" alt="Image 5 2 - Details of backup plans – MyBackup - DailyBackups" src="https://github.com/user-attachments/assets/37f55166-59b4-4948-9e1c-8e2d191686ff" />
   <p align="center">
