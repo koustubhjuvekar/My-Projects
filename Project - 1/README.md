@@ -186,3 +186,8 @@ In Frankfurt region (Primary Region), go to **Backup Plans** →  <kbd>Create Ba
   &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;→&emsp;	**Start time** – Set time `05:00` <br>
   &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;→&emsp;	**Start within** – `1 hour` <br>
   &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;→&emsp;	**Complete Within** – `7 days` <br>
+
+<img width="1366" height="538" alt="Image 4 2 - Backup plan creating – Edit Backup rule (Backup rule configuration – Backup Window)" src="https://github.com/user-attachments/assets/b40c8925-1878-423a-bda9-efd99ee3bec2" />
+  <p align="center">
+    <i><strong>Image 4.2 : </strong> Backup plan creating – Edit Backup rule (Backup rule configuration – <strong>Backup Window</strong>)</i>
+  </p><br>
