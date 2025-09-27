@@ -137,5 +137,5 @@ This is testing HTML page. Run in Primary region http://18.192.68.28/test.html
 
 <img width="1366" height="640" alt="Image 3 2 - Creating vault" src="https://github.com/user-attachments/assets/a7e7c4aa-36f7-4a37-8996-5130aa04a4c2" />
 <p align="center">
-    <i>_Image 3.2: Creating vault_</i>
+    <i><b></b>Image 3.2:</b> Creating vault</i>
 </p><br>
