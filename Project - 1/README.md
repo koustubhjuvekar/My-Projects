@@ -228,9 +228,9 @@ Create Secondary vault in **Canada - Central - ca-central-1**, same like **point
   <p align="center">
     <i><strong>Image 4.6 : </strong> Backup plan creating – Edit Backup rule (Backup rule configuration – <strong> Copy to Destination - optional)</strong></i>
   </p><br>
-
-- Keep remaining setting as it is. <br>
-- Click on <kbd>**Save Backup rule**</kbd>
+  
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;→&emsp;Keep remaining setting as it is. <br>
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;→&emsp;Click on <kbd>**Save Backup rule**</kbd>
   
 <img width="1366" height="595" alt="Image 4 7 - Save backup rule" src="https://github.com/user-attachments/assets/d1712f6b-0f9e-4d78-8c29-848675edfe11" />
   <p align="center">
