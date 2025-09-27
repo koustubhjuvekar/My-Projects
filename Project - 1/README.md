@@ -123,10 +123,14 @@ This is testing HTML page. Run in Primary region http://18.192.68.28/test.html
   </p><br>
 <img width="1366" height="643" alt="Image 3 1 - AWS backup console page" src="https://github.com/user-attachments/assets/d79a5177-00d7-440a-b41b-beb0a809f607" />
   <p align="center">
-    <i>Image 3.1: AWS backup console page</i>
+    <i>Image 3.1: Console search for AWS Backup</i>
   </p><br>
 
-- Click on Vaults →  Click on <button>Create New Vault</button>
+- <body>
+  <p>Click on Vaults → Click on 
+    <button>Create New Vault</button>
+  </p>
+</body>
 
 - In the Frankfurt region, create a Backup Vault.
     - **Vault Name** - PrimaryEC2Vault
