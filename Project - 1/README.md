@@ -126,32 +126,11 @@ This is testing HTML page. Run in Primary region http://18.192.68.28/test.html
     <i>Image 3.1: Console search for AWS Backup</i>
   </p><br>
 
-- 
-    <p>Click on Vaults → Click on 
-        <button>Create New Vault</button>
-    </p>
-
+- Click on Vaults → Click on <button>Create New Vault</button>
+  
 - In the Frankfurt region, create a Backup Vault.
     - **Vault Name** - PrimaryEC2Vault
     - **Vault Type** - Backup Vault
     - **Encryption key** - (default) aws/backup<br>
-
-<button style="background-color: darkorange; color: black; border: 1px solid black; border-radius: 8px; padding: 5px 12px;">
-  Create New Vault
-</button>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Button Example</title>
-</head>
-<body>
-  <p>Click on Vaults → Click on</p>
-  
-  <button style="background-color: darkorange; color: black; border: 1px solid black; border-radius: 12px; padding: 8px 16px; cursor: pointer;">
-    Create New Vault
-  </button>
-</body>
-</html>
 
 
