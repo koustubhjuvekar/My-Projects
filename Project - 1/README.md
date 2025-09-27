@@ -43,7 +43,7 @@ We are creating an automated system where **EC2 backups happen regularly in one 
 
 <img width="1366" height="690" alt="EC2 Primary region launched" src="https://github.com/user-attachments/assets/990a4eb8-ac1a-4135-9148-3685160d2ea1" />
 <p align="center">
-  <i>**Image 1:** Launching an EC2 in primary region (Frankfurt - eu-central-1)</i>
+  <i><strong>Image 1 :</strong> Launching an EC2 in primary region (Frankfurt - eu-central-1)</i>
 </p>
 
 <br>
@@ -111,7 +111,7 @@ This is testing HTML page. Run in Primary region http://18.192.68.28/test.html
 
 <img width="1366" height="686" alt="ss1" src="https://github.com/user-attachments/assets/20f7b2ed-b1f4-40ee-9c9a-1cd400df974a" />
 <p align="center">
-  <i>**Image 2:** Testing Application output in browser – Primary Region - http://18.192.68.28/test.html</i>
+  <i><strong>Image 2 :</strong> Testing Application output in browser – Primary Region - http://18.192.68.28/test.html</i>
 </p><br>
 
 
@@ -119,11 +119,11 @@ This is testing HTML page. Run in Primary region http://18.192.68.28/test.html
 -	In console search, search for AWS Backup. Click on it.
   <img width="1366" height="643" alt="Image 3 Console search for AWS Backup" src="https://github.com/user-attachments/assets/f6b7535a-a04a-4624-9d0d-6085d8cd1adf" />
   <p align="center">
-    <i>**Image 3:** Console search for AWS Backup</i>
+    <i><strong>Image 3 :</strong> Console search for AWS Backup</i>
   </p><br>
 <img width="1366" height="643" alt="Image 3 1 - AWS backup console page" src="https://github.com/user-attachments/assets/d79a5177-00d7-440a-b41b-beb0a809f607" />
   <p align="center">
-    <i>**Image 3.1:** Console search for AWS Backup</i>
+    <i><strong>Image 3.1 :</strong> Console search for AWS Backup</i>
   </p><br>
 
 - Click on Vaults → Click on <kbd>Create New Vault</kbd>
@@ -137,5 +137,5 @@ This is testing HTML page. Run in Primary region http://18.192.68.28/test.html
 
 <img width="1366" height="640" alt="Image 3 2 - Creating vault" src="https://github.com/user-attachments/assets/a7e7c4aa-36f7-4a37-8996-5130aa04a4c2" />
 <p align="center">
-    <i><strong>Image 3.2:</strong> Creating vault</i>
+    <i><strong>Image 3.2 : </strong> Creating vault</i>
 </p><br>
