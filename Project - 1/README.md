@@ -126,7 +126,7 @@ This is testing HTML page. Run in Primary region http://18.192.68.28/test.html
     <i>Image 3.1: Console search for AWS Backup</i>
   </p><br>
 
-- Click on Vaults → Click on <kbd style="font-size:25px; font-family:Arial;">Create New Vault</kbd>
+- #### Click on Vaults → Click on <kbd style="font-size:25px; font-family:Arial;">Create New Vault</kbd>
 
 - In the Frankfurt region, create a Backup Vault.
     - **Vault Name** - PrimaryEC2Vault
