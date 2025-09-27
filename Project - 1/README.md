@@ -209,3 +209,15 @@ In Frankfurt region (Primary Region), go to **Backup Plans** →  <kbd>Create Ba
 
 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; ↪  It will directly go to Canada region → Create vault there → `SecondaryEC2VaultCanada`
 
+<img width="1366" height="592" alt="Image 4 4 - Backup plan creating – Edit Backup rule (Backup rule configuration – Copy to Destination - optional)" src="https://github.com/user-attachments/assets/9d08bfe9-fe75-4b80-9f3a-7a78337882bd" />
+  <p align="center">
+    <i><strong>Image 4.4 : </strong> Backup plan creating – Edit Backup rule (Backup rule configuration – <strong>Copy to Destination - optional)</strong>)</i>
+  </p><br>
+
+Create Secondary vault in **Canada - Central - ca-central-1**, same like **point 3**, in **Primary region**.
+<img width="1366" height="642" alt="Image 4 5 - Created New vault in Secondary Region (Canada - Central - ca-central-1)" src="https://github.com/user-attachments/assets/c0e18a6b-1674-4b3a-813e-d7482ee026d4" />
+  <p align="center">
+    <i><strong>Image 4.5 : </strong> Created New vault in Secondary Region <strong>(Canada - Central - ca-central-1)</strong></i>
+  </p><br>
+
+  
