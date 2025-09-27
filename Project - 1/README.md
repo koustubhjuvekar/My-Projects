@@ -435,3 +435,45 @@ So, run **http://99.79.161.219/test.html** (Canada Region - Backup region)
   </p><br>
 
 So, it is the same output page as seen in **Europe - Frankfurt - eu-central-1.**
+
+
+## ✅ `Result`
+Cross-Region Backup Replication for EC2 using AWS Backup was successfully implemented. Backups from Frankfurt were automatically copied to Canada, and the instance was restored from the replicated backup in Canada.
+
+## 🌟 `Benefits`
+
+-  **Disaster Recovery (DR):** Ensures business continuity even if the primary AWS region becomes unavailable due to natural disasters, power failures, or large-scale outages. <br>
+-  **Data Durability:** Replicating backups across geographically distant regions reduces the risk of data loss. <br>
+-  **Compliance & Governance:** Many organizations and regulations require that data be stored in multiple locations for resilience and audit readiness. <br>
+-  **High Availability:** Applications and workloads can be quickly restored in another region, minimizing downtime.
+
+## ⚠️ `Issues & Resolutions`
+
+**1.	Cross-Region Copy Delay:**
+
+❓  After configuring the copy rule, the recovery point did not appear immediately in the Canada (Central) vault, which initially caused confusion. The reason behind it was identified: only new backups are eligible for replication, whereas existing backups are not copied. <br>
+❓  In addition, there was no option to trigger the copy instantly, so replication started later as per the backup schedule.
+
+**Issue Fixed:** 
+✔  Additional on-demand backups were created in the primary region (Frankfurt), which successfully triggered the copy jobs. <br>
+✔  This ensured that recovery points were eventually replicated to the secondary region (Canada).
+
+**2.	Restore Failure via AWS Backup Console**
+
+❓  While attempting to restore the EC2 instance directly from the recovery point in the Canada (Central) region using the AWS Backup console, the process failed. <br>
+❓  The restore from AWS Backup console failed because the original VPC, subnet, and security groups from Frankfurt were not available in the Canada region, causing a configuration mismatch.
+
+**Issue Fixed: **
+✔  The issue was resolved by navigating to the EC2 → AMIs section in the Canada region. <br>
+✔  The AMI generated through the cross-region backup was available there. <br>
+✔  A new EC2 instance was successfully launched directly from this AMI, and the test application page was verified to be identical to the one in the primary region (Frankfurt).
+
+
+
+<div align="center">
+
+<b><strong>- - T H E   E N D - -</strong></b>
+
+</div>
+
+
