@@ -376,3 +376,8 @@ Click on **Copy jobs**
 Here **Copy job ID** and **status** is given – **completed.**
 
 That means backup is created in **Secondary region (Canada central).**
+
+### 8.	♻️ **Test the Restore (Secondary region - Canada Region)**
+
+Go to **Canada region →** Open **Backup vault  →** `**SecondaryEC2VaultCanada**`. <br>
+Now **recovery point** is generated there, confirm **recovery point exists**.
