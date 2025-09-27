@@ -29,6 +29,7 @@ This ensures:
 
 ## ⚙️ `Steps`  
 We are creating an automated system where **EC2 backups happen regularly in one region and automatically get replicated to another AWS region.** This way, even if the entire primary region fails (disaster, outage, natural calamity), we can still restore our EC2 instance from the backup stored safely in another region.
+
 ### 1. 🌐 **Select Regions and Launch EC2 Instance**
 <ul>
   <li>&emsp;1 primary AWS region (Europe - Frankfurt - eu-central-1)</li>
@@ -423,7 +424,7 @@ Primary Region → **Frankfurt → Ip was 18.192.68.28**
 
 <img width="1366" height="637" alt="Image 8 4 - Secondary region (Canada region) – EC2 launched – IP  99 79 161 219" src="https://github.com/user-attachments/assets/8618e53f-d01d-486e-9356-a19cc72ae484" />
   <p align="center">
-    <i><strong>Image 8.4 : </strong> Secondary region (Canada region) – EC2 launched – IP  99 79 161 219</i>
+    <i><strong>Image 8.4 : </strong> Secondary region (Canada region) – EC2 launched – IP  99.79.161.219</i>
   </p><br>
 
 So, run **http://99.79.161.219/test.html** (Canada Region - Backup region)
