@@ -436,9 +436,9 @@ So, run **http://99.79.161.219/test.html** (Canada Region - Backup region)
     <i><strong>Image 8.5: </strong> Secondary region (Canada region) – EC2 launched – IP http://99.79.161.219/test.html output</i>
   </p><br>
 
-So, it is the same output page as seen in **Europe - Frankfurt - eu-central-1.**
+So, it is the same output page as seen in **Europe - Frankfurt - eu-central-1.** <br>
 
-
+---
 
 ## ✅ `Result`
 Cross-Region Backup Replication for EC2 using AWS Backup was successfully implemented. Backups from Frankfurt were automatically copied to Canada, and the instance was restored from the replicated backup in Canada.
