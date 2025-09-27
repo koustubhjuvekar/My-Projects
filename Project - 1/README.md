@@ -126,7 +126,7 @@ This is testing HTML page. Run in Primary region http://18.192.68.28/test.html
     <i>Image 3.1: Console search for AWS Backup</i>
   </p><br>
 
-- Click on Vaults → Click on <kbd>Create New Vault</kbd>
+- Click on Vaults → Click on <kbd style="font-size:16px; font-family:Arial;">Create New Vault</kbd>
 - <p style="font-size:16px; font-family:Arial;">
   Click on Vaults → Click on <kbd>Create New Vault</kbd>
 </p>
