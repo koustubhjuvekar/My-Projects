@@ -139,5 +139,19 @@ This is testing HTML page. Run in Primary region http://18.192.68.28/test.html
 <button style="background-color: darkorange; color: black; border: 1px solid black; border-radius: 8px; padding: 5px 12px;">
   Create New Vault
 </button>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Button Example</title>
+</head>
+<body>
+  <p>Click on Vaults → Click on</p>
+  
+  <button style="background-color: darkorange; color: black; border: 1px solid black; border-radius: 12px; padding: 8px 16px; cursor: pointer;">
+    Create New Vault
+  </button>
+</body>
+</html>
 
 
