@@ -1,4 +1,4 @@
-# `🌍 Enable Cross-Region Backup Replication for EC2 using AWS Backup`
+# 🌍 Enable Cross-Region Backup Replication for EC2 using AWS Backup
 
 Author: Koustubh Juvekar
 ## `🎯 Objective`  
