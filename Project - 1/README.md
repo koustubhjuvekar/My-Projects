@@ -288,3 +288,68 @@ Here, backup details are displayed and under copy configuration **destination re
   <p align="center">
     <i><strong>Image 5.2 : </strong> Details of backup plans – MyBackup - DailyBackups</i>
   </p><br>
+
+
+### 6.  📀 **Run an On-Demand Backup**
+
+In the backup plan, click <kbd>Create on-demand backup.</kbd> <br>
+
+<img width="1366" height="641" alt="Image 6 - Creating on-demand backup (testing)" src="https://github.com/user-attachments/assets/60458be5-e66c-4f37-a38f-493c6d07fc71" />
+  <p align="center">
+    <i><strong>Image 6 : </strong> Creating on-demand backup (testing)</i>
+  </p><br>
+
+**Create on-demand backup**
+
+**Settings →** <br>
+-  **Resource type –** `EC2`
+-  **Instance ID -**   `i-0545b6e883c95a7c5`
+-  **Backup window –** `Create backup now`
+-  **Total retention period –** `35 days`
+-	 **Backup vault –** `PrimaryEC2Vault`
+-  **IAM role –** `Default role`
+  
+**Click on** <kbd>Create on-demand backup</kbd> 
+
+<img width="1365" height="594" alt="Image 6 1 - Creating on-demand backup – Select Settings" src="https://github.com/user-attachments/assets/af3e4ef7-c552-48f2-88be-4cc5168f2b70" />
+  <p align="center">
+    <i><strong>Image 6.1 : </strong> Creating on-demand backup – Select Settings</i>
+  </p><br>
+
+<img width="1366" height="595" alt="Image 6 2 - Creating on-demand backup – Select Settings" src="https://github.com/user-attachments/assets/ca6d61bc-7ce1-4b78-b36d-2f1a001fe6d3" />
+  <p align="center">
+    <i><strong>Image 6.2 : </strong> Creating on-demand backup – Select Settings</i>
+  </p><br>
+
+Clicked on <kbd>Create on-demand backup.</kbd> <br>
+Backup starts here. Notification will be displayed on the screen.
+
+Go to **Jobs** – Backup job list will be displayed there with **Backup job ID, Status**
+
+<img width="1366" height="593" alt="Image 6 3 - Backup started – Backup jobs created" src="https://github.com/user-attachments/assets/939d2688-702d-4ce4-a535-671546b51d0d" />
+  <p align="center">
+    <i><strong>Image 6.3 : </strong> Backup started – Backup jobs created</i>
+  </p><br>
+
+It may take some time!
+Refresh it! 🔃 <br>
+Once it complete, status will be updated as **completed.**
+
+<img width="1366" height="644" alt="Image 6 4 - Backup jobs created" src="https://github.com/user-attachments/assets/a6a1ed18-fe32-4e8d-99a2-a07835da0151" />
+  <p align="center">
+    <i><strong>Image 6.4 : </strong> Backup jobs created</i>
+  </p><br>
+
+Click on **backup job id.** All the details will be displayed. <br>
+-	`Recovery Point ARN`
+-	`Status`
+-	`Resource name`
+-	`Creation date and time`
+-	`Etc.`
+
+<img width="1366" height="593" alt="Image 6 5 - Backup jobs details" src="https://github.com/user-attachments/assets/782e267a-0571-4a23-96e3-6abfcb3ac202" />
+  <p align="center">
+    <i><strong>Image 6.5 : </strong> Backup jobs details</i>
+  </p><br>
+
+Again, go back to **jobs** option.
