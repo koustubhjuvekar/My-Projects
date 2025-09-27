@@ -47,7 +47,7 @@ We are creating an automated system where **EC2 backups happen regularly in one 
 </p>
 
 
-### 2. 🖥️ Install and Configure Nginx with Test Application
+### 2. 🖥️ **Install and Configure Nginx with Test Application**
 Install Nginx and set up a test HTML page:  
 ```bash
 sudo yum update -y
@@ -114,7 +114,7 @@ This is testing HTML page. Run in Primary region http://18.192.68.28/test.html
 </p><br>
 
 
-### 3.	🔒 Create Backup Vaults
+### 3.	🔒 **Create Backup Vaults**
 -	In console search, search for AWS Backup. Click on it.
   <img width="1366" height="643" alt="Image 3 Console search for AWS Backup" src="https://github.com/user-attachments/assets/f6b7535a-a04a-4624-9d0d-6085d8cd1adf" />
   <p align="center">
