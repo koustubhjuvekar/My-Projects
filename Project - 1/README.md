@@ -355,9 +355,12 @@ Click on **backup job id.** All the details will be displayed. <br>
 
 Again, go back to **jobs** option.
 
+
+
 ### 7.	🔍 **Verify Cross-Region Copy**
 
 Go to **Jobs** → **Copy Jobs** in Frankfurt. <br>
+
 <img width="1364" height="641" alt="Image 7 - Backup jobs" src="https://github.com/user-attachments/assets/3f49900b-27e1-43ff-ba53-a8cec9f8d7b8" />
   <p align="center">
     <i><strong>Image 7 : </strong> Backup jobs</i>
