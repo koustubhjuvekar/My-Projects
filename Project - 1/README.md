@@ -137,6 +137,4 @@ This is testing HTML page. Run in Primary region http://18.192.68.28/test.html
     - **Encryption key** - (default) aws/backup<br>
 
 Click on Vaults → Click on 
-<a href="https://github.com" target="_blank">
-  <img src="https://img.shields.io/badge/Create%20New%20Vault-darkorange?style=for-the-badge&logo=github" />
-</a>
+<button>Create New Vault</button>
