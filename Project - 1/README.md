@@ -170,7 +170,7 @@ In Frankfurt region (Primary Region), go to **Backup Plans** →  <kbd>Create Ba
 
 - **Backup rules →**  Edit Backup rule or Add backup rule → Backup rule configuration 
 
-&emsp;&emsp;&emsp;&emsp;▸&emsp;  Schedule → 
+&emsp;&emsp;&emsp;&emsp;▸&emsp;  **Schedule →**
 
   &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;→&emsp;	**Backup rule name** – `DailyBackups` <br>
   &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;→&emsp;	**Backup vault –** Select `PrimaryEC2Vault` <br>
@@ -180,3 +180,9 @@ In Frankfurt region (Primary Region), go to **Backup Plans** →  <kbd>Create Ba
   <p align="center">
     <i><strong>Image 4.1 : </strong> Backup plan creating – Edit Backup rule (Backup rule configuration - <strong>Schedule</strong>)</i>
   </p><br>
+
+&emsp;&emsp;&emsp;&emsp;▸&emsp;  **Backup window →**   
+
+  &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;→&emsp;	**Start time** – Set time `05:00` <br>
+  &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;→&emsp;	**Start within** – `1 hour` <br>
+  &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;→&emsp;	**Complete Within** – `7 days` <br>
