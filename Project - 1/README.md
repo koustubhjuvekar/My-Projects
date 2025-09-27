@@ -230,4 +230,23 @@ Create Secondary vault in **Canada - Central - ca-central-1**, same like **point
   </p><br>
 
 - Keep remaining setting as it is. <br>
-- Click on <kbd>**Save Backup rule**</kbd>   
+- Click on <kbd>**Save Backup rule**</kbd>
+  
+<img width="1366" height="595" alt="Image 4 7 - Save backup rule" src="https://github.com/user-attachments/assets/d1712f6b-0f9e-4d78-8c29-848675edfe11" />
+  <p align="center">
+    <i><strong>Image 4.7 : </strong> Save backup rule</i>
+  </p><br>
+
+-  **Advanced Backup settings**
+**Select ** – `Windows VSS`, `Back up ACLs`, `Back up object tags`
+
+- **Click on**  <kbd>**Create plan**</kbd>
+  
+**Backup plan is created!**
+
+<img width="1366" height="593" alt="Image 4 8 - Backup plan created" src="https://github.com/user-attachments/assets/9e7549cc-616f-4984-8aa1-c929f59a1694" />
+  <p align="center">
+    <i><strong>Image 4.8 : </strong> Backup plan created</i>
+  </p><br>
+
+  
