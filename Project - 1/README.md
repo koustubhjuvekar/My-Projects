@@ -224,3 +224,10 @@ Create Secondary vault in **Canada - Central - ca-central-1**, same like **point
   &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;→&emsp;	Return to previous window (Frankfurt region - **Edit Backup rule: DailyBackups page**) <br>
   &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;→&emsp;	Again, click on refresh button in front of **Destination vault** 🔃 – then select `SecondaryEC2VaultCanada` from list.
  
+<img width="1366" height="593" alt="Image 4 6 - Backup plan creating – Edit Backup rule (Backup rule configuration – Copy to Destination - optional)" src="https://github.com/user-attachments/assets/cf0c37ad-d0d9-4c4d-be6f-4a3289a77c4a" />
+  <p align="center">
+    <i><strong>Image 4.6 : </strong> Backup plan creating – Edit Backup rule (Backup rule configuration – <strong> Copy to Destination - optional)</strong></i>
+  </p><br>
+
+- Keep remaining setting as it is. <br>
+- Click on <kbd>**Save Backup rule**</kbd>   
