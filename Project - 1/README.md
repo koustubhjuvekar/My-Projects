@@ -178,5 +178,5 @@ In Frankfurt region (Primary Region), go to **Backup Plans** →  <kbd>Create Ba
 
 <img width="1366" height="553" alt="Image 4 1 - Backup plan creating – Edit Backup rule (Backup rule configuration - Schedule)" src="https://github.com/user-attachments/assets/4d57b7c4-f015-484f-bb57-7719b929fff8" />
   <p align="center">
-    <i><strong>Image 4.1 : </strong> Backup plan creating – Edit Backup rule (Backup rule configuration - <strong>**Schedule**</strong>)</i>
+    <i><strong>Image 4.1 : </strong> Backup plan creating – Edit Backup rule (Backup rule configuration - <strong>Schedule</strong>)</i>
   </p><br>
