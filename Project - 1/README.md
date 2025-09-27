@@ -142,4 +142,15 @@ This is testing HTML page. Run in Primary region http://18.192.68.28/test.html
 
 -	After creating vault, click on **Vaults.**
 -	List of created vaults displayed here. Click on newly created vault **`PrimaryEC2Vault.`**
--	Details of `**PrimaryEC2Vault**` will be displayed. **Backup Vault created!**
+-	Details of **`PrimaryEC2Vault`** will be displayed. **Backup Vault created!**
+
+  <img width="1366" height="641" alt="Image 3 3 - Vault created – Vault list – PrimaryEC2Vault" src="https://github.com/user-attachments/assets/162c4ab9-d5fd-43ab-a9cb-ae9a907a43b5" />
+  <p align="center">
+    <i><strong>Image 3.3 : </strong> Vault created – Vault list – PrimaryEC2Vault</i>
+  </p><br>
+
+  <img width="1084" height="552" alt="Image 3 4 - Clicked on PrimaryEC2Vault  -  Details of PrimaryEC2Vault" src="https://github.com/user-attachments/assets/6de70e83-2df1-4c9c-95ab-3cfd622aface" />
+  <p align="center">
+    <i><strong>Image 3.4 : </strong> Clicked on PrimaryEC2Vault  -  Details of PrimaryEC2Vault</i>
+  </p><br>
+
