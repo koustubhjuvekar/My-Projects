@@ -172,7 +172,7 @@ In Frankfurt region (Primary Region), go to **Backup Plans** →  <kbd>Create Ba
 
 &emsp;&emsp;&emsp;&emsp;▸&emsp;  Schedule → 
 
-  &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;→&emsp;	Backup rule name – DailyBackups <br>
-  &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;→&emsp;	Backup vault – Select PrimaryEC2Vault <br>
-  &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;→&emsp;	Backup frequency – Daily <br>
+  &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;→&emsp;	**Backup rule name** – `DailyBackups` <br>
+  &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;→&emsp;	**Backup vault –** Select `PrimaryEC2Vault` <br>
+  &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;→&emsp;	**Backup frequency –** `Daily` <br>
 
