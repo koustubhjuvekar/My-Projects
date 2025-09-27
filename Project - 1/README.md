@@ -156,8 +156,8 @@ This is testing HTML page. Run in Primary region http://18.192.68.28/test.html
 
 
 ### 4.	📝 Create Backup Plan
-In Frankfurt region (Primary Region), go to **Backup Plans** →  <kbd>Create Backup Plan</kbd>
-**-	Start options →**
-&emsp;      o	Backup plan options - Start with a template
-&emsp;      o	Templates - Daily-35day-Retention
-&emsp;      o	Backup plan name – MyBackup
+In Frankfurt region (Primary Region), go to **Backup Plans** →  <kbd>Create Backup Plan</kbd><br>
+**-	Start options →**<br>
+&emsp;      o	Backup plan options - Start with a template<br>
+&emsp;      o	Templates - Daily-35day-Retention<br>
+&emsp;      o	Backup plan name – MyBackup<br>
