@@ -10,7 +10,7 @@ This ensures:
 `2.` High Availability  
 `3.` Disaster Recovery  
 
----
+--- <br>
 
 ## `📑 Table of Contents`
 - ⚙️ **Steps**  
