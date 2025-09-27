@@ -238,7 +238,7 @@ Create Secondary vault in **Canada - Central - ca-central-1**, same like **point
   </p><br>
 
 -  **Advanced Backup settings**
-**Select ** – `Windows VSS`, `Back up ACLs`, `Back up object tags`
+**Select** – `Windows VSS`, `Back up ACLs`, `Back up object tags`
 
 - **Click on**  <kbd>**Create plan**</kbd>
   
