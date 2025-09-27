@@ -129,9 +129,9 @@ This is testing HTML page. Run in Primary region http://18.192.68.28/test.html
 - Click on Vaults → Click on <kbd>Create New Vault</kbd>
 
 - In the Frankfurt region, create a Backup Vault.
-    - **Vault Name** - PrimaryEC2Vault
-    - **Vault Type** - Backup Vault
-    - **Encryption key** - (default) aws/backup<br>
+    - **Vault Name -** `PrimaryEC2Vault` <br>
+    - **Vault Type -** `Backup Vault` <br>
+    - **Encryption key -** `(default) aws/backup` <br>
 
 - **Click on** <kbd>Create Vault</kbd>
 
