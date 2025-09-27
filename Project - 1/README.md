@@ -9,7 +9,7 @@ This ensures:
 `1.` Data Durability  
 `2.` High Availability  
 `3.` Disaster Recovery  
-<br><br><br>
+<br>
 
 ## `📑 Table of Contents`
 - ⚙️ **Steps**  
@@ -25,7 +25,7 @@ This ensures:
 - &ensp;🌟  **Benefits**  
 - &ensp;⚠️  **Issues & Resolutions**  
 - &ensp;🔚  **End of Document** 
-  <br>
+  <br><br><br>
 
 ## `⚙️ Steps`  
 We are creating an automated system where **EC2 backups happen regularly in one region and automatically get replicated to another AWS region.** This way, even if the entire primary region fails (disaster, outage, natural calamity), we can still restore our EC2 instance from the backup stored safely in another region.
