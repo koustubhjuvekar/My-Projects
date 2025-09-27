@@ -355,7 +355,7 @@ Click on **backup job id.** All the details will be displayed. <br>
 
 Again, go back to **jobs** option.
 
-
+<br>
 
 ### 7.	🔍 **Verify Cross-Region Copy**
 
@@ -374,4 +374,5 @@ Click on **Copy jobs**
   </p><br>
 
 Here **Copy job ID** and **status** is given – **completed.**
+
 That means backup is created in **Secondary region (Canada central).**
