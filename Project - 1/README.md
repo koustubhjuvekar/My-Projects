@@ -8,10 +8,11 @@ The objective of this project is to configure an **_AWS Backup Plan_** that auto
 This ensures:  
 `1.` Data Durability  
 `2.` High Availability  
-`3.` Disaster Recovery  <br>
+`3.` Disaster Recovery  
 
 
 ## `📑 Table of Contents`
+
 - ⚙️ Steps
   `1.` Select Regions & Launch EC2  
   `2.` Install & Configure Nginx  
