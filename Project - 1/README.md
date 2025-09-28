@@ -258,15 +258,16 @@ Create Secondary vault in **Canada - Central - ca-central-1**, same like **point
   
 **Resource selection →**
 
-**1. Define resource selection**
-
-You can select **Include all resource types** OR **Include specific resource types.** <br>
-Here selected **Include specific resource types.**
   
 <img width="1365" height="643" alt="Image 5 - Assigning resources" src="https://github.com/user-attachments/assets/a7113fc5-cfaa-49ad-afac-2fbdaefea480" />
   <p align="center">
     <i><strong>Image 5 : </strong> Assigning resources</i>
   </p><br>
+
+**1. Define resource selection**
+
+You can select **Include all resource types** OR **Include specific resource types.** <br>
+Here selected **Include specific resource types.**
 
 **2. Select specific resource types**
 
