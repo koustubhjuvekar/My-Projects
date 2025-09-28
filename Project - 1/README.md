@@ -445,7 +445,7 @@ So, it is the same output page as seen in **Europe - Frankfurt - eu-central-1.**
 <br>
 
 ## ✅ `Result`
-Cross-Region Backup Replication for EC2 using AWS Backup was successfully implemented. Backups from Frankfurt were automatically copied to Canada, and the instance was restored from the replicated backup in Canada.
+Cross-Region Backup Replication for EC2 using AWS Backup was implemented successfully. Backups from the Primary Region (Europe - Frankfurt, eu-central-1) were automatically replicated to the Secondary Region (Canada - Central, ca-central-1), and the EC2 instance was successfully restored from the replicated backup in the Secondary Region.
 
 <br>
 
