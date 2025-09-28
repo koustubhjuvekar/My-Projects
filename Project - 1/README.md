@@ -1,8 +1,7 @@
 ## 🌍 `Enable Cross-Region Backup Replication for EC2 using AWS Backup`
 
 **Author:** Koustubh Juvekar <br>
-**Document:** <a href="./Project%20-%20Cross-Region%20Backup%20Replication%20for%20EC2%20using%20AWS%20Backup.pdf" target="_blank">📄 Open Project PDF</a>
-[![Open PDF](https://img.shields.io/badge/Open%20Project-PDF-red?logo=adobeacrobatreader)](./Project%20-%20Cross-Region%20Backup%20Replication%20for%20EC2%20using%20AWS%20Backup.pdf)
+**Document:** [![Open or Download PDF](https://img.shields.io/badge/Open%20%7C%20Download-PDF-blue?logo=adobeacrobatreader)](./Project%20-%20Cross-Region%20Backup%20Replication%20for%20EC2%20using%20AWS%20Backup.pdf)
 
 
 ## 🎯 `Objective`  
