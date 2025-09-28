@@ -1,4 +1,4 @@
-## 🌍 `Enable Cross-Region Backup Replication for EC2 using AWS Backup`
+<img width="506" height="22" alt="image" src="https://github.com/user-attachments/assets/3bdff6a2-e920-4d5c-a524-5dff62615aac" />## 🌍 `Enable Cross-Region Backup Replication for EC2 using AWS Backup`
 
 **Author:** Koustubh Juvekar <br>
 <br>
@@ -108,7 +108,7 @@ Save it **(Ctrl + X)** --> **(press y)** --> Press **Enter**.
 sudo systemctl reload nginx
 ```
 
-This is testing HTML page. Run in Primary region http://18.192.68.28/test.html
+This is testing HTML page. Access it in Primary region http://18.192.68.28/test.html
 
 <img width="1366" height="686" alt="ss1" src="https://github.com/user-attachments/assets/20f7b2ed-b1f4-40ee-9c9a-1cd400df974a" />
 <p align="center">
