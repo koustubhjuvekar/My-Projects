@@ -2,9 +2,7 @@
 
 **Author:** Koustubh Juvekar <br>
 
-**Document:** [![Open or Download PDF](https://img.shields.io/badge/Open%20%7C%20Download-PDF-blue?logo=adobeacrobatreader)](./Project%20-%20Cross-Region%20Backup%20Replication%20for%20EC2%20using%20AWS%20Backup.pdf)
-[![📄 Open / Download PDF](https://img.shields.io/badge/Open%20/%20Download-PDF-blue?logo=adobeacrobatreader&style=for-the-badge)](./Project%20-%20Cross-Region%20Backup%20Replication%20for%20EC2%20using%20AWS%20Backup.pdf)
-[![📄 Open / Download PDF](https://img.shields.io/badge/Open%20/%20Download-PDF-red?logo=adobeacrobatreader&style=for-the-badge)](./Project%20-%20Cross-Region%20Backup%20Replication%20for%20EC2%20using%20AWS%20Backup.pdf)
+**Document:** [![Open or Download PDF](https://img.shields.io/badge/Download-PDF-blue?logo=adobeacrobatreader)](./Project%20-%20Cross-Region%20Backup%20Replication%20for%20EC2%20using%20AWS%20Backup.pdf)
 
 
 ## 🎯 `Objective`  
