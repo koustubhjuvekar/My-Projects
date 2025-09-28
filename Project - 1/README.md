@@ -468,16 +468,16 @@ Cross-Region Backup Replication for EC2 using AWS Backup was implemented success
 
 **Issue Fixed:**  <br>
 
-✔  &ensp;Additional on-demand backups were created in the primary region (Frankfurt), which successfully triggered the copy jobs.
+✔  &ensp;Additional on-demand backups were created in the Primary region (Europe - Frankfurt - eu-central-1), which successfully triggered the copy jobs.
 
-✔  &ensp;This ensured that recovery points were eventually replicated to the secondary region (Canada).
+✔  &ensp;This ensured that recovery points were eventually replicated to the Secondary region (Canada - Central - ca-central-1).
 
 
 <br>
 
 **2.	Restore Failure via AWS Backup Console**
 
-❓  &ensp;While attempting to restore the EC2 instance directly from the recovery point in the Canada (Central) region using the AWS Backup console, the process failed.
+❓  &ensp;While attempting to restore the EC2 instance directly from the recovery point in the Secondary Region (Canada - Central - ca-central-1), using the AWS Backup console, the process failed.
 
 ❓  &ensp;The restore from AWS Backup console failed because the original VPC, subnet, and security groups from Frankfurt were not available in the Canada region, causing a configuration mismatch.
 
