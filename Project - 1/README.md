@@ -256,7 +256,6 @@ Create Secondary vault in **Canada - Central - ca-central-1**, same like **point
 -  **Resource assignment name** – `MyResource1.` <br>
 -  **IAM Role** – `Default role`
   
-**Resource selection →**
 
   
 <img width="1365" height="643" alt="Image 5 - Assigning resources" src="https://github.com/user-attachments/assets/a7113fc5-cfaa-49ad-afac-2fbdaefea480" />
@@ -264,12 +263,14 @@ Create Secondary vault in **Canada - Central - ca-central-1**, same like **point
     <i><strong>Image 5 : </strong> Assigning resources</i>
   </p><br>
 
-**1. Define resource selection**
+**Resource selection →**
+
+**1. &emsp;  Define resource selection**
 
 You can select **Include all resource types** OR **Include specific resource types.** <br>
 Here selected **Include specific resource types.**
 
-**2. Select specific resource types**
+**2. &emsp;  Select specific resource types**
 
 -  **Resource types** - `EC2` 
 -  **Instance IDs** – Select **instance ID of EC2 launched in Primary region**,  `i-0545b6e883c95a7c5`
