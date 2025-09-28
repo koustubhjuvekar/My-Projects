@@ -255,7 +255,8 @@ Create Secondary vault in **Canada - Central - ca-central-1**, same like **point
 **General** **→**
 -  **Resource assignment name** – `MyResource1.` <br>
 -  **IAM Role** – `Default role`
-  
+
+* _**Default role :** AWS Backup uses the IAM role AWSBackupDefaultServiceRole. If this role does not exist, AWS automatically creates it the first time you create a backup plan._
 
   
 <img width="1365" height="643" alt="Image 5 - Assigning resources" src="https://github.com/user-attachments/assets/a7113fc5-cfaa-49ad-afac-2fbdaefea480" />
