@@ -1,4 +1,4 @@
-<img width="506" height="22" alt="image" src="https://github.com/user-attachments/assets/3bdff6a2-e920-4d5c-a524-5dff62615aac" />## 🌍 `Enable Cross-Region Backup Replication for EC2 using AWS Backup`
+## 🌍 `Enable Cross-Region Backup Replication for EC2 using AWS Backup`
 
 **Author:** Koustubh Juvekar <br>
 <br>
