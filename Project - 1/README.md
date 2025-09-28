@@ -3,7 +3,7 @@
 **Author:** Koustubh Juvekar <br>
 **Document:** <a href="./Project%20-%20Cross-Region%20Backup%20Replication%20for%20EC2%20using%20AWS%20Backup.pdf" target="_blank">📄 Open Project PDF</a>
 
-<br>
+
 ## 🎯 `Objective`  
 The objective of this project is to configure an **_AWS Backup Plan_** that automatically backs up an EC2 instance in the **_Primary region (Frankfurt)_** and replicates those backups to a **_Secondary region (Canada)_**. 
 
