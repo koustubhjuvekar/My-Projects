@@ -2,6 +2,7 @@
 
 **Author:** Koustubh Juvekar <br>
 **Document:** <a href="./Project%20-%20Cross-Region%20Backup%20Replication%20for%20EC2%20using%20AWS%20Backup.pdf" target="_blank">📄 Open Project PDF</a>
+[![Open PDF](https://img.shields.io/badge/Open%20Project-PDF-red?logo=adobeacrobatreader)](./Project%20-%20Cross-Region%20Backup%20Replication%20for%20EC2%20using%20AWS%20Backup.pdf)
 
 
 ## 🎯 `Objective`  
