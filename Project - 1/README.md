@@ -432,7 +432,7 @@ Primary Region → **Frankfurt → Ip was 18.192.68.28**
     <i><strong>Image 8.4 : </strong> Secondary region (Canada region) – EC2 launched – IP  99.79.161.219</i>
   </p><br>
 
-So, run **http://99.79.161.219/test.html** (Canada Region - Backup region)
+Access **http://99.79.161.219/test.html** to verify. (Secondary Region (Canada - Central - ca-central-1))
 
 <img width="1366" height="687" alt="Image 8 5 - Secondary region (Canada region) – EC2 launched – IP output" src="https://github.com/user-attachments/assets/7aeb4d7d-de54-420d-8f1d-6d29e63d7e43" />
   <p align="center">
