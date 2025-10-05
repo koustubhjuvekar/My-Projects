@@ -39,23 +39,20 @@ We are creating an automated system that continuously monitors EBS volumes, dete
 
 ### 1. 🌐 **Launch an EC2 Instance with gp2 Volume**
 
-<ul>
-  <li>&emsp;Login to the AWS Management Console.</li>
-  <li>&emsp;Navigate to <b>EC2 → Instances → Launch Instance</b>.</li>
-  <li>&emsp;Configure the instance with the following details:</li>
-  <ul>
-    &emsp;<li>&emsp;<b>Name:</b> <code>Project2-EC2Instance</code></li>
-    &emsp;<li>&emsp;<b>AMI:</b> <code>Amazon Linux 2 (Free Tier Eligible)</code></li>
-    &emsp;<li>&emsp;<b>Instance Type:</b> <code>t2.micro</code></li>
-    &emsp;<li>&emsp;<b>Key Pair:</b> Select existing or create a new one.</li>
-    &emsp;<li>&emsp;<b>Storage:</b> Ensure that the root volume is of type <code>gp2 (default)</code>.</li>
-  </ul>
-  <li>&emsp;Launch the instance and wait until its state = <b>running</b>.</li>
-  <li>&emsp;Attach an additional <b>gp2</b> EBS volume (e.g., 2 GB).</li>
-  <li>&emsp;Tag the attached volume with:</li>
-  <ul>
-    &emsp;<li>&emsp;<b>Key:</b> <code>AutoConvert</code></li>
-    &emsp;<li>&emsp;<b>Value:</b> <code>true</code></li>
-  </ul>
-  <li>&emsp;Connect to the instance via SSH.</li>
-</ul>
+- Login to the AWS Management Console.  
+- Navigate to **EC2 → Instances → Launch Instance**.  
+- Configure the instance with the following details:  
+  - **Name:** `Project2-EC2Instance`  
+  - **AMI:** `Amazon Linux 2 (Free Tier Eligible)`  
+  - **Instance Type:** `t2.micro`  
+  - **Key Pair:** Select existing or create a new one.  
+  - **Storage:** Ensure that the root volume is of type `gp2 (default)`.  
+
+- Launch the instance and wait until its state = **running**.  
+- Attach an additional **gp2** EBS volume (e.g., 2 GB).  
+- Tag the attached volume with:  
+  - **Key:** `AutoConvert`  
+  - **Value:** `true`  
+
+- Connect to the instance via SSH.  
+
