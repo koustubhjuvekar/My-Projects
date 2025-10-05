@@ -67,6 +67,7 @@ We are creating an automated system that continuously monitors EBS volumes, dete
   <i><strong>Image 1.1 :</strong> EC2 launched with EBS <strong>gp3</strong></i>
 </p>
 
+<br>
 
   #### ▣ &ensp;&nbsp; After launch, create an extra volume: <br>
   - &nbsp;Availability Zone: same as your instance (important!).
@@ -81,17 +82,18 @@ We are creating an automated system that continuously monitors EBS volumes, dete
 <p align="center">
   <i><strong>Image 1.2 :</strong> Elastic block storage - Volumes - Create new volume. </i>
 </p>
-
+<br>
 <img width="1366" height="586" alt="Image 1 3 - Elastic block storage - Volumes - Create new volume" src="https://github.com/user-attachments/assets/d8b90bd5-4443-43e4-8e47-a17e64401e89" />
 <p align="center">
   <i><strong>Image 1.3 :</strong> Elastic block storage - Volumes - Create new volume </i>
 </p>
-
+<br>
 <img width="1366" height="640" alt="Image 1 4 - Volumes created 1 default(gp3) - 1 created (gp2) " src="https://github.com/user-attachments/assets/b35aee5c-b316-4c2a-8656-a2bf88e5d71d" />
 <p align="center">
   <i><strong>Image 1.4 :</strong> Volumes created -- 1 default(gp3) - 1 created (gp2) </i>
 </p>
 
+<br>
 
   #### ▣ &ensp;&nbsp; Attach this new volume to your instance. <br>
   - &nbsp;Right-click → Attach Volume → select `EBS-Demo-Instance.`
@@ -101,6 +103,7 @@ We are creating an automated system that continuously monitors EBS volumes, dete
 <p align="center">
   <i><strong>Image 1.5 :</strong> Attatch volume to the instance EBS-Demo-Instance </i>
 </p>
+<br>
 
 - &nbsp;Select instance/EC2 `EBS-Demo-Instance.` from the list.
 - &nbsp;Device name `/dev/sdf`
@@ -111,12 +114,13 @@ We are creating an automated system that continuously monitors EBS volumes, dete
 <p align="center">
   <i><strong>Image 1.6 :</strong> Attach volume </i>
 </p>
-
-
+<br>
 <img width="1366" height="642" alt="Image 1 7 - Volumes attached" src="https://github.com/user-attachments/assets/100eeaa8-2455-4ade-8124-52cdf87beb21" />
 <p align="center">
   <i><strong>Image 1.6 :</strong> Volumes attached to EC2 </i>
 </p>
+
+<br>
 
 ### 2. &ensp;🌐 **Add a tag for auto-conversion** <br>
 
@@ -130,7 +134,7 @@ We are creating an automated system that continuously monitors EBS volumes, dete
 <p align="center">
   <i><strong>Image 2 :</strong> Tagging Autoconvert= "true" </i>
 </p>
-
+<br>
 
 
 
