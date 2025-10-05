@@ -8,11 +8,11 @@
 
 The objective of this project is to build a serverless automation pipeline that monitors EBS volumes, identifies gp2 volumes, and converts them to gp3 with full logging, alerting, and audit trail.
 
-This ensures:
-`1.` Cost Optimization
-`2.` Performance Improvement
-`3.` Operational Efficiency
-`4.` Security & Compliance
+This ensures: <br>
+`1.` Cost Optimization <br>
+`2.` Performance Improvement <br>
+`3.` Operational Efficiency <br>
+`4.` Security & Compliance <br>
 `5.` Disaster Recovery (via snapshots/rollback)
 <br>
 
