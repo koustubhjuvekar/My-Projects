@@ -42,20 +42,20 @@ We are creating an automated system that continuously monitors EBS volumes, dete
     <li>&emsp;Login to the AWS Management Console.</li>
     <li>&emsp;Navigate to EC2 → Instances → Launch Instance.)</li>
     <li>&emsp;Configure the instance with the following details:</li>
-    <li>&emsp;Go to the AWS Management Console → EC2 → Launch Instance.</li>
+    <li>&emsp;Go to the AWS Management Console → EC2 → Launch Instance.</li><br>
 <ul>
-            - **Name:** `Project2-EC2Instance`
-            - **AMI:** `Amazon Linux 2 (Free Tier Eligible)`
-            - **Instance Type:** `t2.micro`
-            - **Key Pair:** Select existing or create a new one.</li>
-            - **Storage:** Ensure that the root volume is of type `gp2 (default).`
+            - **Name:** `Project2-EC2Instance` <br>
+            - **AMI:** `Amazon Linux 2 (Free Tier Eligible)` <br>
+            - **Instance Type:** `t2.micro` <br>
+            - **Key Pair:** Select existing or create a new one.</li> <br>
+            - **Storage:** Ensure that the root volume is of type `gp2 (default).` <br>
   <ul>
     <li>&emsp;Launch the instance and wait until its state = running.</li>
     <li>&emsp;Attach an additional gp2 EBS volume (e.g., 2 GB).</li>
-    <li>&emsp;Tag the attached volume with:</li>
+    <li>&emsp;Tag the attached volume with:</li> <br>
   <ul>
              - Key: `AutoConvert`
-             - Value: `"true"`
+             - Value: `"true"` <br>
 <ul>
   <li>&emsp;Launch the instance and Connect to the instance via SSH.</li>
 </ul>
