@@ -140,6 +140,7 @@ We are creating an automated system that continuously monitors EBS volumes, dete
 ### 3. &ensp;🌐 **Create DynamoDB table** <br>
 
 - &nbsp;Go to **DynamoDB Console → Tables → Create Table** <br>
+
   - **Table name** - `EBSConversionLog`
   - **Partition key** - `VolumeId (String)`
   - **Sort key** - `Timestamp (String)`
