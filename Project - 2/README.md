@@ -1,4 +1,4 @@
-<img width="875" height="103" alt="steps1" src="https://github.com/user-attachments/assets/8ecb9133-079b-4136-91e2-1ef774b1656b" />
+<img width="1300" height="103" alt="steps1" src="https://github.com/user-attachments/assets/8ecb9133-079b-4136-91e2-1ef774b1656b" />
 
 ## 🌍 `Intelligent EBS Volume Optimization Using Lambda, CloudWatch, SNS, DynamoDB & Step Functions`
 
