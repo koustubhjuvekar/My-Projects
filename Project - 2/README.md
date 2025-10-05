@@ -43,7 +43,7 @@ We are creating an automated system that continuously monitors EBS volumes, dete
 <br>
 
 ### 1. &ensp;🌐 **Launch an EC2 Instance with gp2 Volume** <br>
-- &nbsp;Login to the AWS Management Console. <br>
+- &nbsp;Login to the AWS Management Console. Here region is Asia Pacific (Osaka) <br>
 - &nbsp;Navigate to **EC2 → Instances → Launch Instance**. <br>
 - &nbsp;Configure the instance with the following details: <br>
   - **Vault Name** - `PrimaryEC2Vault`
@@ -61,4 +61,7 @@ We are creating an automated system that continuously monitors EBS volumes, dete
   - **Value:** `true`
 - &nbsp;Connect to the instance via SSH.
 
-
+<img width="1366" height="641" alt="Image 1 - gpu 3 EC2 launching" src="https://github.com/user-attachments/assets/92bbd21b-2f99-4444-baba-387335c66039" />
+<p align="center">
+  <i><strong>Image 1 :</strong> EC2 launch with gp3 (Default) </i>
+</p>
