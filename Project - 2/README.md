@@ -145,7 +145,8 @@ We are creating an automated system that continuously monitors EBS volumes, dete
   - **Partition key** - `VolumeId (String)`
   - **Sort key** - `Timestamp (String)`
   - **Billing** - `On-Demand`
-- Click on <kbd>**Create table**</kbd>
+    
+- &nbsp;Click on <kbd>**Create table**</kbd>
 <br>
 
 <img width="1362" height="643" alt="Image 3 - Go to Dynamodb console" src="https://github.com/user-attachments/assets/d5f673f0-7dab-4349-9bcb-77e74b5d04af" />
@@ -160,7 +161,64 @@ We are creating an automated system that continuously monitors EBS volumes, dete
 <br>
 <img width="1366" height="645" alt="Image 3 2 - Createed table -  Table details" src="https://github.com/user-attachments/assets/8dc03bea-dffb-46c0-8593-a284059c71f6" />
 <p align="center">
-  <i><strong>Image 3.2 :</strong> Createed table -  Table details </i>
+  <i><strong>Image 3.2 :</strong> Created table -  Table details </i>
 </p>
 
+<br>
 
+### 4. &ensp;🌐 **Create SNS topic** <br>
+
+- &nbsp;Go to **SNS Console** → Topics → Create Topic**
+
+<img width="1366" height="648" alt="Image 4 - SNS console" src="https://github.com/user-attachments/assets/1b37a0d1-1da1-4d46-a215-874c8ec887d6" />
+<p align="center">
+  <i><strong>Image 4 :</strong> SNS console</i>
+</p>
+<br>
+<img width="1366" height="643" alt="Image 4 1 - SNS - Create Topic" src="https://github.com/user-attachments/assets/7c580f0b-777a-4944-b88c-d64ae4b1b30b" />
+<p align="center">
+  <i><strong>Image 4.1 :</strong> SNS - Create Topic</i>
+</p>
+<br>
+
+- &nbsp;Click on → **Create Topic**
+  
+  - **Type** - `Standard`
+  - **Name** - `EBSConversionTopic`
+  - **Display name - _optional_** - `EBSConversionTopic`
+    
+- &nbsp;Click on → <kbd>Create topic</kbd> <br>
+
+<img width="1366" height="644" alt="Image 4 2 - SNS - Create Topic - options" src="https://github.com/user-attachments/assets/054d0322-80f4-4619-a436-8647bc481128" />
+<p align="center">
+  <i><strong>Image 4.2 :</strong> SNS - Create Topic - options</i>
+</p>
+<br>
+
+- &nbsp;Click on **Subscriptions** →  click on <kbd>**Create a subscription**</kbd>
+
+  - **Topic ARN** - `arn:aws:sns:ap-northeast-3:494341429801:EBSConversionTopic` _(It’s the ARN of SNS topic.)_
+  - **Protocol** - `Email`
+  - **Endpoint** - `koustubhjuvekar07@gmail.com`
+
+- &nbsp;Click on <kbd>Create subscription</kbd>. <br>
+  
+<img width="1366" height="643" alt="Image 4 3 - SNS - Email add" src="https://github.com/user-attachments/assets/4e34cf1f-668d-4cc3-b925-38f14c2aef49" />
+<p align="center">
+  <i><strong>Image 4.3 :</strong> SNS - Add Email</i>
+</p>
+<br>
+  
+- &nbsp;Confirm subscription in your mailbox.<br>
+
+<img width="1366" height="647" alt="Image 4 4 - SNS - Email confirm subscription" src="https://github.com/user-attachments/assets/66253093-0697-45cd-bffc-8a0ce9a304ab" />
+<p align="center">
+  <i><strong>Image 4.4 :</strong> SNS - Email confirm subscription</i>
+</p>
+<br>
+
+<img width="1366" height="648" alt="Image 4 5 - SNS - Email confirmed" src="https://github.com/user-attachments/assets/50cd12bc-4a63-4666-b8c5-45d24e05d25a" />
+<p align="center">
+  <i><strong>Image 4.5 :</strong> SNS - Email confirmed</i>
+</p>
+<br>
