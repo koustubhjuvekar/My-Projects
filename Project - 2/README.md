@@ -38,12 +38,13 @@ This ensures: <br>
 We are creating an automated system that continuously monitors EBS volumes, detects gp2 volumes, and converts them to gp3 with built-in logging, alerts, and rollback for safe and efficient operations.
 
 ### 1. 🌐 **Launch an EC2 Instance with gp2 Volume**
+
 <ul>
     <li>&emsp;Login to the AWS Management Console.</li>
     <li>&emsp;Navigate to EC2 → Instances → Launch Instance.)</li>
     <li>&emsp;Configure the instance with the following details:</li>
     <li>&emsp;Go to the AWS Management Console → EC2 → Launch Instance.</li><br>
-<ul>
+<ul>  
             - **Name:** `Project2-EC2Instance` <br>
             - **AMI:** `Amazon Linux 2 (Free Tier Eligible)` <br>
             - **Instance Type:** `t2.micro` <br>
@@ -61,50 +62,23 @@ We are creating an automated system that continuously monitors EBS volumes, dete
 </ul>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-tep 1: Launch an EC2 Instance with gp2 Volume
-
-Login to the AWS Management Console.
-
-Navigate to EC2 → Instances → Launch Instance.
-
-Configure the instance with the following details:
-
-Name: Project2-EC2Instance
-
-AMI: Amazon Linux 2 (Free Tier Eligible)
-
-Instance Type: t2.micro
-
-Key Pair: Select existing or create a new one.
-
-Storage: Ensure that the root volume is of type gp2 (default).
-
-Launch the instance and wait until its state = running.
-
-Attach an additional gp2 EBS volume (e.g., 2 GB).
-
-Tag the attached volume with:
-
-Key: AutoConvert
-
-Value: true
+<ul>
+  <li>&emsp;Login to the AWS Management Console.</li>
+  <li>&emsp;Navigate to <b>EC2 → Instances → Launch Instance</b>.</li>
+  <li>&emsp;Configure the instance with the following details:</li>
+  <ul>
+    <li>&emsp;<b>Name:</b> <code>Project2-EC2Instance</code></li>
+    <li>&emsp;<b>AMI:</b> <code>Amazon Linux 2 (Free Tier Eligible)</code></li>
+    <li>&emsp;<b>Instance Type:</b> <code>t2.micro</code></li>
+    <li>&emsp;<b>Key Pair:</b> Select existing or create a new one.</li>
+    <li>&emsp;<b>Storage:</b> Ensure that the root volume is of type <code>gp2 (default)</code>.</li>
+  </ul>
+  <li>&emsp;Launch the instance and wait until its state = <b>running</b>.</li>
+  <li>&emsp;Attach an additional <b>gp2</b> EBS volume (e.g., 2 GB).</li>
+  <li>&emsp;Tag the attached volume with:</li>
+  <ul>
+    <li>&emsp;<b>Key:</b> <code>AutoConvert</code></li>
+    <li>&emsp;<b>Value:</b> <code>true</code></li>
+  </ul>
+  <li>&emsp;Connect to the instance via SSH.</li>
+</ul>
