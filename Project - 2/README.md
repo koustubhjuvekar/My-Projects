@@ -35,7 +35,7 @@ This ensures: <br>
 <br><br>
 
 
-### ⚙️ `Steps`
+## ⚙️ `Steps`
 
 We are creating an automated system that continuously monitors EBS volumes, detects gp2 volumes, and converts them to gp3 with built-in logging, alerts, and rollback for safe and efficient operations.
 <br>
