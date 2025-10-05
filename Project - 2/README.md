@@ -45,22 +45,22 @@ We are creating an automated system that continuously monitors EBS volumes, dete
 ### 1. &ensp;🌐 **Launch an EC2 Instance with gp2 Volume** <br>
 
 #### ▣ &ensp;&nbsp; Go to EC2 Console → Launch Instance <br>
-- &nbsp;Login to the AWS Management Console. Here region is Asia Pacific (Osaka) <br>
-- &nbsp;Navigate to **EC2 → Instances → Launch Instance**. <br>
-- &nbsp;Configure the instance with the following details: <br>
-  - **Name** - `EBS-Demo-Instance`
-  - **AMI** - `Amazon Linux 2 (Free Tier Eligible)`
-  - **Instance Type** - `t2.micro`
-  - **Key Pair** - Select existing or create a new one.
-  - **Storage** - keep default root volume `(usually gp3)`.
-
-- Launch the instance and wait until its state = **running**.
-
-- &nbsp;Attach an additional **gp2** EBS volume (e.g., 2 GB).
-- &nbsp;Tag the attached volume with:
-  - **Key:** `AutoConvert`
-  - **Value:** `true`
-- &nbsp;Connect to the instance via SSH.
+  - &nbsp;Login to the AWS Management Console. Here region is Asia Pacific (Osaka) <br>
+  - &nbsp;Navigate to **EC2 → Instances → Launch Instance**. <br>
+  - &nbsp;Configure the instance with the following details: <br>
+    - **Name** - `EBS-Demo-Instance`
+    - **AMI** - `Amazon Linux 2 (Free Tier Eligible)`
+    - **Instance Type** - `t2.micro`
+    - **Key Pair** - Select existing or create a new one.
+    - **Storage** - keep default root volume `(usually gp3)`.
+  
+  - Launch the instance and wait until its state = **running**.
+  
+  - &nbsp;Attach an additional **gp2** EBS volume (e.g., 2 GB).
+  - &nbsp;Tag the attached volume with:
+    - **Key:** `AutoConvert`
+    - **Value:** `true`
+  - &nbsp;Connect to the instance via SSH.
 
 <img width="1366" height="641" alt="Image 1 - gpu 3 EC2 launching" src="https://github.com/user-attachments/assets/92bbd21b-2f99-4444-baba-387335c66039" />
 <p align="center">
