@@ -38,19 +38,20 @@ This ensures: <br>
 We are creating an automated system that continuously monitors EBS volumes, detects gp2 volumes, and converts them to gp3 with built-in logging, alerts, and rollback for safe and efficient operations.
 
 ### 1. 🌐 **Launch an EC2 Instance with gp2 Volume**
-- Login to the AWS Management Console.
-- Navigate to **EC2 → Instances → Launch Instance**.
-- Configure the instance with the following details:
-  - **Name:** `Project2-EC2Instance`
-  - **AMI:** `Amazon Linux 2 (Free Tier Eligible)`
-  - **Instance Type:** `t2.micro`
-  - **Key Pair:** Select existing or create a new one.
-  - **Storage:** Ensure that the root volume is of type `gp2 (default)`.
-- Launch the instance and wait until its state = **running**.
-- Attach an additional **gp2** EBS volume (e.g., 2 GB).
-- Tag the attached volume with:
-  - **Key:** `AutoConvert`
-  - **Value:** `true`
-- Connect to the instance via SSH.
+
+- &ensp;Login to the AWS Management Console.
+- &ensp;Navigate to **EC2 → Instances → Launch Instance**.
+- &ensp;Configure the instance with the following details:
+  - &ensp;**Name:** `Project2-EC2Instance`
+  - &ensp;**AMI:** `Amazon Linux 2 (Free Tier Eligible)`
+  - &ensp;**Instance Type:** `t2.micro`
+  - &ensp;**Key Pair:** Select existing or create a new one.
+  - &ensp;**Storage:** Ensure that the root volume is of type `gp2 (default)`.
+- &ensp;Launch the instance and wait until its state = **running**.
+- &ensp;Attach an additional **gp2** EBS volume (e.g., 2 GB).
+- &ensp;Tag the attached volume with:
+  - &ensp;**Key:** `AutoConvert`
+  - &ensp;**Value:** `true`
+- &ensp;Connect to the instance via SSH.
 
 
