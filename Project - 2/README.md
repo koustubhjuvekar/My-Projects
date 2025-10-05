@@ -108,7 +108,7 @@ We are creating an automated system that continuously monitors EBS volumes, dete
 - &nbsp;Select instance/EC2 `EBS-Demo-Instance.` from the list.
 - &nbsp;Device name `/dev/sdf`
   
-- Click on <kbd>Attach volume</kbd>
+- &nbsp;Click on <kbd>**Attach volume**</kbd>
 
 <img width="1366" height="640" alt="Image 1 6 - Attatch volume" src="https://github.com/user-attachments/assets/e197a570-df16-4b37-aef2-2cd57768766d" />
 <p align="center">
