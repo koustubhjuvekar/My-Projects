@@ -45,7 +45,7 @@ We are creating an automated system that continuously monitors EBS volumes, dete
 ### 1. &ensp;🌐 **Launch an EC2 Instance with gp2 Volume** <br>
 
 #### ▣ &ensp;&nbsp; Go to EC2 Console → Launch Instance <br>
-      - &nbsp;Login to the AWS Management Console. Here region is Asia Pacific (Osaka) <br>
+  - &nbsp;Login to the AWS Management Console. Here region is Asia Pacific (Osaka) <br>
   - &nbsp;Navigate to **EC2 → Instances → Launch Instance**. <br>
   - &nbsp;Configure the instance with the following details: <br>
     - **Name** - `EBS-Demo-Instance`
@@ -54,7 +54,7 @@ We are creating an automated system that continuously monitors EBS volumes, dete
     - **Key Pair** - Select existing or create a new one.
     - **Storage** - keep default root volume `(usually gp3)`.
   
-  - Launch the instance and wait until its state = **running**.
+  - &nbsp;Launch the instance and wait until its state = **running**.
   
   - &nbsp;Attach an additional **gp2** EBS volume (e.g., 2 GB).
   - &nbsp;Tag the attached volume with:
