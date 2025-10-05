@@ -49,6 +49,7 @@ We are creating an automated system that continuously monitors EBS volumes, dete
   - &nbsp;Login to the AWS Management Console. Here region is Asia Pacific (Osaka) <br>
   - &nbsp;Navigate to **EC2 → Instances → Launch Instance**. <br>
   - &nbsp;Configure the instance with the following details: <br>
+  
     - **Name** - `EBS-Demo-Instance`
     - **AMI** - `Amazon Linux 2 (Free Tier Eligible)`
     - **Instance Type** - `t2.micro`
@@ -63,19 +64,18 @@ We are creating an automated system that continuously monitors EBS volumes, dete
 
 <img width="1366" height="643" alt="Image 1 1 - EC2 launched with EBS gp3" src="https://github.com/user-attachments/assets/86e835b5-2a33-476e-995c-918e55a6327b" />
 <p align="center">
-  <i><strong>Image 1.1 :</strong> EC2 launched with EBS **gp3**</i>
+  <i><strong>Image 1.1 :</strong> EC2 launched with EBS <strong>gp3</strong></i>
 </p>
 
 
   #### ▣ &ensp;&nbsp; After launch, create an extra volume: <br>
   - &nbsp;Availability Zone: same as your instance (important!).
   - &nbsp;Go to Elastic Block **Store → Volumes → Create Volume.** <br>
-    - **Name** - `EBS-Demo-Volume`
+
+    - **Volume Type** - `General Purpose SSD (gp2)`
     - **Size** - `10 GiB`
-    - **Type** - `gp2`
-  - &nbsp;Tag the attached volume with:
-    - **Key** - `AutoConvert`
-    - **Value** - `"true"`
+    - **Name** - `EBS-Demo-Volume` _(You can name volume from tag option.)_
+    
 
 <img width="1366" height="640" alt="Image 1 2 - Elastic block storage - Volumes - Create new volume" src="https://github.com/user-attachments/assets/fc1daae1-ff3f-4f2f-8f6f-a3f299b53228" />
 <p align="center">
@@ -118,9 +118,18 @@ We are creating an automated system that continuously monitors EBS volumes, dete
   <i><strong>Image 1.6 :</strong> Volumes attached to EC2 </i>
 </p>
 
+### 2. &ensp;🌐 **Add a tag for auto-conversion** <br>
 
+- &nbsp;Click on gp2 volume → Scroll down → Click on `Tags` → Click on <kbd>Manage tags</kbd><br>
+- &nbsp;Tag the attached volume with: <br>
 
-
+    - **Key** - `AutoConvert`
+    - **Value** - `"true"`
+    
+<img width="1366" height="638" alt="Image 2 - Tagging Autoconvert=true" src="https://github.com/user-attachments/assets/0722e536-4be2-4810-974d-fe0e6ab86f8b" />
+<p align="center">
+  <i><strong>Image 2 :</strong> Tagging Autoconvert= "true" </i>
+</p>
 
 
 
