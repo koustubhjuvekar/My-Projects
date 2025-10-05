@@ -39,7 +39,7 @@ We are creating an automated system that continuously monitors EBS volumes, dete
 
 ### 1. 🌐 **Launch an EC2 Instance with gp2 Volume**
 
-- Login to the AWS Management Console.  
+- Login to the AWS Management Console.
 - Navigate to **EC2 → Instances → Launch Instance**.  
 - Configure the instance with the following details:  
   - **Name:** `Project2-EC2Instance`  
