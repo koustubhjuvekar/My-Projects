@@ -134,14 +134,32 @@ We are creating an automated system that continuously monitors EBS volumes, dete
 <p align="center">
   <i><strong>Image 2 :</strong> Tagging Autoconvert= "true" </i>
 </p>
+
 <br>
 
+### 3. &ensp;🌐 **Create DynamoDB table** <br>
 
+- &nbsp;Go to **DynamoDB Console → Tables → Create Table** <br>
+  - **Table name** - `EBSConversionLog`
+  - **Partition key** - `VolumeId (String)`
+  - **Sort key** - `Timestamp (String)`
+  - **Billing** - `On-Demand`
+- Click on <kbd>**Create table**</kbd>
+<br>
 
-
-
-
-
-
+<img width="1362" height="643" alt="Image 3 - Go to Dynamodb console" src="https://github.com/user-attachments/assets/d5f673f0-7dab-4349-9bcb-77e74b5d04af" />
+<p align="center">
+  <i><strong>Image 3 :</strong> Go to Dynamodb console </i>
+</p>
+<br>
+<img width="1366" height="643" alt="Image 3 1 - Dynamodb - Create table" src="https://github.com/user-attachments/assets/3f29f206-caf3-4cbb-b593-0b737d325ada" />
+<p align="center">
+  <i><strong>Image 3.1 :</strong> Dynamodb - Create table </i>
+</p>
+<br>
+<img width="1366" height="645" alt="Image 3 2 - Createed table -  Table details" src="https://github.com/user-attachments/assets/8dc03bea-dffb-46c0-8593-a284059c71f6" />
+<p align="center">
+  <i><strong>Image 3.2 :</strong> Createed table -  Table details </i>
+</p>
 
 
