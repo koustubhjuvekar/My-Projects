@@ -16,17 +16,17 @@ This ensures: <br>
 `5.` Disaster Recovery (via snapshots/rollback)
 <br>
 
-## 📑 `Table of Contents`
-- ⚙️ **Steps**
-   &ensp;&ensp;  `1.` &ensp;Launch EC2 Instance with gp2 Volume
-   &ensp;&ensp;  `2.` &ensp;Create DynamoDB Table
-   &ensp;&ensp;  `3.` &ensp;Create SNS Topic & Subscription
-   &ensp;&ensp;  `4.` &ensp;Create IAM Role for Lambda
-   &ensp;&ensp;  `5.` &ensp;Deploy First Lambda – EBSFilterLambda
-   &ensp;&ensp;  `6.` &ensp;Deploy Second Lambda – EBSModifyLambda
-   &ensp;&ensp;  `7.` &ensp;Build Step Functions Workflow
-   &ensp;&ensp;  `8.` &ensp;Schedule with EventBridge Rule
-   &ensp;&ensp;  `9.` &ensp;Testing & Validation
+## 📑 `Table of Contents`<br>
+- ⚙️ **Steps** <br>
+   &ensp;&ensp;  `1.` &ensp;Launch EC2 Instance with gp2 Volume<br>
+   &ensp;&ensp;  `2.` &ensp;Create DynamoDB Table<br>
+   &ensp;&ensp;  `3.` &ensp;Create SNS Topic & Subscription<br>
+   &ensp;&ensp;  `4.` &ensp;Create IAM Role for Lambda<br>
+   &ensp;&ensp;  `5.` &ensp;Deploy First Lambda – EBSFilterLambda<br>
+   &ensp;&ensp;  `6.` &ensp;Deploy Second Lambda – EBSModifyLambda<br>
+   &ensp;&ensp;  `7.` &ensp;Build Step Functions Workflow<br>
+   &ensp;&ensp;  `8.` &ensp;Schedule with EventBridge Rule<br>
+   &ensp;&ensp;  `9.` &ensp;Testing & Validation<br>
 - &ensp;✅ **Result**
 - &ensp;🌟 **Benefits**
 - &ensp;⚠️ **Issues & Resolutions**
