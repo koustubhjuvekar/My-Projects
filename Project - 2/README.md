@@ -41,7 +41,8 @@ We are creating an automated system that continuously monitors EBS volumes, dete
 
 - &ensp;&ensp;Login to the AWS Management Console.
 - &ensp;&ensp;Navigate to **EC2 → Instances → Launch Instance**.
-- &ensp;&ensp;Configure the instance with the following details:<br>
+- &ensp;&ensp;Configure the instance with the following details:
+  
      -    **Vault Name -** `PrimaryEC2Vault` <br>
      -    **Name -** `Project2-EC2Instance` <br>
      -    **AMI -** `Amazon Linux 2 (Free Tier Eligible)` <br>
