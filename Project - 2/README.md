@@ -44,18 +44,18 @@ We are creating an automated system that continuously monitors EBS volumes, dete
   <li>&emsp;Navigate to <b>EC2 → Instances → Launch Instance</b>.</li>
   <li>&emsp;Configure the instance with the following details:</li>
   <ul>
-    <li>&emsp;&emsp;<b>Name:</b> <code>Project2-EC2Instance</code></li>
-    <li>&emsp;&emsp;<b>AMI:</b> <code>Amazon Linux 2 (Free Tier Eligible)</code></li>
-    <li>&emsp;&emsp;<b>Instance Type:</b> <code>t2.micro</code></li>
-    <li>&emsp;&emsp;<b>Key Pair:</b> Select existing or create a new one.</li>
-    <li>&emsp;&emsp;<b>Storage:</b> Ensure that the root volume is of type <code>gp2 (default)</code>.</li>
+    &emsp;<li>&emsp;<b>Name:</b> <code>Project2-EC2Instance</code></li>
+    &emsp;<li>&emsp;<b>AMI:</b> <code>Amazon Linux 2 (Free Tier Eligible)</code></li>
+    &emsp;<li>&emsp;<b>Instance Type:</b> <code>t2.micro</code></li>
+    &emsp;<li>&emsp;<b>Key Pair:</b> Select existing or create a new one.</li>
+    &emsp;<li>&emsp;<b>Storage:</b> Ensure that the root volume is of type <code>gp2 (default)</code>.</li>
   </ul>
   <li>&emsp;Launch the instance and wait until its state = <b>running</b>.</li>
   <li>&emsp;Attach an additional <b>gp2</b> EBS volume (e.g., 2 GB).</li>
   <li>&emsp;Tag the attached volume with:</li>
   <ul>
-    <li>&emsp;&emsp;<b>Key:</b> <code>AutoConvert</code></li>
-    <li>&emsp;&emsp;<b>Value:</b> <code>true</code></li>
+    &emsp;<li>&emsp;<b>Key:</b> <code>AutoConvert</code></li>
+    &emsp;<li>&emsp;<b>Value:</b> <code>true</code></li>
   </ul>
   <li>&emsp;Connect to the instance via SSH.</li>
 </ul>
