@@ -34,6 +34,10 @@ This ensures: <br>
 - &ensp;🔚 **End of Document** 
 <br><br>
 
+
+<img width="1268" height="58" alt="steps" src="https://github.com/user-attachments/assets/66012542-c932-48c8-aaa3-7901a94efa4b" />
+
+
 ## ⚙️ `Steps`  <br>
 We are creating an automated system that continuously monitors EBS volumes, detects gp2 volumes, and converts them to gp3 with built-in logging, alerts, and rollback for safe and efficient operations.
 
