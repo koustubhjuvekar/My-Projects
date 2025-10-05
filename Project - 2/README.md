@@ -39,9 +39,9 @@ We are creating an automated system that continuously monitors EBS volumes, dete
 
 ### 1. 🌐 **Launch an EC2 Instance with gp2 Volume**
 
-- &ensp;&ensp;Login to the AWS Management Console.
-- &ensp;&ensp;Navigate to **EC2 → Instances → Launch Instance**.
-- Configure the instance with the following details:
+- &nbsp;Login to the AWS Management Console.
+- &nbsp;Navigate to **EC2 → Instances → Launch Instance**.
+- &nbsp;Configure the instance with the following details:
   
   - **Vault Name** - `PrimaryEC2Vault`
   - **Name** - `Project2-EC2Instance`
@@ -52,10 +52,10 @@ We are creating an automated system that continuously monitors EBS volumes, dete
 
 - Launch the instance and wait until its state = **running**.
 
-- &ensp;&ensp;Attach an additional **gp2** EBS volume (e.g., 2 GB).
-- &ensp;&ensp;Tag the attached volume with:
-  - &ensp;**Key:** `AutoConvert`
-  - &ensp;**Value:** `true`
-- &ensp;&ensp;Connect to the instance via SSH.
+- &nbsp;Attach an additional **gp2** EBS volume (e.g., 2 GB).
+- &nbsp;Tag the attached volume with:
+  - **Key:** `AutoConvert`
+  - **Value:** `true`
+- &nbsp;Connect to the instance via SSH.
 
 
