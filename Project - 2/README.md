@@ -35,7 +35,7 @@ This ensures: <br>
 <br><br>
 
 
-<img width="1268" height="58" alt="steps" src="https://github.com/user-attachments/assets/66012542-c932-48c8-aaa3-7901a94efa4b" />
+<img width="1270" height="58" alt="steps" src="https://github.com/user-attachments/assets/66012542-c932-48c8-aaa3-7901a94efa4b" />
 
 
 <!-- ## ⚙️ `Steps`  <br>
