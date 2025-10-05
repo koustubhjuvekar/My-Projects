@@ -39,20 +39,24 @@ We are creating an automated system that continuously monitors EBS volumes, dete
 
 ### 1. 🌐 **Launch an EC2 Instance with gp2 Volume**
 <ul>
-  <li>&emsp;Login to the AWS Management Console.</li>
-  <li>&emsp;Navigate to EC2 → Instances → Launch Instance.)</li>
-  <li>&emsp;Configure the instance with the following details:</li>
-  <li>&emsp;Go to the AWS Management Console → EC2 → Launch Instance.</li>
-                <li>&emsp; &ensp;&ensp;- Name: Project2-EC2Instance</li>
-                <li>&emsp; &ensp;&ensp;- AMI: Amazon Linux 2 (Free Tier Eligible)</li>
-                <li>&emsp; &ensp;&ensp;- Instance Type: t2.micro</li>
-                <li>&emsp; &ensp;&ensp;- Key Pair: Select existing or create a new one.</li>
-                <li>&emsp; &ensp;&ensp;- Storage: Ensure that the root volume is of type gp2 (default).</li>
-  <li>&emsp;Launch the instance and wait until its state = running.</li>
-  <li>&emsp;Attach an additional gp2 EBS volume (e.g., 2 GB).</li>
-  <li>&emsp;Tag the attached volume with:</li>
-             <li>&emsp; &ensp;&ensp;- Key: AutoConvert</li>
-             <li>&emsp; &ensp;&ensp;- Value: true</li>
+    <li>&emsp;Login to the AWS Management Console.</li>
+    <li>&emsp;Navigate to EC2 → Instances → Launch Instance.)</li>
+    <li>&emsp;Configure the instance with the following details:</li>
+    <li>&emsp;Go to the AWS Management Console → EC2 → Launch Instance.</li>
+<ul>
+            - **Name:** `Project2-EC2Instance`
+            - **AMI:** `Amazon Linux 2 (Free Tier Eligible)`
+            - **Instance Type:** `t2.micro`
+            - **Key Pair:** Select existing or create a new one.</li>
+            - **Storage:** Ensure that the root volume is of type `gp2 (default).`
+  <ul>
+    <li>&emsp;Launch the instance and wait until its state = running.</li>
+    <li>&emsp;Attach an additional gp2 EBS volume (e.g., 2 GB).</li>
+    <li>&emsp;Tag the attached volume with:</li>
+  <ul>
+             - Key: `AutoConvert`
+             - Value: `"true"`
+<ul>
   <li>&emsp;Launch the instance and Connect to the instance via SSH.</li>
 </ul>
 
