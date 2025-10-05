@@ -54,16 +54,81 @@ We are creating an automated system that continuously monitors EBS volumes, dete
     - **Instance Type** - `t2.micro`
     - **Key Pair** - Select existing or create a new one.
     - **Storage** - keep default root volume `(usually gp3)`.
-  
-  - &nbsp;Launch the instance and wait until its state = **running**.
-  
-  - &nbsp;Attach an additional **gp2** EBS volume (e.g., 2 GB).
-  - &nbsp;Tag the attached volume with:
-    - **Key:** `AutoConvert`
-    - **Value:** `true`
-  - &nbsp;Connect to the instance via SSH.
+  - &nbsp;Launch EC2.
 
 <img width="1366" height="641" alt="Image 1 - gpu 3 EC2 launching" src="https://github.com/user-attachments/assets/92bbd21b-2f99-4444-baba-387335c66039" />
 <p align="center">
   <i><strong>Image 1 :</strong> EC2 launch with gp3 (Default) </i>
 </p>
+
+<img width="1366" height="643" alt="Image 1 1 - EC2 launched with EBS gp3" src="https://github.com/user-attachments/assets/86e835b5-2a33-476e-995c-918e55a6327b" />
+<p align="center">
+  <i><strong>Image 1.1 :</strong> EC2 launched with EBS **gp3**</i>
+</p>
+
+
+  #### ▣ &ensp;&nbsp; After launch, create an extra volume: <br>
+  - &nbsp;Availability Zone: same as your instance (important!).
+  - &nbsp;Go to Elastic Block **Store → Volumes → Create Volume.** <br>
+    - **Name** - `EBS-Demo-Volume`
+    - **Size** - `10 GiB`
+    - **Type** - `gp2`
+  - &nbsp;Tag the attached volume with:
+    - **Key** - `AutoConvert`
+    - **Value** - `"true"`
+
+<img width="1366" height="640" alt="Image 1 2 - Elastic block storage - Volumes - Create new volume" src="https://github.com/user-attachments/assets/fc1daae1-ff3f-4f2f-8f6f-a3f299b53228" />
+<p align="center">
+  <i><strong>Image 1.2 :</strong> Elastic block storage - Volumes - Create new volume. </i>
+</p>
+
+<img width="1366" height="586" alt="Image 1 3 - Elastic block storage - Volumes - Create new volume" src="https://github.com/user-attachments/assets/d8b90bd5-4443-43e4-8e47-a17e64401e89" />
+<p align="center">
+  <i><strong>Image 1.3 :</strong> Elastic block storage - Volumes - Create new volume </i>
+</p>
+
+<img width="1366" height="640" alt="Image 1 4 - Volumes created 1 default(gp3) - 1 created (gp2) " src="https://github.com/user-attachments/assets/b35aee5c-b316-4c2a-8656-a2bf88e5d71d" />
+<p align="center">
+  <i><strong>Image 1.4 :</strong> Volumes created -- 1 default(gp3) - 1 created (gp2) </i>
+</p>
+
+
+  #### ▣ &ensp;&nbsp; Attach this new volume to your instance. <br>
+  - &nbsp;Right-click → Attach Volume → select `EBS-Demo-Instance.`
+
+
+<img width="1366" height="641" alt="Image 1 5 - Attatch volume to the instance EBS-Demo-Instance" src="https://github.com/user-attachments/assets/24e1bf0c-169d-4339-8664-254f5faf3d05" />
+<p align="center">
+  <i><strong>Image 1.5 :</strong> Attatch volume to the instance EBS-Demo-Instance </i>
+</p>
+
+- &nbsp;Select instance/EC2 `EBS-Demo-Instance.` from the list.
+- &nbsp;Device name `/dev/sdf`
+  
+- Click on <kbd>Attach volume</kbd>
+
+<img width="1366" height="640" alt="Image 1 6 - Attatch volume" src="https://github.com/user-attachments/assets/e197a570-df16-4b37-aef2-2cd57768766d" />
+<p align="center">
+  <i><strong>Image 1.6 :</strong> Attach volume </i>
+</p>
+
+
+<img width="1366" height="642" alt="Image 1 7 - Volumes attached" src="https://github.com/user-attachments/assets/100eeaa8-2455-4ade-8124-52cdf87beb21" />
+<p align="center">
+  <i><strong>Image 1.6 :</strong> Volumes attached to EC2 </i>
+</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
