@@ -16,6 +16,47 @@ This ensures: <br>
 `5.` Disaster Recovery (via snapshots/rollback)
 <br>
 
+## 📑 `Table of Contents`
+- ⚙️ **Steps**
+   &ensp;&ensp;  `1.` &ensp;Launch EC2 Instance with gp2 Volume
+   &ensp;&ensp;  `2.` &ensp;Create DynamoDB Table
+   &ensp;&ensp;  `3.` &ensp;Create SNS Topic & Subscription
+   &ensp;&ensp;  `4.` &ensp;Create IAM Role for Lambda
+   &ensp;&ensp;  `5.` &ensp;Deploy First Lambda – EBSFilterLambda
+   &ensp;&ensp;  `6.` &ensp;Deploy Second Lambda – EBSModifyLambda
+   &ensp;&ensp;  `7.` &ensp;Build Step Functions Workflow
+   &ensp;&ensp;  `8.` &ensp;Schedule with EventBridge Rule
+   &ensp;&ensp;  `9.` &ensp;Testing & Validation
+- &ensp;✅ **Result**
+- &ensp;🌟 **Benefits**
+- &ensp;⚠️ **Issues & Resolutions**
+- &ensp;🔐 **Security Best Practices**
+- &ensp;🔚 **End of Document**
+<br><br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 tep 1: Launch an EC2 Instance with gp2 Volume
 
 Login to the AWS Management Console.
