@@ -37,9 +37,8 @@ This ensures: <br>
 ## ⚙️ `Steps`  <br>
 We are creating an automated system that continuously monitors EBS volumes, detects gp2 volumes, and converts them to gp3 with built-in logging, alerts, and rollback for safe and efficient operations.
 
-### 1. &ensp;🌐 **Launch an EC2 Instance with gp2 Volume**
+## 1. &ensp;🌐 **Launch an EC2 Instance with gp2 Volume**
 
----
 - &nbsp;Login to the AWS Management Console.
 - &nbsp;Navigate to **EC2 → Instances → Launch Instance**.
 - &nbsp;Configure the instance with the following details:
