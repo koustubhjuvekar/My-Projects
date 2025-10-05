@@ -1,5 +1,8 @@
 ## 🌍 `Intelligent EBS Volume Optimization Using Lambda, CloudWatch, SNS, DynamoDB & Step Functions`
 
+**Author:** Koustubh Juvekar <br>
+
+**Document:** [![Open or Download PDF](https://img.shields.io/badge/Download-PDF-blue?logo=adobeacrobatreader)](./Project%20-%20Cross-Region%20Backup%20Replication%20for%20EC2%20using%20AWS%20Backup.pdf)
 
 
 tep 1: Launch an EC2 Instance with gp2 Volume
