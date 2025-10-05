@@ -4,6 +4,17 @@
 
 **Document:** [![Open or Download PDF](https://img.shields.io/badge/Download-PDF-blue?logo=adobeacrobatreader)](./Project%20-%20Cross-Region%20Backup%20Replication%20for%20EC2%20using%20AWS%20Backup.pdf)
 
+## 🎯 `Objective`  
+
+The objective of this project is to build a serverless automation pipeline that monitors EBS volumes, identifies gp2 volumes, and converts them to gp3 with full logging, alerting, and audit trail.
+
+This ensures:
+`1.` Cost Optimization
+`2.` Performance Improvement
+`3.` Operational Efficiency
+`4.` Security & Compliance
+`5.` Disaster Recovery (via snapshots/rollback)
+<br>
 
 tep 1: Launch an EC2 Instance with gp2 Volume
 
