@@ -42,7 +42,7 @@ We are creating an automated system that continuously monitors EBS volumes, dete
   <li>&emsp;Login to the AWS Management Console.</li>
   <li>&emsp;Navigate to EC2 → Instances → Launch Instance.)</li>
   <li>&emsp;Configure the instance with the following details:</li>
-                <li>&emsp;- Go to the AWS Management Console → EC2 → Launch Instance.</li>
+  <li>&emsp;Go to the AWS Management Console → EC2 → Launch Instance.</li>
                 <li>&emsp; &ensp;&ensp;- Name: Project2-EC2Instance</li>
                 <li>&emsp; &ensp;&ensp;- AMI: Amazon Linux 2 (Free Tier Eligible)</li>
                 <li>&emsp; &ensp;&ensp;- Instance Type: t2.micro</li>
