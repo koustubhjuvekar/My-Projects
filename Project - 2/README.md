@@ -61,7 +61,7 @@ We are creating an automated system that continuously monitors EBS volumes, dete
 <p align="center">
   <i><strong>Image 1 :</strong> EC2 launch with gp3 (Default) </i>
 </p>
-
+<br>
 <img width="1366" height="643" alt="Image 1 1 - EC2 launched with EBS gp3" src="https://github.com/user-attachments/assets/86e835b5-2a33-476e-995c-918e55a6327b" />
 <p align="center">
   <i><strong>Image 1.1 :</strong> EC2 launched with EBS <strong>gp3</strong></i>
@@ -75,7 +75,7 @@ We are creating an automated system that continuously monitors EBS volumes, dete
 
     - **Volume Type** - `General Purpose SSD (gp2)`
     - **Size** - `10 GiB`
-    - **Name** - `EBS-Demo-Volume` _(You can name volume from tag option.)_
+    - **Name** - `EBS-Demo-Volume` _(You can name volume from tag option.)_ <br>
     
 
 <img width="1366" height="640" alt="Image 1 2 - Elastic block storage - Volumes - Create new volume" src="https://github.com/user-attachments/assets/fc1daae1-ff3f-4f2f-8f6f-a3f299b53228" />
