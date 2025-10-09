@@ -221,7 +221,7 @@ We are creating an automated system that continuously monitors EBS volumes, dete
 </p>
 <br>
 
-### 5. &ensp; **Create IAM Role for Lambda** <br>
+### 5. &ensp; **Create IAM Role for Lambda and Step Function** <br>
 
 #### ▣ &ensp;&nbsp; For Lambda (`LambdaEBSRole`) <br>
 
