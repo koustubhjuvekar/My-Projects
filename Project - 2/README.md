@@ -294,6 +294,30 @@ We are creating an automated system that continuously monitors EBS volumes, dete
 
 <img width="1366" height="639" alt="Image 5 3B - IAM roles - create role for Stepfunction" src="https://github.com/user-attachments/assets/42fd7997-1a4b-4891-9e74-5c873888bb4e" />
 <p align="center">
-  <i><strong>Image 5 3B :</strong>  IAM roles - create role for Stepfunction </i>
+  <i><strong>Image 5.3B :</strong>  IAM roles - create role for Stepfunction </i>
+</p>
+<br>
+
+<img width="1366" height="601" alt="Image 5 4B - IAM roles - create role for Stepfunction - Attach AWSLambdaRole" src="https://github.com/user-attachments/assets/e119c56b-eb64-48e0-a09c-eaf11580c197" />
+<p align="center">
+  <i><strong>Image 5.4B :</strong>  IAM roles - Create role for Stepfunction - Attach AWSLambdaRole </i>
+</p>
+<br>
+
+<img width="1366" height="597" alt="Image 5 5B - IAM roles - create role for Stepfunction - Attach AWSLambdaRole - Use a permissions boundary to control the maximum role permissions" src="https://github.com/user-attachments/assets/8877bbf2-fc4e-492b-87a1-75194b6ec79e" />
+<p align="center">
+  <i><strong>Image 5.5B :</strong>  IAM roles - create role for Stepfunction - Attach AWSLambdaRole - Use a permissions boundary to control the maximum role permissions </i>
+</p>
+<br>
+
+<img width="1366" height="642" alt="Image 5 6B - IAM roles - create role for Stepfunction - Page 3" src="https://github.com/user-attachments/assets/85d742ff-a291-4b0f-958e-dff0eaee2f0a" />
+<p align="center">
+  <i><strong>Image 5.6B :</strong>  IAM roles - create role for Stepfunction - Page 3 </i>
+</p>
+<br>
+
+<img width="1366" height="639" alt="Image 5 7 - IAM roles created" src="https://github.com/user-attachments/assets/533ea9be-b6bc-472e-ad21-e7e445a37602" />
+<p align="center">
+  <i><strong>Image 5.7 :</strong>  IAM roles created. </i>
 </p>
 <br>
