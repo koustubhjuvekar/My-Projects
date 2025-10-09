@@ -269,3 +269,31 @@ We are creating an automated system that continuously monitors EBS volumes, dete
   <i><strong>Image 5.2 :</strong>  IAM roles - IAM roles - create role page 3 </i>
 </p>
 <br>
+
+
+#### ▣ &ensp;&nbsp; For Step Functions (`StepFunctionsEBSRole`) <br>
+
+-  &nbsp;Go to **IAM → Roles → Create Role**
+  
+  -  Trusted entity type - `Step Functions`
+  -  Use case → Service or use case - `StepFunctionsEBSRole`
+  -  click on <kbd>Next</kbd>
+
+-  Add Permissions → Permissions policies (1078)
+   -  →  Click on `Set permissions boundary - optional`
+     -   →  Select `Use a permissions boundary to control the maximum role permissions`
+     -   Search and select `CloudWatchLogsFullAccess` `AWSLambdaRole` policies.
+
+-  Name, review and create
+   -  Role details →
+   
+      -  Role name - `StepFunctionsEBSRole`
+      -  Description - `Allows Step Functions function to call AWS service on your behalf.`
+    
+-  Click on <kbd>Create role</kbd>
+
+<img width="1366" height="639" alt="Image 5 3B - IAM roles - create role for Stepfunction" src="https://github.com/user-attachments/assets/42fd7997-1a4b-4891-9e74-5c873888bb4e" />
+<p align="center">
+  <i><strong>Image 5 3B :</strong>  IAM roles - create role for Stepfunction </i>
+</p>
+<br>
