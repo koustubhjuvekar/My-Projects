@@ -327,7 +327,14 @@ We are creating an automated system that continuously monitors EBS volumes, dete
 #### ▣ &ensp;&nbsp; EBSFilterLambda <br>
 
 - &nbsp;Go to **Lambda → Create function**<br>
-  &nbsp;Click on <kbd>Create function</kbd> → Author from scratch
+
+<img width="1366" height="640" alt="Image 6 - Go to Lambda console" src="https://github.com/user-attachments/assets/20e9bf33-6b51-4801-8aa1-2933151d0e67" />
+<p align="center">
+  <i><strong>Image 6 :</strong>  Go to Lambda console. </i>
+</p>
+<br>
+
+- &nbsp;Click on <kbd>Create function</kbd> → Author from scratch
 - &nbsp;Basic information
     -  Function name - `EBSFilterLambda`
     -  Runtime - `Python 3.13`
@@ -338,7 +345,41 @@ We are creating an automated system that continuously monitors EBS volumes, dete
 
 - &nbsp;Click on <kbd>Create function</kbd>
 
-- &nbsp;Paste code for filter function (from my previous answer).
+<img width="1366" height="643" alt="Image 6 1 - Create FUnction - Options" src="https://github.com/user-attachments/assets/3e9d88ad-3d57-416b-81f2-bb51227fc90a" />
+<p align="center">
+  <i><strong>Image 6.1 :</strong>  Create FUnction - Options. </i>
+</p>
+<br>
+
+<img width="1366" height="592" alt="Image 6 2 - Create FUnction - Existing role" src="https://github.com/user-attachments/assets/422c3507-fbb0-4da1-a25f-76634c7455eb" />
+<p align="center">
+  <i><strong>Image 6.2 :</strong>  Create Function - Existing role. </i>
+</p>
+<br>
+
+- &nbsp;Add environment variable →
+  
+  -  Key - `DDB_TABLE`
+  -  Value - `EBSConversionLog`
+    
+- &nbsp;Click on <kbd>Save</kbd>
+
+  &nbsp;It will be as `DDB_TABLE = EBSConversionLog`
+
+
+<img width="1366" height="595" alt="Image 6 3 - Add environment variable" src="https://github.com/user-attachments/assets/efcaeaee-c36c-4add-8f01-e909e7a63efe" />
+<p align="center">
+  <i><strong>Image 6.3 :</strong>  Add environment variable. </i>
+</p>
+<br>
+
+<img width="1366" height="643" alt="Image 6 4 - Add environment variable" src="https://github.com/user-attachments/assets/7ab865c1-94bd-4758-bc2b-855af1c9866c" />
+<p align="center">
+  <i><strong>Image 6.4 :</strong>  Add environment variable. </i>
+</p>
+<br>
+
+- &nbsp;Paste code for filter function [_lambda_function.py_](./lambda_function.py)
   
 ```
 import boto3
@@ -395,3 +436,7 @@ def lambda_handler(event, context):
             'Volumes': []
         }
 ```
+
+
+
+
