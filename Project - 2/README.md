@@ -619,3 +619,115 @@ AWS EBS Conversion Service'''
 </p>
 <br>
 
+-  &nbsp;Go to **Configuration** → General Configuration → Click on <kbd>Edit</kbd> → 
+-  &nbsp;Scroll down → Set **Timeout** - `5 min 0 sec`
+-  &nbsp;Click on <kbd>Save</kbd>
+
+<img width="1366" height="644" alt="Image 6 11B - Edit Timeout = 5min" src="https://github.com/user-attachments/assets/d58825d0-fb4b-4aba-9f2d-c700e74d8900" />
+<p align="center">
+  <i><strong>Image 6.11B :</strong>  Go to Configuration - Edit Timeout = 5min </i>
+</p>
+<br>
+
+<img width="1366" height="642" alt="Image 6 12 - Functions created" src="https://github.com/user-attachments/assets/50e09c7d-1fbb-402d-8b6c-3b8fd43151fc" />
+<p align="center">
+  <i><strong>Image 6.12 :</strong> Lambda Functions created </i>
+</p>
+<br>
+
+
+### 7. &ensp;🌐 **Create Step Function** <br>
+
+-  &nbsp;Go to **Step Functions → State Machines → Create State Machine**
+
+<img width="1366" height="646" alt="Image 7 - Step Function" src="https://github.com/user-attachments/assets/d85dfee9-bfa7-4fe2-891b-b20b4b04eca1" />
+<p align="center">
+  <i><strong>Image 7 :</strong> Go to Step Function </i>
+</p>
+<br>
+
+-  &nbsp;Click on <kbd>Create your own</kbd>
+
+<img width="1366" height="641" alt="Image 7 1 - Step Function - Create your own" src="https://github.com/user-attachments/assets/ee5324ea-0265-45a5-b9fb-f4de6b2dfb33" />
+<p align="center">
+  <i><strong>Image 7.1 :</strong> Step Function - Create your own </i>
+</p>
+<br>
+
+-  &nbsp;**Create State Machine**
+   -  Step Machine name - `EBSConversionStateMachine`
+   -  Step Machine type - `Standard`
+   -  Click on <kbd>Continue</kbd>
+
+<img width="1366" height="644" alt="Image 7 1 - Step Function - Creating function" src="https://github.com/user-attachments/assets/5cac791e-faca-4858-ae0c-7a1856c6e67e" />
+<p align="center">
+  <i><strong>Image 7.1B :</strong> Create state machine </i>
+</p>
+<br>
+
+-  &nbsp;Click on <kbd>{} Code</kbd>
+
+-  &nbsp;Paste JSON code here. (update ARNs).
+
+```
+{
+  "Comment": "State machine to convert gp2 volumes to gp3",
+  "StartAt": "FilterVolumes",
+  "States": {
+    "FilterVolumes": {
+      "Type": "Task",
+      "Resource": "arn:aws:lambda:ap-northeast-3:494341429801:function:EBSFilterLambda",
+      "ResultPath": "$.FilterResult",
+      "Next": "CheckVolumesFound"
+    },
+    "CheckVolumesFound": {
+      "Type": "Choice",
+      "Choices": [
+        {
+          "Variable": "$.FilterResult.Volumes",
+          "IsPresent": true,
+          "Next": "ModifyVolumes"
+        }
+      ],
+      "Default": "NoVolumesFound"
+    },
+    "ModifyVolumes": {
+      "Type": "Task",
+      "Resource": "arn:aws:lambda:ap-northeast-3:494341429801:function:EBSModifyLambda",
+      "InputPath": "$.FilterResult",
+      "ResultPath": "$.ModifyResult",
+      "End": true
+    },
+    "NoVolumesFound": {
+      "Type": "Pass",
+      "Result": "No gp2 volumes found with AutoConvert=true",
+      "End": true
+    }
+  }
+}
+```
+
+<img width="1365" height="643" alt="Image 7 2 - Step Function - Code" src="https://github.com/user-attachments/assets/bfea0f51-d838-4f35-b89d-b15e8b058cf8" />
+<p align="center">
+  <i><strong>Image 7.2 :</strong> Step Function - JSON Code </i>
+</p>
+<br>
+
+
+-  &nbsp;Click on <kbd>{} Config</kbd> → Permission →
+   -  Execution role →
+      -  &nbsp;Click on Drop down list → Choose and existing role → Select `StepFunctionsEBSRole`
+
+-  &nbsp;Click on <kbd>Create</kbd>
+
+<img width="1366" height="643" alt="Image 7 3 - Step Function - Configuration - Execution rule" src="https://github.com/user-attachments/assets/0047eb9e-05f6-42b9-9599-b3e51ba10b87" />
+<p align="center">
+  <i><strong>Image 7.3 :</strong> Step Function - Configuration - Execution rule <code>StepFunctionsEBSRole</code> </i>
+</p>
+<br>
+
+<img width="1366" height="642" alt="Image 7 4 - Step Function created" src="https://github.com/user-attachments/assets/bf68d389-3747-4235-a2c9-312da50508b3" />
+<p align="center">
+  <i><strong>Image 7.4 :</strong> Step Function created </i>
+</p>
+<br>
