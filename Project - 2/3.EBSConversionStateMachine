@@ -1,0 +1,35 @@
+{
+  "Comment": "State machine to convert gp2 volumes to gp3",
+  "StartAt": "FilterVolumes",
+  "States": {
+    "FilterVolumes": {
+      "Type": "Task",
+      "Resource": "arn:aws:lambda:ap-northeast-3:494341429801:function:EBSFilterLambda",
+      "ResultPath": "$.FilterResult",
+      "Next": "CheckVolumesFound"
+    },
+    "CheckVolumesFound": {
+      "Type": "Choice",
+      "Choices": [
+        {
+          "Variable": "$.FilterResult.Volumes",
+          "IsPresent": true,
+          "Next": "ModifyVolumes"
+        }
+      ],
+      "Default": "NoVolumesFound"
+    },
+    "ModifyVolumes": {
+      "Type": "Task",
+      "Resource": "arn:aws:lambda:ap-northeast-3:494341429801:function:EBSModifyLambda",
+      "InputPath": "$.FilterResult",
+      "ResultPath": "$.ModifyResult",
+      "End": true
+    },
+    "NoVolumesFound": {
+      "Type": "Pass",
+      "Result": "No gp2 volumes found with AutoConvert=true",
+      "End": true
+    }
+  }
+}
