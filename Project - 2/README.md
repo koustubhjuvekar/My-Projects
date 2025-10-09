@@ -655,6 +655,7 @@ AWS EBS Conversion Service'''
 <br>
 
 -  &nbsp;**Create State Machine**
+
    -  Step Machine name - `EBSConversionStateMachine`
    -  Step Machine type - `Standard`
    -  Click on <kbd>Continue</kbd>
@@ -715,7 +716,9 @@ AWS EBS Conversion Service'''
 
 
 -  &nbsp;Click on <kbd>{} Config</kbd> → Permission →
+  
    -  Execution role →
+     
       -  &nbsp;Click on Drop down list → Choose and existing role → Select `StepFunctionsEBSRole`
 
 -  &nbsp;Click on <kbd>Create</kbd>
