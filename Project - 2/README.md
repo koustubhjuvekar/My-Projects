@@ -668,7 +668,7 @@ AWS EBS Conversion Service'''
 
 -  &nbsp;Click on <kbd>{} Code</kbd>
 
--  &nbsp;Paste JSON code here. (update ARNs).
+-  &nbsp;Paste JSON code here. (update ARNs). [_EBSConversionStateMachine_](./3.EBSConversionStateMachine)
 
 ```
 {
