@@ -275,7 +275,7 @@ We are creating an automated system that continuously monitors EBS volumes, dete
 
 -  &nbsp;Go to **IAM → Roles → Create Role**
   
-  -  Trusted entity type - `Step Functions`
+  -  Trusted entity type - `AWS service`
   -  Use case → Service or use case - `StepFunctionsEBSRole`
   -  click on <kbd>Next</kbd>
 
