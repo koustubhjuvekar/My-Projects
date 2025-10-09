@@ -273,10 +273,10 @@ We are creating an automated system that continuously monitors EBS volumes, dete
 
 #### ▣ &ensp;&nbsp; For Step Functions (`StepFunctionsEBSRole`) <br>
 
--  &nbsp;Go to **IAM → Roles → Create Role**
+- &nbsp;Go to **IAM → Roles → Create Role**
   
   -  Trusted entity type - `AWS service`
-  -  Use case → Service or use case - `StepFunctionsEBSRole`
+  -  Use case → Service or use case - `Step Functions`
   -  click on <kbd>Next</kbd>
 
 -  Add Permissions → Permissions policies (1078)
