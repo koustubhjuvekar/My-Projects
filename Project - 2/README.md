@@ -226,15 +226,22 @@ We are creating an automated system that continuously monitors EBS volumes, dete
 #### ▣ &ensp;&nbsp; For Lambda (`LambdaEBSRole`) <br>
 
 -  &nbsp;Go to **IAM → Roles → Create Role**
+  
+   -  Trusted entity type - `AWS service`
+   -  Use case → Service or use case - `Lambda`
+   -  click on <kbd>Next</kbd>
      
 <img width="1366" height="643" alt="Image 5 - Go to IAM console " src="https://github.com/user-attachments/assets/5c525720-f073-44bc-b41c-08e7aad36ac9" />
-      <p align="center">
-        <i><strong>Image 5 :</strong> Go to IAM console</i>
-      </p>
+<p align="center">
+  <i><strong>Image 5 :</strong> Go to IAM console</i>
+</p>
+<br>
 
-  -  Trusted entity type - `AWS service`
-  -  Use case → Service or use case - `Lambda`
-  -  click on <kbd>Next</kbd>
+<img width="1366" height="645" alt="Image 5 - IAM roles - create role page 1" src="https://github.com/user-attachments/assets/fbe7be36-4008-4b6e-b9be-bf4c14ce68a6" />
+<p align="center">
+  <i><strong>Image 5 :</strong> IAM roles - create role page 1 </i>
+</p>
+<br>
 
 -  Add Permissions → Permissions policies (1078) → Select following permissions(Search in box)
    -  `AmazonDynamoDBFullAccess`
@@ -252,11 +259,6 @@ We are creating an automated system that continuously monitors EBS volumes, dete
     
 -  Click on <kbd>Create role</kbd>  
 
-<img width="1366" height="645" alt="Image 5 - IAM roles - create role page 1" src="https://github.com/user-attachments/assets/fbe7be36-4008-4b6e-b9be-bf4c14ce68a6" />
-<p align="center">
-  <i><strong>Image 5 :</strong> IAM roles - create role page 1 </i>
-</p>
-<br>
 
 <img width="1364" height="641" alt="Image 5 1 - IAM roles - create role page 3 - policies added previously" src="https://github.com/user-attachments/assets/662f7f5d-e6e3-4008-b5a6-2964d6cc3e71" />
 <p align="center">
@@ -437,6 +439,183 @@ def lambda_handler(event, context):
         }
 ```
 
+<img width="1366" height="638" alt="Image 6 5 - Add code" src="https://github.com/user-attachments/assets/733e8329-aed2-4e09-a11f-3f9b48d973d0" />
+<p align="center">
+  <i><strong>Image 6.5 :</strong>  Add code. </i>
+</p>
+<br>
 
 
+#### ▣ &ensp;&nbsp; EBSModifyLambda <br>
+
+- &nbsp;Go to **Lambda → Create function**
+- &nbsp;Click on <kbd>Create function</kbd> → Author from scratch
+- &nbsp;Basic information
+    -  Function name - `EBSModifyLambda`
+    -  Runtime - `Python 3.13`
+      
+- &nbsp;Permission → Change default execution role →
+- &nbsp;Use an existing role →
+    -  Existing Role - `LambdaEBSRole`
+
+- &nbsp;Click on <kbd>Create function</kbd>
+
+<img width="1366" height="638" alt="Image 6 6B - Create FUnction - EBSModifyLambda" src="https://github.com/user-attachments/assets/f435e2b2-6bf4-4438-9060-66d10d17d125" />
+<p align="center">
+  <i><strong>Image 6.6B :</strong>  Create FUnction - EBSModifyLambda. </i>
+</p>
+<br>
+
+<img width="1366" height="591" alt="Image 6 7B - Create FUnction - Existing role" src="https://github.com/user-attachments/assets/90e86736-cc01-48a0-b32d-dfb269dd452d" />
+<p align="center">
+  <i><strong>Image 6.7B :</strong>  Create Function - Existing role. </i>
+</p>
+<br>
+
+- &nbsp;Add environment variable →
+  
+  -  Key - `DDB_TABLE`
+  -  Value - `EBSConversionLog`
+  -  Key -  `SNS_TOPIC_ARN`
+  -  Value - `arn:aws:sns:ap-northeast-3:494341429801:EBSConversionTopic`
+    
+- &nbsp;Click on <kbd>Save</kbd>
+
+  &nbsp;It will be as
+  -  `DDB_TABLE = EBSConversionLog`
+  -  `SNS_TOPIC_ARN = arn:aws:sns:ap-northeast-3:494341429801:EBSConversionTopic`
+  
+<img width="1366" height="640" alt="Image 6 8B - Add environment variable" src="https://github.com/user-attachments/assets/f5301e93-cb8c-415b-b7e7-8f53d7b7988c" />
+<p align="center">
+  <i><strong>Image 6.8B :</strong>  Add environment variable. </i>
+</p>
+<br>
+
+<img width="1366" height="640" alt="Image 6 9B - Added environment variable" src="https://github.com/user-attachments/assets/e27ea9ef-7aa3-42bd-9db7-c85b93aa0bd3" />
+<p align="center">
+  <i><strong>Image 6.9B :</strong>  Added environment variable. </i>
+</p>
+<br>
+
+- &nbsp;Paste code for modify function. [_lambda_function.py_](./2.lambda_function.py)
+
+```
+import boto3
+import json
+import os
+from datetime import datetime
+
+def lambda_handler(event, context):
+    print(f"EBSModifyLambda started with event: {event}")
+    
+    ec2 = boto3.client('ec2')
+    dynamodb = boto3.client('dynamodb')
+    sns = boto3.client('sns')
+    
+    try:
+        # Get volumes from Step Functions input
+        volumes = event.get('Volumes', [])
+        print(f"Processing {len(volumes)} volumes: {volumes}")
+        
+        if not volumes:
+            return {
+                'statusCode': 400,
+                'body': json.dumps('No volumes provided in event')
+            }
+        
+        converted_volumes = []
+        
+        for volume_id in volumes:
+            print(f"Processing volume: {volume_id}")
+            
+            # Describe volume
+            response = ec2.describe_volumes(VolumeIds=[volume_id])
+            volume = response['Volumes'][0]
+            
+            # Check volume type
+            current_type = volume['VolumeType']
+            tags = {tag['Key']: tag['Value'] for tag in volume.get('Tags', [])}
+            
+            print(f"Volume {volume_id}: type={current_type}, AutoConvert={tags.get('AutoConvert')}")
+            
+            if current_type == 'gp2' and tags.get('AutoConvert') == '"true"':
+                print(f"Converting volume {volume_id} from gp2 to gp3")
+                
+                # Convert to gp3
+                ec2.modify_volume(VolumeId=volume_id, VolumeType='gp3')
+                
+                # Update DynamoDB
+                dynamodb.put_item(
+                    TableName=os.environ['DDB_TABLE'],
+                    Item={
+                        'VolumeId': {'S': volume_id},
+                        'Timestamp': {'S': datetime.utcnow().isoformat()},
+                        'Status': {'S': 'COMPLETED'},
+                        'Action': {'S': 'Converted to gp3'}
+                    }
+                )
+                
+                # Send SNS notification
+                try:
+                    sns_response = sns.publish(
+                        TopicArn=os.environ['SNS_TOPIC_ARN'],
+                        Subject='✅ EBS Volume Converted Successfully',
+                        Message=f'''EBS Volume Conversion Complete!
+
+Volume ID: {volume_id}
+Conversion: gp2 → gp3
+Timestamp: {datetime.utcnow().isoformat()} UTC
+Status: SUCCESS
+
+Your EBS volume has been successfully converted from gp2 to gp3.
+This may result in cost savings and improved performance.
+
+AWS EBS Conversion Service'''
+                    )
+                    print(f"SNS notification sent: {sns_response['MessageId']}")
+                except Exception as sns_error:
+                    print(f"SNS notification failed: {str(sns_error)}")
+                
+                converted_volumes.append(volume_id)
+                print(f"Successfully converted {volume_id} to gp3")
+            else:
+                print(f"Skipping {volume_id}: type={current_type}, AutoConvert={tags.get('AutoConvert')}")
+        
+        return {
+            'statusCode': 200,
+            'body': json.dumps(f"Converted {len(converted_volumes)} volumes: {converted_volumes}")
+        }
+        
+    except Exception as e:
+        print(f"Error: {str(e)}")
+        
+        # Send error notification
+        try:
+            sns.publish(
+                TopicArn=os.environ['SNS_TOPIC_ARN'],
+                Subject='❌ EBS Volume Conversion Failed',
+                Message=f'''EBS Volume Conversion Error!
+
+Error: {str(e)}
+Timestamp: {datetime.utcnow().isoformat()} UTC
+Event: {json.dumps(event)}
+
+Please check CloudWatch logs for more details.
+
+AWS EBS Conversion Service'''
+            )
+        except:
+            pass
+        
+        return {
+            'statusCode': 500,
+            'body': json.dumps(f"Error: {str(e)}")
+        }
+```
+
+<img width="1366" height="642" alt="Image 6 10B - Code" src="https://github.com/user-attachments/assets/d3c891c4-6f90-4d0c-a95f-2c5c64f649b7" />
+<p align="center">
+  <i><strong>Image 6.10B :</strong>  Added code. </i>
+</p>
+<br>
 
