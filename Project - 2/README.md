@@ -231,3 +231,22 @@ We are creating an automated system that continuously monitors EBS volumes, dete
       <p align="center">
         <i><strong>Image 5 :</strong> Go to IAM console</i>
       </p>
+
+  -  Trusted entity type - `AWS service`
+  -  Use case → Service or use case - `Lambda`
+  -  click on <kbd>Next</kbd>
+
+-  Add Permissions → Permissions policies (1078) → Select following permissions(Search in box)
+   -  `AmazonDynamoDBFullAccess`
+   -  `AmazonEC2FullAccess`
+   -  `AmazonSNSFullAccess`
+   -  `CloudWatchLogsFullAccess`
+
+-  Click on <kbd>Create role</kbd>
+
+-  Name, review and create
+   -  Role details →
+      -  Role name - `LambdaEBSRole`
+      -  Description - `Allows Lambda function to call AWS service on your behalf.`
+    
+-  Click on <kbd>Create role</kbd>  
