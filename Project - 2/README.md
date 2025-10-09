@@ -321,3 +321,18 @@ We are creating an automated system that continuously monitors EBS volumes, dete
   <i><strong>Image 5.7 :</strong>  IAM roles created. </i>
 </p>
 <br>
+
+### 6. &ensp;🌐 **Create Lambda functions** <br>
+
+#### ▣ &ensp;&nbsp; EBSFilterLambda <br>
+
+- &nbsp;Go to **Lambda → Create function**
+  &nbsp;Click on <kbd>Create function</kbd> → Author from scratch
+- &nbsp;Basic information
+    -  Function name - `EBSFilterLambda`
+    -  Runtime - `Python 3.13`
+- Use an existing role →
+    -  Existing Role - `LambdaEBSRole`
+      
+- &nbsp;Paste code for filter function (from my previous answer).
+  
