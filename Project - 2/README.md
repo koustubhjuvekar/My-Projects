@@ -336,7 +336,7 @@ We are creating an automated system that continuously monitors EBS volumes, dete
 - &nbsp;Use an existing role →
     -  Existing Role - `LambdaEBSRole`
 
--  Click on <kbd>Create function</kbd>
+- &nbsp;Click on <kbd>Create function</kbd>
 
 - &nbsp;Paste code for filter function (from my previous answer).
   
