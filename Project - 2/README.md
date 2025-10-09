@@ -326,13 +326,17 @@ We are creating an automated system that continuously monitors EBS volumes, dete
 
 #### ▣ &ensp;&nbsp; EBSFilterLambda <br>
 
-- &nbsp;Go to **Lambda → Create function**
+- &nbsp;Go to **Lambda → Create function**<br>
   &nbsp;Click on <kbd>Create function</kbd> → Author from scratch
 - &nbsp;Basic information
     -  Function name - `EBSFilterLambda`
     -  Runtime - `Python 3.13`
-- Use an existing role →
-    -  Existing Role - `LambdaEBSRole`
       
+- &nbsp;Permission → Change default execution role →
+- &nbsp;Use an existing role →
+    -  Existing Role - `LambdaEBSRole`
+
+-  Click on <kbd>Create function</kbd>
+
 - &nbsp;Paste code for filter function (from my previous answer).
   
