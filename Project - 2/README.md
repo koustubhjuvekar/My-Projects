@@ -223,3 +223,11 @@ We are creating an automated system that continuously monitors EBS volumes, dete
 
 ### 5. &ensp; **Create IAM Role for Lambda** <br>
 
+#### ▣ &ensp;&nbsp; For Lambda (`LambdaEBSRole`) <br>
+
+  1. Go to **IAM → Roles → Create Role**
+     
+<img width="1366" height="643" alt="Image 5 - Go to IAM console " src="https://github.com/user-attachments/assets/5c525720-f073-44bc-b41c-08e7aad36ac9" />
+      <p align="center">
+        <i><strong>Image 5 :</strong> Go to IAM console</i>
+      </p>
