@@ -220,3 +220,6 @@ We are creating an automated system that continuously monitors EBS volumes, dete
   <i><strong>Image 4.5 :</strong> SNS - Email confirmed</i>
 </p>
 <br>
+
+### 5. &ensp; **Create IAM Role for Lambda** <br>
+
