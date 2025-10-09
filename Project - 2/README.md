@@ -379,7 +379,7 @@ We are creating an automated system that continuously monitors EBS volumes, dete
 </p>
 <br>
 
-- &nbsp;Paste code for filter function [_lambda_function.py_](./lambda_function.py)
+- &nbsp;Paste code for filter function [_lambda_function.py_]([./lambda_function.py](https://github.com/koustubhjuvekar/My-Projects/blob/068df218e72c4ba6b3b92c36f01ce8be55e30d1a/Project%20-%202/1.%20lambda_function.py))
   
 ```
 import boto3
