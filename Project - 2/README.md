@@ -246,7 +246,26 @@ We are creating an automated system that continuously monitors EBS volumes, dete
 
 -  Name, review and create
    -  Role details →
+   
       -  Role name - `LambdaEBSRole`
       -  Description - `Allows Lambda function to call AWS service on your behalf.`
     
 -  Click on <kbd>Create role</kbd>  
+
+<img width="1366" height="645" alt="Image 5 - IAM roles - create role page 1" src="https://github.com/user-attachments/assets/fbe7be36-4008-4b6e-b9be-bf4c14ce68a6" />
+<p align="center">
+  <i><strong>Image 5 :</strong> IAM roles - create role page 1 </i>
+</p>
+<br>
+
+<img width="1364" height="641" alt="Image 5 1 - IAM roles - create role page 3 - policies added previously" src="https://github.com/user-attachments/assets/662f7f5d-e6e3-4008-b5a6-2964d6cc3e71" />
+<p align="center">
+  <i><strong>Image 5.1 :</strong>  IAM roles - create role page 3 - policies added previously</i>
+</p>
+<br>
+
+<img width="1363" height="640" alt="Image 5 2 - IAM roles - create role page 3" src="https://github.com/user-attachments/assets/ecdcba8c-2092-4802-840a-05ac37608156" />
+<p align="center">
+  <i><strong>Image 5.2 :</strong>  IAM roles - IAM roles - create role page 3 </i>
+</p>
+<br>
