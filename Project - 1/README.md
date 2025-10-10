@@ -70,7 +70,7 @@ Create a simple test page
 sudo nano test.html
 ```
 Insert this code: (or you can add your html page for test)
-```bash
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
