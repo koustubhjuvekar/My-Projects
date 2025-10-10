@@ -34,7 +34,7 @@ This ensures:
 ## ⚙️ `Steps`  
 We are creating an automated system where **EC2 backups happen regularly in one region and automatically get replicated to another AWS region.** This way, even if the entire primary region fails (disaster, outage, natural calamity), we can still restore our EC2 instance from the backup stored safely in another region.
 
-### 1.&ensp;**Select Regions and Launch EC2 Instance**
+### 1. &ensp;**Select Regions and Launch EC2 Instance**
 <ul>
   <li>&emsp;1 primary AWS region (Europe - Frankfurt - eu-central-1)</li>
   <li>&emsp;1 replica AWS region (Canada - Central - ca-central-1)</li>
@@ -53,7 +53,7 @@ We are creating an automated system where **EC2 backups happen regularly in one 
 
 <br>
 
-### 2. 🖥️ **Install and Configure Nginx with Test Application**
+### 2. &ensp;**Install and Configure Nginx with Test Application**
 Install Nginx and set up a test HTML page:  
 ```bash
 sudo yum update -y
@@ -120,7 +120,7 @@ This is testing HTML page. Access it in Primary region http://18.192.68.28/test.
 </p><br>
 
 
-### 3.	🔒 **Create Backup Vaults**
+### 3. &ensp;**Create Backup Vaults**
 -	In console search, search for AWS Backup. Click on it.
   <img width="1366" height="643" alt="Image 3 Console search for AWS Backup" src="https://github.com/user-attachments/assets/f6b7535a-a04a-4624-9d0d-6085d8cd1adf" />
   <p align="center">
@@ -160,7 +160,7 @@ This is testing HTML page. Access it in Primary region http://18.192.68.28/test.
   </p><br>
 
 
-### 4.	📝 Create Backup Plan
+### 4. &ensp;**Create Backup Plan**
 In Frankfurt region (Primary Region), go to **Backup Plans** →  <kbd>Create Backup Plan</kbd> <br>
 -	**Start options →** <br>
 
@@ -245,7 +245,7 @@ Create a secondary vault in **Canada - Central (ca-central-1)**, in the same way
 -  **Advanced Backup settings**
 **Select** – `Windows VSS`, `Back up ACLs`, `Back up object tags`
 
-- **Click on**  <kbd>**Create plan**</kbd>
+-  **Click on**  <kbd>**Create plan**</kbd>
   
 **Backup plan is created!**
 
@@ -254,7 +254,7 @@ Create a secondary vault in **Canada - Central (ca-central-1)**, in the same way
     <i><strong>Image 4.8 : </strong> Backup plan created</i>
   </p><br>
 
-### 5.  🔗 **Assign Resources to the Plan**
+### 5. &ensp;**Assign Resources to the Plan**
 
 **General** **→**
 -  **Resource assignment name** – `MyResource1.` <br>
@@ -298,7 +298,7 @@ Here, backup details are displayed and under copy configuration **destination re
   </p><br>
 
 
-### 6.  📀 **Run an On-Demand Backup**
+### 6. &ensp;**Run an On-Demand Backup**
 
 In the backup plan, click <kbd>Create on-demand backup.</kbd> <br>
 
@@ -365,7 +365,7 @@ Again, go back to **jobs** option.
 
 <br>
 
-### 7.	🔍 **Verify Cross-Region Copy**
+### 7. &ensp;**Verify Cross-Region Copy**
 
 Go to **Jobs** → **Copy Jobs** in Frankfurt. <br>
 
@@ -387,7 +387,7 @@ That means backup is created in **Secondary region (Canada central).**
 
 <br>
 
-### 8.	♻️ **Test the Restore (Secondary region - Canada Region)**
+### 8. &ensp; **Test the Restore (Secondary region - Canada Region)**
 
 Go to **Canada region →** Open **Backup vault  →** **`SecondaryEC2VaultCanada`**. <br>
 
@@ -462,7 +462,7 @@ Cross-Region Backup Replication for EC2 using AWS Backup was implemented success
 
 <br>
 
-## ⚠️ `Issues & Resolutions`
+## ⛔ `Issues & Resolutions`
 
 **1.	Cross-Region Copy Delay:**
 
