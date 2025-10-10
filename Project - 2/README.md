@@ -17,7 +17,9 @@ This ensures: <br>
 <br>
 
 ## 📑 `Table of Contents`<br>
-- ⚙️ **Steps** <br>
+
+- &ensp;⚙️ **Steps**
+  
    &ensp;&ensp;  `1.` &ensp;Launch EC2 Instance with gp2 Volume<br>
    &ensp;&ensp;  `2.` &ensp;Add a tag for auto-conversion<br>
    &ensp;&ensp;  `3.` &ensp;Create DynamoDB table<br>
@@ -810,4 +812,155 @@ AWS EBS Conversion Service'''
 <br>
 
 ### 9. &ensp;**Testing & Validation** <br>
+
+-  &ensp;Before test -
+
+-  <img width="1366" height="643" alt="Image 9 - Testing before ss" src="https://github.com/user-attachments/assets/d205f993-585e-41ef-8845-462899057676" />
+<p align="center">
+  <i><strong>Image 9 :</strong> Screenshot before testing</i>
+</p>
+<br>
+
+-  Manually start **Step Function** execution :
+
+   -  &ensp;Go to Step Functions → State machines → `State machine: EBSConversionStateMachine`
+   -  &ensp;Click on <kbd>Start Execution</kbd>
+
+<img width="1366" height="640" alt="Image 9 1 - Step function - Execution start" src="https://github.com/user-attachments/assets/2f5e9603-c296-4538-94cf-c00ad9a87fb5" />
+<p align="center">
+  <i><strong>Image 9.1 :</strong> Step function - Execution start</i>
+</p>
+<br>
+
+-  Input: `{}`
+-  Click on <kbd>Start execution</kbd>
+-  Execution will be started. Wait until success.
+
+<img width="1366" height="644" alt="Image 9 2 - Step function - Execution start -Input" src="https://github.com/user-attachments/assets/3a023d50-4bc1-4d3f-a407-41e5a933b820" />
+<p align="center">
+  <i><strong>Image 9.2 :</strong> Step function - Execution start - Input</i>
+</p>
+<br>
+
+<img width="1366" height="641" alt="Image 9 3 - Step function - Execution succeeded" src="https://github.com/user-attachments/assets/233500dc-53b3-42d2-9c62-562eefd0dced" />
+<p align="center">
+  <i><strong>Image 9.3 :</strong> Step function - Execution start - Execution succeeded</i>
+</p>
+<br>
+
+-  After succession, graph view of execution will be displayed.
+
+<img width="1366" height="641" alt="Image 9 4 - Flowchart" src="https://github.com/user-attachments/assets/f6b3f24c-acff-4e29-a604-d7df13ea925e" />
+<p align="center">
+  <i><strong>Image 9.4 :</strong> Graph view</i>
+</p>
+<br>
+
+-  After run:
+
+   -  &ensp;Go to **DynamoDB → Items tab → Explore Items → Check for DynamoDB audit log** → _should see entry._
+     
+<img width="1366" height="640" alt="Image 9 5 - DynamoDB audit log" src="https://github.com/user-attachments/assets/0540b11e-a191-4de9-a2c3-436e96765fe8" />
+<p align="center">
+  <i><strong>Image 9.5 :</strong> DynamoDB audit log</i>
+</p>
+<br>
+
+<img width="1366" height="642" alt="Image 9 6 - Verify DynamoDB audit log" src="https://github.com/user-attachments/assets/152902dc-363e-4b11-90b5-93a7951fab1b" />
+<p align="center">
+  <i><strong>Image 9.6  :</strong> Verify DynamoDB audit log</i>
+</p>
+<br>
+
+-  To check execution step by step and CloudWatch logs showing Lambda output -
+
+   -  &ensp;Go to **CloudWatch → Log groups → /aws/lambda/EBSFilterLambda**
+
+<img width="1366" height="638" alt="Image 9 7A - Converting gpu2 to 3" src="https://github.com/user-attachments/assets/b4c1c82c-583f-4624-a169-851dc239d573" />
+<p align="center">
+ <i><strong>Image 9.7A  :</strong> CloudWatch → EBSFilterLambda → Converting gp2 to gp3</i>
+</p>
+<br>
+
+   -  &ensp;Go to **CloudWatch → Log groups → /aws/lambda/EBSModifyLambda**
+
+<img width="1366" height="641" alt="Image 9 7B - Converted gp2 to gp3" src="https://github.com/user-attachments/assets/b0a4cdd5-d922-41cc-8fcc-3a6776ab1f04" />
+<p align="center">
+ <i><strong>Image 9.7B  :</strong> CloudWatch → EBSModifyLambda → Converted gp2 to gp3</i>
+</p>
+<br>
+
+-  Step Function execution process → Here, scroll down and check for step column. <br>
+-  It will show **ModifyVolumes** Status.
+
+<img width="1366" height="640" alt="Image 9 8 - Converted gp2 to gp3 - step function execution" src="https://github.com/user-attachments/assets/466dc755-a4a1-4a6a-8271-6dfee5b13298" />
+<p align="center">
+ <i><strong>Image 9.8  :</strong> Converted gp2 to gp3 - step function execution</i>
+</p>
+<br>
+
+-  Now go to EC2 console → Elastic Block Store → Volumes
+-  Check for volume which was gp2 initially, now it is gp3, after conversion.
+<br>
+
+<img width="1366" height="644" alt="Image 9 9 - Converted gp2 to gp3 Volume page" src="https://github.com/user-attachments/assets/a610715e-309f-4015-8cba-dc092867b8a4" />
+<p align="center">
+ <i><strong>Image 9.9  :</strong> Converted gp2 to gp3 Volume </i>
+</p>
+<br>
+
+-  Created another gp2 volume for testing and attached to EC2 → `vol-005370e741329e7d3`
+-  After **Step Function Execution and complete conversion of volume, received email update of service SNS**
+
+<img width="1364" height="640" alt="Image 9 10 - Converted gp2 to gp3 Volume page - created another GPU2" src="https://github.com/user-attachments/assets/7a900c70-2c38-485f-bf9a-ad88080d32fd" />
+<p align="center">
+ <i><strong>Image 9.10  :</strong> Converted gp2 to gp3 Volume page - created another gp2 - <code>vol-005370e741329e7d3</code> </i>
+</p>
+<br>
+
+<img width="1366" height="645" alt="Image 9 11 - Converted gp2 to gp3 Volume page - created another GPU2 to check sns - recieve email" src="https://github.com/user-attachments/assets/847609c2-e8c7-4806-b46d-6c5fccaf520f" />
+<p align="center">
+ <i><strong>Image 9.11  :</strong> Converted gp2 to gp3 Volume page - created another gp2 to check SNS - recieve email for <code>vol-005370e741329e7d3</code> </i>
+</p>
+<br>
+
+-  DynamoDB logs
+
+<img width="1366" height="642" alt="Image 9 12 - Converted gp2 to gp3 Volume page - Dynamodb" src="https://github.com/user-attachments/assets/0551123d-7c75-4532-9d0d-b71649541509" />
+<p align="center">
+ <i><strong>Image 9.12  :</strong> Converted gp2 to gp3 Volume page - DynamoDB logs</i>
+</p>
+<br>
+
+-  Go to Volumes → All volumes are automatically converted to gp3.
+
+<img width="1366" height="639" alt="Image 9 13 - Converted all gp2 to gp3 " src="https://github.com/user-attachments/assets/37aa8481-448a-428e-9f0f-6262894c745b" />
+<p align="center">
+ <i><strong>Image 9.13  :</strong> Converted all gp2 to gp3 </i>
+</p>
+<br>
+
+-  Cloudwatch `log groups`
+
+<img width="1366" height="643" alt="Image 9 14 - Cloudwatch for both " src="https://github.com/user-attachments/assets/e60f4ded-cdde-4dc1-8b18-625c4b4b5caa" />
+<p align="center">
+ <i><strong>Image 9.14  :</strong> Cloudwatch for both groups </i>
+</p>
+<br>
+
+-  Cloudwatch log Events for `EBSModifyLambda`
+
+<img width="1366" height="642" alt="Image 9 15 - Cloudwatch for modify logd" src="https://github.com/user-attachments/assets/557418da-5796-44b0-8729-5448a007b8bf" />
+<p align="center">
+ <i><strong>Image 9.15  :</strong> Cloudwatch log Events for EBSModifyLambda </i>
+</p>
+<br>
+
+-  Cloudwatch log Events for `EBSFilterLambda`
+
+<img width="1366" height="640" alt="Image 9 16 - Cloudwatch for lambdafilter logd" src="https://github.com/user-attachments/assets/ed5b14db-e8cd-4fc8-a453-94da1b803647" />
+<p align="center">
+ <i><strong>Image 9.15  :</strong> Cloudwatch log Events for EBSFilterLambda </i>
+</p>
+<br>
 
