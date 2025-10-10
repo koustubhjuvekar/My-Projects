@@ -383,7 +383,7 @@ We are creating an automated system that continuously monitors EBS volumes, dete
 
 - &nbsp;Paste code for filter function [_lambda_function.py_](./1.lambda_function.py)
   
-```
+```python
 import boto3
 import os
 from datetime import datetime
@@ -499,7 +499,7 @@ def lambda_handler(event, context):
 
 - &nbsp;Paste code for modify function. [_lambda_function.py_](./2.lambda_function.py)
 
-```
+```python
 import boto3
 import json
 import os
@@ -670,7 +670,7 @@ AWS EBS Conversion Service'''
 
 -  &nbsp;Paste JSON code here. (update ARNs). [_EBSConversionStateMachine_](./3.EBSConversionStateMachine)
 
-```
+```json
 {
   "Comment": "State machine to convert gp2 volumes to gp3",
   "StartAt": "FilterVolumes",
