@@ -15,7 +15,8 @@ This ensures:
 <br>
 
 ## 📑 `Table of Contents`
-- ⚙️ **Steps**  
+- ⚙️&ensp;**Steps**
+
   &ensp;&ensp;  `1.` &ensp;Select Regions & Launch EC2  
   &ensp;&ensp;  `2.` &ensp;Install & Configure Nginx  
   &ensp;&ensp;  `3.` &ensp;Create Backup Vaults  
@@ -24,10 +25,10 @@ This ensures:
   &ensp;&ensp;  `6.` &ensp;Run On-Demand Backup   
   &ensp;&ensp;  `7.` &ensp;Verify Cross-Region Copy  
   &ensp;&ensp;  `8.` &ensp;Test Restore in Canada  
-- &ensp;✅  **Result**
-- &ensp;🌟  **Benefits**  
-- &ensp;⚠️  **Issues & Resolutions**  
-- &ensp;🔚  **End of Document** 
+- &ensp;✅&ensp;**Result**
+- &ensp;🌟&ensp;**Benefits**  
+- &ensp;⛔&ensp;**Issues & Resolutions**  
+- &ensp;🔚&ensp;**End of Document** 
   <br><br>
 
 ## ⚙️ `Steps`  
