@@ -734,3 +734,76 @@ AWS EBS Conversion Service'''
   <i><strong>Image 7.4 :</strong> Step Function created </i>
 </p>
 <br>
+
+### 8. &ensp;🌐 **Create EventBridge Rule** <br>
+
+-  &nbsp;Go to **EventBridge → Rules → <kbd>Create Rule</kbd>**
+  
+<img width="1366" height="642" alt="Image 8 - Eventbridge console" src="https://github.com/user-attachments/assets/3b5d1117-27a9-4b22-b6f0-a28ba2350198" />
+<p align="center">
+  <i><strong>Image 8 :</strong> Go to Eventbridge console </i>
+</p>
+<br>
+
+-  &nbsp;Define rule detail → Rule detail →
+  
+   -  &nbsp;Name - `EBSConversionDaily`
+   -  &nbsp;Event bus - `default`
+   -  &nbsp;Rule type - `Schedule`
+
+-  &nbsp;Click on <kbd>**Continue to create rule**</kbd>
+
+<img width="1366" height="641" alt="Image 8 1 - Eventbridge console - rule 1" src="https://github.com/user-attachments/assets/92e6b4dd-816e-41f5-8890-c9bd2fe67787" />
+<p align="center">
+  <i><strong>Image 8.1 :</strong> Eventbridge console - rule 1 </i>
+</p>
+<br>
+
+<img width="1366" height="590" alt="Image 8 2 - Create rule " src="https://github.com/user-attachments/assets/cb7c1e2d-7a49-464d-b140-72369c735146" />
+<p align="center">
+  <i><strong>Image 8.2 :</strong> Continue to create rule </i>
+</p>
+<br>
+
+-  &nbsp;Define schedule → Schedule pattern → <br>`A fine-grained schedule that runs at a specific time, such as 8:00 a.m. PST on the first Monday of every month`
+-  &nbsp;Cron Expression
+   -  `cron(0 2 * * ? *)` (runs daily at 2AM UTC).
+   &nbsp;_(Set time as per your requirement. If you want immidiate testing, set time accordingly.)_
+
+-  &nbsp;Next 10 triggers dates and timings will be displayed.
+-  &nbsp;Click on <kbd>Next</kbd>
+
+-  &nbsp;Select target(s) → Target 1 → Select `AWS service`
+  
+   -  &nbsp;Select a target - `Step Functions state machine`
+   -  &nbsp;State machine - `EBSConversionStateMachine`
+   -  &nbsp;Execution role - `Create a new role for this specific resource`
+   -  &nbsp;Role name - `EventBridgeInvokeStepFunctionRole1`
+   -  &nbsp;Click on <kbd>Next</kbd>
+
+-  &nbsp;Keep remaining options as it is. At the end, EventBridge Rule will be created.
+
+<img width="1366" height="639" alt="Image 8 3 - Create schedule" src="https://github.com/user-attachments/assets/9cddff6e-b672-426c-ae72-3622d8a2cb57" />
+<p align="center">
+  <i><strong>Image 8.3 :</strong> Continue to Create schedule </i>
+</p>
+<br>
+
+<img width="1366" height="637" alt="Image 8 4 - Set Target" src="https://github.com/user-attachments/assets/d3ebab05-1000-4379-be8e-fc3788cf332f" />
+<p align="center">
+  <i><strong>Image 8.4 :</strong> Continue to Set Target </i>
+</p>
+<br>
+
+<img width="1366" height="588" alt="Image 8 5 - Set Target IAM role" src="https://github.com/user-attachments/assets/ec191cb7-8402-441d-8f3e-7b3c453d9d3c" />
+<p align="center">
+  <i><strong>Image 8.5 :</strong> Continue to create IAM role EventBridgeInvokeStepFunctionRole1</i>
+</p>
+<br>
+
+<img width="1366" height="640" alt="Image 8 6 - Eventbridge rule created" src="https://github.com/user-attachments/assets/cb1ad908-94ff-4268-8836-ba7070ae30e6" />
+<p align="center">
+  <i><strong>Image 8.6 :</strong> Eventbridge rule created</i>
+</p>
+<br>
+
