@@ -387,7 +387,7 @@ That means backup is created in **Secondary region (Canada central).**
 
 <br>
 
-### 8. &ensp; **Test the Restore (Secondary region - Canada Region)**
+### 8. &ensp;**Test the Restore (Secondary region - Canada Region)**
 
 Go to **Canada region →** Open **Backup vault  →** **`SecondaryEC2VaultCanada`**. <br>
 
