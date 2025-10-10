@@ -19,13 +19,13 @@ This ensures: <br>
 ## 📑 `Table of Contents`<br>
 - ⚙️ **Steps** <br>
    &ensp;&ensp;  `1.` &ensp;Launch EC2 Instance with gp2 Volume<br>
-   &ensp;&ensp;  `2.` &ensp;Create DynamoDB Table<br>
-   &ensp;&ensp;  `3.` &ensp;Create SNS Topic & Subscription<br>
-   &ensp;&ensp;  `4.` &ensp;Create IAM Role for Lambda<br>
-   &ensp;&ensp;  `5.` &ensp;Deploy First Lambda – EBSFilterLambda<br>
-   &ensp;&ensp;  `6.` &ensp;Deploy Second Lambda – EBSModifyLambda<br>
-   &ensp;&ensp;  `7.` &ensp;Build Step Functions Workflow<br>
-   &ensp;&ensp;  `8.` &ensp;Schedule with EventBridge Rule<br>
+   &ensp;&ensp;  `2.` &ensp;Add a tag for auto-conversion<br>
+   &ensp;&ensp;  `3.` &ensp;Create DynamoDB table<br>
+   &ensp;&ensp;  `4.` &ensp;Create SNS topic<br>
+   &ensp;&ensp;  `5.` &ensp;Create IAM Role for Lambda and Step Function<br>
+   &ensp;&ensp;  `6.` &ensp;Create Lambda functions<br>
+   &ensp;&ensp;  `7.` &ensp;Create Step Function<br>
+   &ensp;&ensp;  `8.` &ensp;Create EventBridge Rule<br>
    &ensp;&ensp;  `9.` &ensp;Testing & Validation<br>
 - &ensp;✅ **Result**
 - &ensp;🌟 **Benefits**
@@ -40,7 +40,7 @@ This ensures: <br>
 We are creating an automated system that continuously monitors EBS volumes, detects gp2 volumes, and converts them to gp3 with built-in logging, alerts, and rollback for safe and efficient operations.
 <br>
 
-### 1. &ensp;🌐 **Launch an EC2 Instance with gp2 Volume** <br>
+### 1. &ensp;**Launch an EC2 Instance with gp2 Volume** <br>
 
 #### ▣ &ensp;&nbsp; Go to EC2 Console → Launch Instance <br>
 
@@ -48,11 +48,11 @@ We are creating an automated system that continuously monitors EBS volumes, dete
   - &nbsp;Navigate to **EC2 → Instances → Launch Instance**. <br>
   - &nbsp;Configure the instance with the following details: <br>
   
-    - **Name** - `EBS-Demo-Instance`
-    - **AMI** - `Amazon Linux 2 (Free Tier Eligible)`
-    - **Instance Type** - `t2.micro`
-    - **Key Pair** - Select existing or create a new one.
-    - **Storage** - keep default root volume `(usually gp3)`.
+    - &ensp;**Name** - `EBS-Demo-Instance`
+    - &ensp;**AMI** - `Amazon Linux 2 (Free Tier Eligible)`
+    - &ensp;**Instance Type** - `t2.micro`
+    - &ensp;**Key Pair** - Select existing or create a new one.
+    - &ensp;**Storage** - keep default root volume `(usually gp3)`.
   - &nbsp;Launch EC2.
 
 <img width="1366" height="641" alt="Image 1 - gpu 3 EC2 launching" src="https://github.com/user-attachments/assets/92bbd21b-2f99-4444-baba-387335c66039" />
@@ -71,9 +71,9 @@ We are creating an automated system that continuously monitors EBS volumes, dete
   - &nbsp;Availability Zone: same as your instance (important!).
   - &nbsp;Go to Elastic Block **Store → Volumes → Create Volume.** <br>
 
-    - **Volume Type** - `General Purpose SSD (gp2)`
-    - **Size** - `10 GiB`
-    - **Name** - `EBS-Demo-Volume` _(You can name volume from tag option.)_ <br>
+    - &ensp;**Volume Type** - `General Purpose SSD (gp2)`
+    - &ensp;**Size** - `10 GiB`
+    - &ensp;**Name** - `EBS-Demo-Volume` _(You can name volume from tag option.)_ <br>
     
 
 <img width="1366" height="640" alt="Image 1 2 - Elastic block storage - Volumes - Create new volume" src="https://github.com/user-attachments/assets/fc1daae1-ff3f-4f2f-8f6f-a3f299b53228" />
@@ -120,13 +120,13 @@ We are creating an automated system that continuously monitors EBS volumes, dete
 
 <br>
 
-### 2. &ensp;🌐 **Add a tag for auto-conversion** <br>
+### 2. &ensp; **Add a tag for auto-conversion** <br>
 
 - &nbsp;Click on gp2 volume → Scroll down → Click on `Tags` → Click on <kbd>Manage tags</kbd><br>
 - &nbsp;Tag the attached volume with: <br>
 
-    - **Key** - `AutoConvert`
-    - **Value** - `"true"`
+    - &ensp;**Key** - `AutoConvert`
+    - &ensp;**Value** - `"true"`
     
 <img width="1366" height="638" alt="Image 2 - Tagging Autoconvert=true" src="https://github.com/user-attachments/assets/0722e536-4be2-4810-974d-fe0e6ab86f8b" />
 <p align="center">
@@ -135,14 +135,14 @@ We are creating an automated system that continuously monitors EBS volumes, dete
 
 <br>
 
-### 3. &ensp;🌐 **Create DynamoDB table** <br>
+### 3. &ensp; **Create DynamoDB table** <br>
 
 - &nbsp;Go to **DynamoDB Console → Tables → Create Table** <br>
 
-  - **Table name** - `EBSConversionLog`
-  - **Partition key** - `VolumeId (String)`
-  - **Sort key** - `Timestamp (String)`
-  - **Billing** - `On-Demand`
+  - &ensp;**Table name** - `EBSConversionLog`
+  - &ensp;**Partition key** - `VolumeId (String)`
+  - &ensp;**Sort key** - `Timestamp (String)`
+  - &ensp;**Billing** - `On-Demand`
     
 - &nbsp;Click on <kbd>**Create table**</kbd>
 <br>
@@ -164,7 +164,7 @@ We are creating an automated system that continuously monitors EBS volumes, dete
 
 <br>
 
-### 4. &ensp;🌐 **Create SNS topic** <br>
+### 4. &ensp; **Create SNS topic** <br>
 
 - &nbsp;Go to **SNS Console** → Topics → Create Topic**
 
@@ -181,9 +181,9 @@ We are creating an automated system that continuously monitors EBS volumes, dete
 
 - &nbsp;Click on → **Create Topic**
   
-  - **Type** - `Standard`
-  - **Name** - `EBSConversionTopic`
-  - **Display name - _optional_** - `EBSConversionTopic`
+  - &ensp;**Type** - `Standard`
+  - &ensp;**Name** - `EBSConversionTopic`
+  - &ensp;**Display name - _optional_** - `EBSConversionTopic`
     
 - &nbsp;Click on → <kbd>Create topic</kbd> <br>
 
@@ -195,9 +195,9 @@ We are creating an automated system that continuously monitors EBS volumes, dete
 
 - &nbsp;Click on **Subscriptions** →  click on <kbd>**Create a subscription**</kbd>
 
-  - **Topic ARN** - `arn:aws:sns:ap-northeast-3:494341429801:EBSConversionTopic` _(It’s the ARN of SNS topic.)_
-  - **Protocol** - `Email`
-  - **Endpoint** - `koustubhjuvekar07@gmail.com`
+  - &ensp;**Topic ARN** - `arn:aws:sns:ap-northeast-3:494341429801:EBSConversionTopic` _(It’s the ARN of SNS topic.)_
+  - &ensp;**Protocol** - `Email`
+  - &ensp;**Endpoint** - `koustubhjuvekar07@gmail.com`
 
 - &nbsp;Click on <kbd>Create subscription</kbd>. <br>
   
@@ -225,11 +225,11 @@ We are creating an automated system that continuously monitors EBS volumes, dete
 
 #### ▣ &ensp;&nbsp; For Lambda (`LambdaEBSRole`) <br>
 
--  &nbsp;Go to **IAM → Roles → Create Role**
+- Go to **IAM → Roles → Create Role**
   
-   -  Trusted entity type - `AWS service`
-   -  Use case → Service or use case - `Lambda`
-   -  click on <kbd>Next</kbd>
+   -  &ensp;**Trusted entity type** - `AWS service`
+   -  &ensp;**Use case** → Service or use case - `Lambda`
+   -  &ensp;**Click on** <kbd>Next</kbd>
      
 <img width="1366" height="643" alt="Image 5 - Go to IAM console " src="https://github.com/user-attachments/assets/5c525720-f073-44bc-b41c-08e7aad36ac9" />
 <p align="center">
@@ -244,18 +244,18 @@ We are creating an automated system that continuously monitors EBS volumes, dete
 <br>
 
 -  Add Permissions → Permissions policies (1078) → Select following permissions(Search in box)
-   -  `AmazonDynamoDBFullAccess`
-   -  `AmazonEC2FullAccess`
-   -  `AmazonSNSFullAccess`
-   -  `CloudWatchLogsFullAccess`
+   -  &ensp;`AmazonDynamoDBFullAccess`
+   -  &ensp;`AmazonEC2FullAccess`
+   -  &ensp;`AmazonSNSFullAccess`
+   -  &ensp;`CloudWatchLogsFullAccess`
 
 -  Click on <kbd>Create role</kbd>
 
 -  Name, review and create
-   -  Role details →
+   -  &ensp;Role details →
    
-      -  Role name - `LambdaEBSRole`
-      -  Description - `Allows Lambda function to call AWS service on your behalf.`
+      -  &ensp;Role name - `LambdaEBSRole`
+      -  &ensp;Description - `Allows Lambda function to call AWS service on your behalf.`
     
 -  Click on <kbd>Create role</kbd>  
 
@@ -273,13 +273,13 @@ We are creating an automated system that continuously monitors EBS volumes, dete
 <br>
 
 
-#### ▣ &ensp;&nbsp; For Step Functions (`StepFunctionsEBSRole`) <br>
+#### ▣ &ensp;&nbsp;For Step Functions (`StepFunctionsEBSRole`) <br>
 
-- &nbsp;Go to **IAM → Roles → Create Role**
+-  Go to **IAM → Roles → Create Role**
   
-  -  Trusted entity type - `AWS service`
-  -  Use case → Service or use case - `Step Functions`
-  -  click on <kbd>Next</kbd>
+   -  &ensp;**Trusted entity type** - `AWS service`
+   -  &ensp;**Use case** → Service or use case - `Step Functions`
+   -  &ensp;**Click on** <kbd>Next</kbd>
 
 -  Add Permissions → Permissions policies (1078)
    -  →  Click on `Set permissions boundary - optional`
@@ -287,10 +287,10 @@ We are creating an automated system that continuously monitors EBS volumes, dete
      -   Search and select `CloudWatchLogsFullAccess` `AWSLambdaRole` policies.
 
 -  Name, review and create
-   -  Role details →
+   -  &ensp;Role details →
    
-      -  Role name - `StepFunctionsEBSRole`
-      -  Description - `Allows Step Functions function to call AWS service on your behalf.`
+      -  &ensp;Role name - `StepFunctionsEBSRole`
+      -  &ensp;Description - `Allows Step Functions function to call AWS service on your behalf.`
     
 -  Click on <kbd>Create role</kbd>
 
@@ -324,11 +324,11 @@ We are creating an automated system that continuously monitors EBS volumes, dete
 </p>
 <br>
 
-### 6. &ensp;🌐 **Create Lambda functions** <br>
+### 6. &ensp; **Create Lambda functions** <br>
 
 #### ▣ &ensp;&nbsp; EBSFilterLambda <br>
 
-- &nbsp;Go to **Lambda → Create function**<br>
+- Go to **Lambda → Create function**<br>
 
 <img width="1366" height="640" alt="Image 6 - Go to Lambda console" src="https://github.com/user-attachments/assets/20e9bf33-6b51-4801-8aa1-2933151d0e67" />
 <p align="center">
@@ -336,16 +336,16 @@ We are creating an automated system that continuously monitors EBS volumes, dete
 </p>
 <br>
 
-- &nbsp;Click on <kbd>Create function</kbd> → Author from scratch
-- &nbsp;Basic information
-    -  Function name - `EBSFilterLambda`
-    -  Runtime - `Python 3.13`
+- Click on <kbd>Create function</kbd> → Author from scratch
+- Basic information
+    -  &ensp;Function name - `EBSFilterLambda`
+    -  &ensp;Runtime - `Python 3.13`
       
-- &nbsp;Permission → Change default execution role →
-- &nbsp;Use an existing role →
-    -  Existing Role - `LambdaEBSRole`
+- Permission → Change default execution role →
+- Use an existing role →
+    -  &ensp;Existing Role - `LambdaEBSRole`
 
-- &nbsp;Click on <kbd>Create function</kbd>
+- Click on <kbd>Create function</kbd>
 
 <img width="1366" height="643" alt="Image 6 1 - Create FUnction - Options" src="https://github.com/user-attachments/assets/3e9d88ad-3d57-416b-81f2-bb51227fc90a" />
 <p align="center">
@@ -359,14 +359,14 @@ We are creating an automated system that continuously monitors EBS volumes, dete
 </p>
 <br>
 
-- &nbsp;Add environment variable →
+- Add environment variable →
   
-  -  Key - `DDB_TABLE`
-  -  Value - `EBSConversionLog`
+  -  &ensp;**Key** - `DDB_TABLE`
+  -  &ensp;**Value** - `EBSConversionLog`
     
-- &nbsp;Click on <kbd>Save</kbd>
+- Click on <kbd>Save</kbd>
 
-  &nbsp;It will be as `DDB_TABLE = EBSConversionLog`
+  It will be as `DDB_TABLE = EBSConversionLog`
 
 
 <img width="1366" height="595" alt="Image 6 3 - Add environment variable" src="https://github.com/user-attachments/assets/efcaeaee-c36c-4add-8f01-e909e7a63efe" />
@@ -381,7 +381,7 @@ We are creating an automated system that continuously monitors EBS volumes, dete
 </p>
 <br>
 
-- &nbsp;Paste code for filter function [_lambda_function.py_](./1.lambda_function.py)
+- Paste code for filter function [_lambda_function.py_](./1.lambda_function.py)
   
 ```python
 import boto3
@@ -448,17 +448,19 @@ def lambda_handler(event, context):
 
 #### ▣ &ensp;&nbsp; EBSModifyLambda <br>
 
-- &nbsp;Go to **Lambda → Create function**
-- &nbsp;Click on <kbd>Create function</kbd> → Author from scratch
-- &nbsp;Basic information
-    -  Function name - `EBSModifyLambda`
-    -  Runtime - `Python 3.13`
+- Go to **Lambda → Create function**
+- Click on <kbd>Create function</kbd> → Author from scratch
+- Basic information
+  
+    -  &ensp;**Function name** - `EBSModifyLambda`
+    -  &ensp;**Runtime** - `Python 3.13`
       
-- &nbsp;Permission → Change default execution role →
-- &nbsp;Use an existing role →
-    -  Existing Role - `LambdaEBSRole`
+- Permission → Change default execution role →
+- Use an existing role →
+  
+    -  &ensp;**Existing Role** - `LambdaEBSRole`
 
-- &nbsp;Click on <kbd>Create function</kbd>
+- Click on <kbd>Create function</kbd>
 
 <img width="1366" height="638" alt="Image 6 6B - Create FUnction - EBSModifyLambda" src="https://github.com/user-attachments/assets/f435e2b2-6bf4-4438-9060-66d10d17d125" />
 <p align="center">
@@ -472,18 +474,18 @@ def lambda_handler(event, context):
 </p>
 <br>
 
-- &nbsp;Add environment variable →
+- Add environment variable →
   
-  -  Key - `DDB_TABLE`
-  -  Value - `EBSConversionLog`
-  -  Key -  `SNS_TOPIC_ARN`
-  -  Value - `arn:aws:sns:ap-northeast-3:494341429801:EBSConversionTopic`
+  -  &ensp;**Key -** `DDB_TABLE`
+  -  &ensp;**Value -** `EBSConversionLog`
+  -  &ensp;**Key -**  `SNS_TOPIC_ARN`
+  -  &ensp;**Value -** `arn:aws:sns:ap-northeast-3:494341429801:EBSConversionTopic`
     
-- &nbsp;Click on <kbd>Save</kbd>
+- Click on <kbd>Save</kbd>
 
-  &nbsp;It will be as
-  -  `DDB_TABLE = EBSConversionLog`
-  -  `SNS_TOPIC_ARN = arn:aws:sns:ap-northeast-3:494341429801:EBSConversionTopic`
+  It will be as
+  -  &ensp;`DDB_TABLE = EBSConversionLog`
+  -  &ensp;`SNS_TOPIC_ARN = arn:aws:sns:ap-northeast-3:494341429801:EBSConversionTopic`
   
 <img width="1366" height="640" alt="Image 6 8B - Add environment variable" src="https://github.com/user-attachments/assets/f5301e93-cb8c-415b-b7e7-8f53d7b7988c" />
 <p align="center">
@@ -497,7 +499,7 @@ def lambda_handler(event, context):
 </p>
 <br>
 
-- &nbsp;Paste code for modify function. [_lambda_function.py_](./2.lambda_function.py)
+- Paste code for modify function. [_lambda_function.py_](./2.lambda_function.py)
 
 ```python
 import boto3
@@ -619,9 +621,9 @@ AWS EBS Conversion Service'''
 </p>
 <br>
 
--  &nbsp;Go to **Configuration** → General Configuration → Click on <kbd>Edit</kbd> → 
--  &nbsp;Scroll down → Set **Timeout** - `5 min 0 sec`
--  &nbsp;Click on <kbd>Save</kbd>
+-  Go to **Configuration** → General Configuration → Click on <kbd>Edit</kbd> → 
+-  Scroll down → Set **Timeout** - `5 min 0 sec`
+-  Click on <kbd>Save</kbd>
 
 <img width="1366" height="644" alt="Image 6 11B - Edit Timeout = 5min" src="https://github.com/user-attachments/assets/d58825d0-fb4b-4aba-9f2d-c700e74d8900" />
 <p align="center">
@@ -636,9 +638,9 @@ AWS EBS Conversion Service'''
 <br>
 
 
-### 7. &ensp;🌐 **Create Step Function** <br>
+### 7. &ensp;**Create Step Function** <br>
 
--  &nbsp;Go to **Step Functions → State Machines → Create State Machine**
+-  Go to **Step Functions → State Machines → Create State Machine**
 
 <img width="1366" height="646" alt="Image 7 - Step Function" src="https://github.com/user-attachments/assets/d85dfee9-bfa7-4fe2-891b-b20b4b04eca1" />
 <p align="center">
@@ -646,7 +648,7 @@ AWS EBS Conversion Service'''
 </p>
 <br>
 
--  &nbsp;Click on <kbd>Create your own</kbd>
+-  Click on <kbd>Create your own</kbd>
 
 <img width="1366" height="641" alt="Image 7 1 - Step Function - Create your own" src="https://github.com/user-attachments/assets/ee5324ea-0265-45a5-b9fb-f4de6b2dfb33" />
 <p align="center">
@@ -654,11 +656,11 @@ AWS EBS Conversion Service'''
 </p>
 <br>
 
--  &nbsp;**Create State Machine**
+-  **Create State Machine**
 
-   -  Step Machine name - `EBSConversionStateMachine`
-   -  Step Machine type - `Standard`
-   -  Click on <kbd>Continue</kbd>
+   -  &ensp;**Step Machine name** - `EBSConversionStateMachine`
+   -  &ensp;**Step Machine type** - `Standard`
+   -  &ensp;**Click on** <kbd>Continue</kbd>
 
 <img width="1366" height="644" alt="Image 7 1 - Step Function - Creating function" src="https://github.com/user-attachments/assets/5cac791e-faca-4858-ae0c-7a1856c6e67e" />
 <p align="center">
@@ -666,9 +668,9 @@ AWS EBS Conversion Service'''
 </p>
 <br>
 
--  &nbsp;Click on <kbd>{} Code</kbd>
+-  Click on <kbd>{} Code</kbd>
 
--  &nbsp;Paste JSON code here. (update ARNs). [_EBSConversionStateMachine_](./3.EBSConversionStateMachine)
+-  Paste JSON code here. (update ARNs). [_EBSConversionStateMachine_](./3.EBSConversionStateMachine)
 
 ```json
 {
@@ -715,13 +717,13 @@ AWS EBS Conversion Service'''
 <br>
 
 
--  &nbsp;Click on <kbd>{} Config</kbd> → Permission →
+-  Click on <kbd>{} Config</kbd> → Permission →
   
-   -  Execution role →
+   -  &ensp;Execution role →
      
       -  &nbsp;Click on Drop down list → Choose and existing role → Select `StepFunctionsEBSRole`
 
--  &nbsp;Click on <kbd>Create</kbd>
+-  Click on <kbd>Create</kbd>
 
 <img width="1366" height="643" alt="Image 7 3 - Step Function - Configuration - Execution rule" src="https://github.com/user-attachments/assets/0047eb9e-05f6-42b9-9599-b3e51ba10b87" />
 <p align="center">
@@ -735,9 +737,9 @@ AWS EBS Conversion Service'''
 </p>
 <br>
 
-### 8. &ensp;🌐 **Create EventBridge Rule** <br>
+### 8. &ensp;**Create EventBridge Rule** <br>
 
--  &nbsp;Go to **EventBridge → Rules → <kbd>Create Rule</kbd>**
+-  Go to **EventBridge → Rules → <kbd>Create Rule</kbd>**
   
 <img width="1366" height="642" alt="Image 8 - Eventbridge console" src="https://github.com/user-attachments/assets/3b5d1117-27a9-4b22-b6f0-a28ba2350198" />
 <p align="center">
@@ -745,13 +747,13 @@ AWS EBS Conversion Service'''
 </p>
 <br>
 
--  &nbsp;Define rule detail → Rule detail →
+-  Define rule detail → Rule detail →
   
-   -  &nbsp;Name - `EBSConversionDaily`
-   -  &nbsp;Event bus - `default`
-   -  &nbsp;Rule type - `Schedule`
+   -  &nbsp;**Name **- `EBSConversionDaily`
+   -  &nbsp;**Event bus** - `default`
+   -  &nbsp;**Rule type** - `Schedule`
 
--  &nbsp;Click on <kbd>**Continue to create rule**</kbd>
+-  Click on <kbd>**Continue to create rule**</kbd>
 
 <img width="1366" height="641" alt="Image 8 1 - Eventbridge console - rule 1" src="https://github.com/user-attachments/assets/92e6b4dd-816e-41f5-8890-c9bd2fe67787" />
 <p align="center">
@@ -765,23 +767,23 @@ AWS EBS Conversion Service'''
 </p>
 <br>
 
--  &nbsp;Define schedule → Schedule pattern → <br>`A fine-grained schedule that runs at a specific time, such as 8:00 a.m. PST on the first Monday of every month`
--  &nbsp;Cron Expression
-   -  `cron(0 2 * * ? *)` (runs daily at 2AM UTC).
-   &nbsp;_(Set time as per your requirement. If you want immidiate testing, set time accordingly.)_
+-  Define schedule → Schedule pattern → <br>`A fine-grained schedule that runs at a specific time, such as 8:00 a.m. PST on the first Monday of every month`
+-  Cron Expression
+   -  &ensp;`cron(0 2 * * ? *)` (runs daily at 2AM UTC).
+   _(Set time as per your requirement. If you want immidiate testing, set time accordingly.)_
 
--  &nbsp;Next 10 triggers dates and timings will be displayed.
--  &nbsp;Click on <kbd>Next</kbd>
+-  Next 10 triggers dates and timings will be displayed.
+-  Click on <kbd>Next</kbd>
 
--  &nbsp;Select target(s) → Target 1 → Select `AWS service`
+- Select target(s) → Target 1 → Select `AWS service`
   
-   -  &nbsp;Select a target - `Step Functions state machine`
-   -  &nbsp;State machine - `EBSConversionStateMachine`
-   -  &nbsp;Execution role - `Create a new role for this specific resource`
-   -  &nbsp;Role name - `EventBridgeInvokeStepFunctionRole1`
-   -  &nbsp;Click on <kbd>Next</kbd>
+   -  &nbsp;**Select a target** - `Step Functions state machine`
+   -  &nbsp;**State machine** - `EBSConversionStateMachine`
+   -  &nbsp;**Execution role** - `Create a new role for this specific resource`
+   -  &nbsp;**Role name** - `EventBridgeInvokeStepFunctionRole1`
+   -  &nbsp;**Click on** <kbd>Next</kbd>
 
--  &nbsp;Keep remaining options as it is. At the end, EventBridge Rule will be created.
+-  Keep remaining options as it is. At the end, EventBridge Rule will be created.
 
 <img width="1366" height="639" alt="Image 8 3 - Create schedule" src="https://github.com/user-attachments/assets/9cddff6e-b672-426c-ae72-3622d8a2cb57" />
 <p align="center">
@@ -806,4 +808,6 @@ AWS EBS Conversion Service'''
   <i><strong>Image 8.6 :</strong> Eventbridge rule created</i>
 </p>
 <br>
+
+### 9. &ensp;**Testing & Validation** <br>
 
