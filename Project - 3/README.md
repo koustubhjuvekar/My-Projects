@@ -199,7 +199,52 @@ Now go to your local computer install rclone.
 </p>
 <br>
 
-Download as per your OS.
+- &nbsp;Download as per your OS.
+- &nbsp;Under Windows, download the ZIP (64-bit version).
+- &nbsp;Extract it, you will see a folder like:
+
+<img width="1366" height="729" alt="f699bf73-0dbe-48e9-b4a4-149baf6fcda2" src="https://github.com/user-attachments/assets/d9c34e6e-ca47-4166-a040-3dc420d5b637" />
+<p align="center">
+  <i><strong>Image 7 :</strong> rclone folder after extraction </i>
+</p>
+<br>
+
+- &nbsp;Open Command Prompt in that folder
+  
+  -	Hold `Shift + Right-click` inside the folder → choose
+  -	Open **PowerShell window** here or Open **Command Prompt** here.
+
+<img width="1366" height="728" alt="468a1a42-92c2-4f8f-a8c4-9e6baf7be222" src="https://github.com/user-attachments/assets/6514ae55-6031-4302-a26c-521395014b29" />
+<p align="center">
+  <i><strong>Image 8 :</strong> Open PowerShell in rclone folder  </i>
+</p>
+<br>
+
+- &nbsp;Now you can directly use:
+
+  -  &nbsp;Now **copy** or **copied rclone command from EC2 console**, paste it here…
+
+  ```bash
+  .\rclone authorize "drive" "eyJzY29wZSI6ImRyaXZlIn0"
+  ```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
