@@ -108,6 +108,7 @@ Follow the below steps to set up, configure, and test the entire automation from
    ```
    
  - &nbsp;All should show version numbers.
+<br>
 
 ### 4. &ensp;**Install & configure rclone (google drive)** <br>
 
@@ -222,14 +223,24 @@ Now go to your local computer install rclone.
 
 - &nbsp;Now you can directly use:
 
-  -  &nbsp;Now **copy** or **copied rclone command from EC2 console**, paste it here…
+  -  &nbsp;Now **copy** or **copied rclone command from EC2 console**, paste it here… (add `.\` before copied command)
+  <br>
 
   ```bash
   .\rclone authorize "drive" "eyJzY29wZSI6ImRyaXZlIn0"
   ```
 
+<img width="1366" height="730" alt="42580446-90ea-4d9f-8f19-876921b55c52" src="https://github.com/user-attachments/assets/5ac792bc-414c-429a-ac5d-6a236169bd65" />
+<p align="center">
+  <i><strong>Image 9 :</strong> PowerShell for rclone sign in  </i>
+</p>
+<br>
 
-
+ - &nbsp;Authorize in browser
+   
+   - &nbsp;A Google login window will open.
+   - &nbsp;Log in → Click Allow till end.
+   - &nbsp;It will show Successful message.
 
 
 
