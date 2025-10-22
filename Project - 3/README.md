@@ -85,3 +85,32 @@ Follow the below steps to set up, configure, and test the entire automation from
 </p>
 <br>
 
+### 3. &ensp;**System preparation** <br>
+
+ - &nbsp;Update packages
+   
+   ```bash
+   sudo apt update && sudo apt upgrade -y
+   ```
+   
+ - &nbsp;Install required tools
+
+   ```bash
+   sudo apt install -y zip unzip curl jq cron
+   ```
+
+ - &nbsp;Verify installations
+
+   ```bash
+   zip --version
+   jq --version
+   curl --version
+   ```  
+
+
+
+
+
+
+
+
