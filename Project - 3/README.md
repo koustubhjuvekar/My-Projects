@@ -152,26 +152,26 @@ Follow the below steps to set up, configure, and test the entire automation from
 
 - &nbsp;Keep pressing enter until…
 
-```bash
+  ```bash
+  
+  Edit advanced config?
+  y) Yes
+  n) No (default)
+  
+  y/n> n
+  ```
+  <br>
 
-Edit advanced config?
-y) Yes
-n) No (default)
-
-y/n> n
-```
-<br>
-
-```bash
-Use web browser to automatically authenticate rclone with remote?
- * Say Y if the machine running rclone has a web browser you can use
- * Say N if running rclone on a (remote) machine without web browser access
-If not sure try Y. If Y failed, try N.
-
-y) Yes (default)
-n) No
-y/n> n
-```
+  ```bash
+  Use web browser to automatically authenticate rclone with remote?
+   * Say Y if the machine running rclone has a web browser you can use
+   * Say N if running rclone on a (remote) machine without web browser access
+  If not sure try Y. If Y failed, try N.
+  
+  y) Yes (default)
+  n) No
+  y/n> n
+  ```
 
 <img width="1366" height="429" alt="257f18a9-61d6-43b1-94c5-4bc177bbc5a5" src="https://github.com/user-attachments/assets/c7e4ebca-5b8a-4183-9edc-a08dfea9efac" />
 <p align="center">
@@ -181,9 +181,9 @@ y/n> n
 
 - &nbsp;Now copy rclone command given there
 
-```bash
-rclone authorize "drive" "eyJzY29wZSI6ImRyaXZlIn0"
-```
+  ```bash
+  rclone authorize "drive" "eyJzY29wZSI6ImRyaXZlIn0"
+  ```
 &nbsp;**wait here and keep as it is…**
 
 ---
@@ -264,8 +264,10 @@ Go back to PowerShell window **where you run rclone command. **
 
 - &nbsp;Copy the result code generated there.
 <br>
+
 ```bash
-eyJ0b2tlbiI6IntcImFjY2Vzc190b2tlblwiOlwieWEyOS5hMEFRUV9CRFFfVDE1MmJBV09PSEhOYlN5QXNuVUhucm9VOElaczJDNmxWWFpiZ1hkcjc3Q1FULWdvVFlMQnBHX0o2NHpRanlmcHI4VFMycklGcDlLbjdLUXZlUTRZcFcwdmE0T2QzT1MzTC1BREoySnFScUdPNHNiX3E5MXNnaW0yY3lwSFdDcHRESkFUb1NtYlJZVFhlOG9RUUlWTjRLX3VuaVE4Qy1oVWRMSTNqdlphSE5CdUZUN3R5U2E3ZGpGMUNfRXhlSDBhQ2dZS0FXY1NBUkVTRlFIR1gyTWkyb2Q4ZnJYVC1YNW9Pb2VmWWtQSDhnMDIwNlwiLFwidG9rZW5fdHlwZVwiOlwiQmVhcmVyXCIsXCJyZWZyZXNoX3Rva2VuXCI6XCIxLy8wZ0lXbVpGOFJsQm1hQ2dZSUFSQUFHQkFTTndGLUw5SXJNbHFnXzV1ZmJJNU9HbUZoZTZEUnRHVndhd3VMNzZsT0J5eTM2U0dLWUlxUzg2ZnVCeGlnc0RoVHNhYTU3Vk1HZkRBXCIsXCJleHBpcnlcIjpcIjIwMjUtMTAtMjFUMjE6MzQ6MjYuNTE5NjA1NyswNTozMFwiLFwiZXhwaXJlc19pblwiOjM1OTl9In0
+  eyJ0b2tlbiI6IntcImFjY2Vzc190b2tlblwiOlwieWEyOS5hMEFRUV9CRFFfVDE1MmJBV09PSEhOYlN5QXNuVUhucm9VOElaczJDNmxWWFpiZ1hkcjc3Q1FULWdvVFlMQnBHX0o2NHpRanlmcHI4VFMycklGcDlLbjdLUXZlUTRZcFcwdmE0T2QzT1MzTC1BREoySnFScUdPNHNiX3E5MXNnaW0yY3lwSFdDcHRESkFUb1NtYlJZVFhlOG9RUUlWTjRLX3VuaVE4Qy1oVWRMSTNqdlphSE5CdUZUN3R5U2E3ZGpGMUNfRXhlSDBhQ2dZS0FXY1NBUkVTRlFIR1gyTWkyb2Q4ZnJYVC1YNW9Pb2VmWWtQSDhnMDIwNlwiLFwidG9rZW5fdHlwZVwiOlwiQmVhcmVyXCIsXCJyZWZyZXNoX3Rva2VuXCI6XCIxLy8wZ0lXbVpGOFJsQm1hQ2dZSUFSQUFHQkFTTndGLUw5SXJNbHFnXzV1ZmJJNU9HbUZoZTZEUnRHVndhd3VMNzZsT0J5eTM2U0dLWUlxUzg2ZnVCeGlnc0RoVHNhYTU3Vk1HZkRBXCIsXCJleHBpcnlcIjpcIjIwMjUtMTAtMjFUMjE6MzQ6MjYuNTE5NjA1NyswNTozMFwiLFwiZXhwaXJlc19pblwiOjM1OTl9In0
+
 ```
 
 and now **go back to EC2 console PowerShell!**
