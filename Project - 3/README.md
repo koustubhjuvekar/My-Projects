@@ -221,7 +221,7 @@ Now go to your local computer install rclone.
 </p>
 <br>
 
-- &nbsp;Now you can directly use:
+- &nbsp;**Now you can directly use:**
 
   -  &nbsp;Now **copy** or **copied rclone command from EC2 console**, paste it here… (add `.\` before copied command)
   <br>
@@ -236,19 +236,39 @@ Now go to your local computer install rclone.
 </p>
 <br>
 
- - &nbsp;Authorize in browser
+ - &nbsp;**Authorize in browser**
    
    - &nbsp;A Google login window will open.
-   - &nbsp;Log in → Click Allow till end.
-   - &nbsp;It will show Successful message.
+   - &nbsp;Log in → Click `Allow` till end.
+   - &nbsp;It will show **Successful** message!
 
+<img width="1366" height="729" alt="b3dbdb4a-9d99-4f54-99f8-cd7b044f2341" src="https://github.com/user-attachments/assets/a969b3f8-f8b8-4660-bf33-4729ea37a666" />
+<p align="center">
+  <i><strong>Image 10 :</strong> Sign in window for rclone  </i>
+</p>
+<br>
 
+<img width="1366" height="728" alt="ebf296d9-b7e3-47b2-810a-e7867dae3ccf" src="https://github.com/user-attachments/assets/c7877b8d-f55a-4ffc-995e-6c09f99129dd" />
+<p align="center">
+  <i><strong>Image 11 :</strong> Sign in Successful  </i>
+</p>
+<br>
 
+Go back to PowerShell window **where you run rclone command. **
 
+<img width="1366" height="729" alt="2efe92d6-3cac-4959-b4c8-9be825006b8a" src="https://github.com/user-attachments/assets/d432e2d1-cdad-46fd-9532-b96c27bafbe9" />
+<p align="center">
+  <i><strong>Image 12 :</strong> Result code generated for remote machine  </i>
+</p>
+<br>
 
+ - &nbsp;Copy the result code generated there.
+<br>
+```bash
+eyJ0b2tlbiI6IntcImFjY2Vzc190b2tlblwiOlwieWEyOS5hMEFRUV9CRFFfVDE1MmJBV09PSEhOYlN5QXNuVUhucm9VOElaczJDNmxWWFpiZ1hkcjc3Q1FULWdvVFlMQnBHX0o2NHpRanlmcHI4VFMycklGcDlLbjdLUXZlUTRZcFcwdmE0T2QzT1MzTC1BREoySnFScUdPNHNiX3E5MXNnaW0yY3lwSFdDcHRESkFUb1NtYlJZVFhlOG9RUUlWTjRLX3VuaVE4Qy1oVWRMSTNqdlphSE5CdUZUN3R5U2E3ZGpGMUNfRXhlSDBhQ2dZS0FXY1NBUkVTRlFIR1gyTWkyb2Q4ZnJYVC1YNW9Pb2VmWWtQSDhnMDIwNlwiLFwidG9rZW5fdHlwZVwiOlwiQmVhcmVyXCIsXCJyZWZyZXNoX3Rva2VuXCI6XCIxLy8wZ0lXbVpGOFJsQm1hQ2dZSUFSQUFHQkFTTndGLUw5SXJNbHFnXzV1ZmJJNU9HbUZoZTZEUnRHVndhd3VMNzZsT0J5eTM2U0dLWUlxUzg2ZnVCeGlnc0RoVHNhYTU3Vk1HZkRBXCIsXCJleHBpcnlcIjpcIjIwMjUtMTAtMjFUMjE6MzQ6MjYuNTE5NjA1NyswNTozMFwiLFwiZXhwaXJlc19pblwiOjM1OTl9In0
+```
 
-
-
+and now **go back to EC2 console PowerShell!**
 
 
 
