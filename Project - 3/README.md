@@ -66,4 +66,22 @@ Follow the below steps to set up, configure, and test the entire automation from
 - &nbsp;Launch instance!
 
 <img width="1366" height="642" alt="Ec2" src="https://github.com/user-attachments/assets/31ca166f-e52a-4419-91f2-285160064374" />
+<p align="center">
+  <i><strong>Image 1 :</strong> EC2 launched (Default) </i>
+</p>
+<br>
+
+### 2. &ensp;**Connect to EC2** <br>
+
+ - &nbsp;Open PowerShell or any SSHclient. Connect to EC2.
+
+   ```bash
+   &nbsp;ssh -i "C:\Users\koust\Downloads\BackupAutomation.pem" ubuntu@13.215.185.143
+   ```
+   
+<img width="1366" height="725" alt="79f08726-a589-41de-8853-c523843dd2c6" src="https://github.com/user-attachments/assets/6e22425d-f933-49c3-b39e-dba7f7682f48" />
+<p align="center">
+  <i><strong>Image 2 :</strong> Connected to EC2 using SSH </i>
+</p>
+<br>
 
