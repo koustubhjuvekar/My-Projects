@@ -236,7 +236,7 @@ Now go to your local computer install rclone.
 </p>
 <br>
 
- - &nbsp;**Authorize in browser**
+- &nbsp;**Authorize in browser**
    
    - &nbsp;A Google login window will open.
    - &nbsp;Log in → Click `Allow` till end.
@@ -262,7 +262,7 @@ Go back to PowerShell window **where you run rclone command. **
 </p>
 <br>
 
- - &nbsp;Copy the result code generated there.
+- &nbsp;Copy the result code generated there.
 <br>
 ```bash
 eyJ0b2tlbiI6IntcImFjY2Vzc190b2tlblwiOlwieWEyOS5hMEFRUV9CRFFfVDE1MmJBV09PSEhOYlN5QXNuVUhucm9VOElaczJDNmxWWFpiZ1hkcjc3Q1FULWdvVFlMQnBHX0o2NHpRanlmcHI4VFMycklGcDlLbjdLUXZlUTRZcFcwdmE0T2QzT1MzTC1BREoySnFScUdPNHNiX3E5MXNnaW0yY3lwSFdDcHRESkFUb1NtYlJZVFhlOG9RUUlWTjRLX3VuaVE4Qy1oVWRMSTNqdlphSE5CdUZUN3R5U2E3ZGpGMUNfRXhlSDBhQ2dZS0FXY1NBUkVTRlFIR1gyTWkyb2Q4ZnJYVC1YNW9Pb2VmWWtQSDhnMDIwNlwiLFwidG9rZW5fdHlwZVwiOlwiQmVhcmVyXCIsXCJyZWZyZXNoX3Rva2VuXCI6XCIxLy8wZ0lXbVpGOFJsQm1hQ2dZSUFSQUFHQkFTTndGLUw5SXJNbHFnXzV1ZmJJNU9HbUZoZTZEUnRHVndhd3VMNzZsT0J5eTM2U0dLWUlxUzg2ZnVCeGlnc0RoVHNhYTU3Vk1HZkRBXCIsXCJleHBpcnlcIjpcIjIwMjUtMTAtMjFUMjE6MzQ6MjYuNTE5NjA1NyswNTozMFwiLFwiZXhwaXJlc19pblwiOjM1OTl9In0
@@ -270,12 +270,40 @@ eyJ0b2tlbiI6IntcImFjY2Vzc190b2tlblwiOlwieWEyOS5hMEFRUV9CRFFfVDE1MmJBV09PSEhOYlN5
 
 and now **go back to EC2 console PowerShell!**
 
+---
+**Paste copied result code there**
 
+<img width="1366" height="728" alt="c7d8ae85-6a2f-4ed7-a406-a23f09c9f0cb" src="https://github.com/user-attachments/assets/a76d846b-6530-4295-ae9d-f31ed265295f" />
+<p align="center">
+  <i><strong>Image 13 :</strong> Result code pasted back into EC2 console  </i>
+</p>
+<br>
 
+```bash
+Keep this "gdrive" remote?
+y) Yes this is OK (default)
+e) Edit this remote
+d) Delete this remote
 
+y/e/d> y
 
+```
+- &nbsp;Then press q and quit from config option
 
+- &nbsp;**Test it:**
 
+```bash
+rclone ls gdrive:
+```
+- &nbsp;If it **lists files/folders** → working fine.
+
+<img width="1366" height="505" alt="710f15e1-61d5-4f95-9d15-3b9312e114c5" src="https://github.com/user-attachments/assets/06f5f41b-f952-4c46-8736-2e6bc59f177b" />
+<p align="center">
+  <i><strong>Image 14 :</strong> rclone ls gdrive - list of files/folders in Google drive   </i>
+</p>
+<br>
+  
+See, it is syncing all the files from Google drive.
 
 
 
