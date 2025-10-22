@@ -189,13 +189,17 @@ rclone authorize "drive" "eyJzY29wZSI6ImRyaXZlIn0"
 
 Now go to your local computer install rclone.
 
-- &nbsp;Download rclone for Windows
+- &nbsp;**Download rclone for Windows**
   
   - Go to: https://rclone.org/downloads/
 
+<img width="898" height="473" alt="214e5842-0afa-4dd5-bb35-8ed1bf045501" src="https://github.com/user-attachments/assets/055cc4fb-ed33-4604-b298-af2deab2d6fe" />
+<p align="center">
+  <i><strong>Image 6 :</strong> rclone.org/downloads/ </i>
+</p>
+<br>
 
-
-
+Download as per your OS.
 
 
 
