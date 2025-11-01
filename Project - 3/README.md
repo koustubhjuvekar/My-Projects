@@ -469,3 +469,19 @@ Save it!
 </p>
 <br>
 
+-  **Make it executable**
+
+```bash
+chmod +x ~/scripts/backup_script.sh
+```
+
+<br>
+
+### **7.	&ensp;Testing manually**
+
+-  **Run the script**
+```bash
+bash ~/scripts/backup_script.sh
+```
+
+You will see the status as backup completed!
