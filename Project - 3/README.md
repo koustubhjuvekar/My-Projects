@@ -485,3 +485,12 @@ bash ~/scripts/backup_script.sh
 ```
 
 You will see the status as backup completed!
+
+
+So, you can see console like this. Whatever commands we run you can see in the image.
+
+<img width="1366" height="621" alt="6034579b-4307-438b-b1e4-2e64c029fbd1" src="https://github.com/user-attachments/assets/86ae1ee0-473a-4bd4-b3b9-07335016344e" />
+<p align="center">
+  <i><strong>Image 19 :</strong> Backup status </code></i>
+</p>
+<br>
