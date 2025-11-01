@@ -318,4 +318,34 @@ mkdir -p ~/backups/MyProject
 mkdir -p ~/scripts
 ```
 
+-  **Create a sample project**
 
+```bash
+cd ~/MyProject
+echo "print('Hello from MyProject')" > app.py
+```
+
+-  **Create config file**
+
+_(You will replace your-unique-URL from https://webhook.site)_
+Copy** Your unique URL** from there and add it to the given JSON code
+
+<img width="1366" height="728" alt="279449b9-ae57-4cc8-9133-1bdefabb62d0" src="https://github.com/user-attachments/assets/6d9004f8-364a-47bb-8e45-c32db98c8e99" />
+
+
+```json
+cd ~/scripts
+cat <<EOF > backup_config.json
+{
+  "project_name": "MyProject",
+  "project_path": "/home/ubuntu/MyProject",
+  "backup_base_dir": "/home/ubuntu/backups",
+  "remote_name": "gdrive",
+  "remote_folder": "ProjectBackups",
+  "daily_keep": 7,
+  "weekly_keep": 4,
+  "monthly_keep": 3,
+  "webhook_url": "https://webhook.site/7f18bd10-512b-4858-abae-e875fb082ac6"
+}
+EOF
+```
