@@ -311,3 +311,11 @@ See, it is syncing all the files from Google drive.
 
 ### **5. &ensp;Project directory & config setup**
 
+-  **Create folders**
+```bash
+mkdir -p ~/MyProject
+mkdir -p ~/backups/MyProject
+mkdir -p ~/scripts
+```
+
+
