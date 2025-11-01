@@ -331,7 +331,10 @@ _(You will replace your-unique-URL from https://webhook.site)_
 Copy** Your unique URL** from there and add it to the given JSON code
 
 <img width="1366" height="728" alt="279449b9-ae57-4cc8-9133-1bdefabb62d0" src="https://github.com/user-attachments/assets/6d9004f8-364a-47bb-8e45-c32db98c8e99" />
-
+<p align="center">
+  <i><strong>Image 15 :</strong>Webhook URL </i>
+</p>
+<br>
 
 ```json
 cd ~/scripts
@@ -349,3 +352,120 @@ cat <<EOF > backup_config.json
 }
 EOF
 ```
+<br>
+
+Or you can edit or write code using sudo nano ```backup_config.json.```
+
+Save it!
+
+<img width="1366" height="727" alt="c4d60d62-34f6-43fb-a544-8eda1bae71fd" src="https://github.com/user-attachments/assets/b0ffeb2c-ef77-4028-9ed8-4cdf5ae4cb6e" />
+<p align="center">
+  <i><strong>Image 16 :</strong>  <code> backup_config.json </code></i>
+</p>
+<br>
+
+You can verify requests coming in webhook.
+
+<img width="1366" height="686" alt="8ece5fa5-40d7-48d0-b91d-0f70a81bcfd6" src="https://github.com/user-attachments/assets/48485bda-ba59-4ee6-b176-760ecebd3114" />
+<p align="center">
+  <i><strong>Image 17 :</strong>  Webhook Notification</i>
+</p>
+<br>
+
+### **6.	&ensp;Create the main script**
+
+-  Create the script file
+
+```bash
+nano ~/scripts/backup_script.sh
+```
+
+Paste Below given code
+
+```bash
+#!/bin/bash
+# ============================================
+# Automated Backup Script with Google Drive Integration
+# ============================================
+
+CONFIG_FILE="/home/ubuntu/scripts/backup_config.json"
+LOG_FILE="/home/ubuntu/scripts/backup.log"
+NOTIFY=true
+
+# ----- Check for --no-notify flag -----
+for arg in "$@"; do
+  if [ "$arg" == "--no-notify" ]; then
+    NOTIFY=false
+  fi
+done
+
+# ----- Read configuration -----
+PROJECT_NAME=$(jq -r '.project_name' $CONFIG_FILE)
+PROJECT_PATH=$(jq -r '.project_path' $CONFIG_FILE)
+BACKUP_BASE=$(jq -r '.backup_base_dir' $CONFIG_FILE)
+REMOTE_NAME=$(jq -r '.remote_name' $CONFIG_FILE)
+REMOTE_FOLDER=$(jq -r '.remote_folder' $CONFIG_FILE)
+DAILY_KEEP=$(jq -r '.daily_keep' $CONFIG_FILE)
+WEEKLY_KEEP=$(jq -r '.weekly_keep' $CONFIG_FILE)
+MONTHLY_KEEP=$(jq -r '.monthly_keep' $CONFIG_FILE)
+WEBHOOK_URL=$(jq -r '.webhook_url' $CONFIG_FILE)
+
+# ----- Timestamp & Folder structure -----
+TIMESTAMP=$(date +"%Y%m%d_%H%M%S")
+DATE_YEAR=$(date +"%Y")
+DATE_MONTH=$(date +"%m")
+DATE_DAY=$(date +"%d")
+
+BACKUP_DIR="$BACKUP_BASE/$PROJECT_NAME/$DATE_YEAR/$DATE_MONTH/$DATE_DAY"
+mkdir -p "$BACKUP_DIR"
+
+BACKUP_FILE="${PROJECT_NAME}_${TIMESTAMP}.zip"
+BACKUP_PATH="$BACKUP_DIR/$BACKUP_FILE"
+
+# ----- Create backup -----
+echo "[$(date)] Starting backup..." | tee -a $LOG_FILE
+zip -r "$BACKUP_PATH" "$PROJECT_PATH" >/dev/null
+echo "[$(date)] Backup created: $BACKUP_PATH" | tee -a $LOG_FILE
+
+# ----- Upload to Google Drive -----
+rclone copy "$BACKUP_PATH" "${REMOTE_NAME}:${REMOTE_FOLDER}" --progress
+if [ $? -eq 0 ]; then
+    UPLOAD_STATUS="Success"
+else
+    UPLOAD_STATUS="Failed"
+fi
+
+# ----- Rotational Backup Logic -----
+echo "[$(date)] Cleaning old backups..." | tee -a $LOG_FILE
+
+find "$BACKUP_BASE/$PROJECT_NAME" -type f -name "*.zip" -mtime +$DAILY_KEEP -delete
+
+if [ "$(date +%u)" -eq 7 ]; then
+  find "$BACKUP_BASE/$PROJECT_NAME" -type f -name "*.zip" -mtime +$((7 * WEEKLY_KEEP)) -delete
+fi
+
+find "$BACKUP_BASE/$PROJECT_NAME" -type f -name "*.zip" -mtime +$((30 * MONTHLY_KEEP)) -delete
+
+echo "[$(date)] Rotation complete" | tee -a $LOG_FILE
+
+# ----- Notification -----
+if [ "$NOTIFY" = true ]; then
+  curl -X POST -H "Content-Type: application/json" \
+    -d "{\"project\": \"$PROJECT_NAME\", \"date\": \"$(date)\", \"status\": \"$UPLOAD_STATUS\"}" \
+    "$WEBHOOK_URL"
+  echo "[$(date)] Notification sent ($UPLOAD_STATUS)" | tee -a $LOG_FILE
+else
+  echo "[$(date)] Notification skipped" | tee -a $LOG_FILE
+fi
+
+echo "[$(date)] Backup completed!" | tee -a $LOG_FILE
+```
+
+Save it!
+
+<img width="1366" height="728" alt="01b72b6b-1388-459d-b584-fbe77c2161cc" src="https://github.com/user-attachments/assets/d61c1121-0bd9-40e2-9a26-80ba164ba6b7" />
+<p align="center">
+  <i><strong>Image 18 :</strong>   <code> backup_config.json </code></i>
+</p>
+<br>
+
