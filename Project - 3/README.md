@@ -309,6 +309,5 @@ See, it is syncing all the files from Google drive.
 
 
 
-
-
+### **5. &ensp;Project directory & config setup**
 
